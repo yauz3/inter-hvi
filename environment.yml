@@ -1,4 +1,4 @@
-name: kat_env
+name: inter_hvi
 channels:
   - conda-forge
   - psi4
@@ -18,4 +18,4 @@ dependencies:
   - numpy
   - matplotlib
   - seaborn
-prefix: /home/yavuz/anaconda3/envs/kat_env
+prefix: /home/yavuz/anaconda3/envs/inter_hvi
