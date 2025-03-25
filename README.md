@@ -1,6 +1,6 @@
 # Inter-HVI: Bridging Interpretability and Accuracy in Hypervalent Iodine Reactivity Prediction
 
-# Reference Implementation of Inter-POL algorithm
+# Reference Implementation of Inter-HVI algorithm
 This readme file documents all of the required steps to run Inter-POL.
 
 Note that the code was implemented and tested on a Linux operating system only.
