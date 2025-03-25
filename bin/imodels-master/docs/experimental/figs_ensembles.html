@@ -1,0 +1,1750 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">from copy import deepcopy
+
+import numpy as np
+from matplotlib import pyplot as plt
+from sklearn import datasets
+from sklearn import tree
+from sklearn.base import BaseEstimator
+from sklearn.linear_model import RidgeCV, RidgeClassifierCV
+from sklearn.model_selection import train_test_split
+from sklearn.tree import plot_tree
+from sklearn.utils import check_X_y
+
+from imodels.tree.viz_utils import extract_sklearn_tree_from_figs
+
+
+class Node:
+    def __init__(self, feature: int = None, threshold: int = None,
+                 value=None, idxs=None, is_root: bool = False, left=None,
+                 impurity_reduction: float = None, tree_num: int = None,
+                 right=None, split_or_linear=&#39;split&#39;, n_samples=0):
+        &#34;&#34;&#34;Node class for splitting
+        &#34;&#34;&#34;
+
+        # split or linear
+        self.is_root = is_root
+        self.idxs = idxs
+        self.tree_num = tree_num
+        self.split_or_linear = split_or_linear
+        self.feature = feature
+        self.n_samples = n_samples
+        self.impurity_reduction = impurity_reduction
+
+        # different meanings
+        self.value = value  # for split this is mean, for linear this is weight
+
+        # split-specific (for linear these should all be None)
+        self.threshold = threshold
+        self.left = left
+        self.right = right
+        self.left_temp = None
+        self.right_temp = None
+
+    def update_values(self, X, y):
+        self.value = y.mean()
+        if self.threshold is not None:
+            right_indicator = np.apply_along_axis(
+                lambda x: x[self.feature] &gt; self.threshold, 1, X)
+            X_right = X[right_indicator, :]
+            X_left = X[~right_indicator, :]
+            y_right = y[right_indicator]
+            y_left = y[~right_indicator]
+            if self.left is not None:
+                self.left.update_values(X_left, y_left)
+            if self.right is not None:
+                self.right.update_values(X_right, y_right)
+
+    def shrink(self, reg_param, cum_sum=0):
+        if self.is_root:
+            cum_sum = self.value
+        if self.left is None:  # if leaf node, change prediction
+            self.value = cum_sum
+        else:
+            shrunk_diff = (self.left.value - self.value) / \
+                (1 + reg_param / self.n_samples)
+            self.left.shrink(reg_param, cum_sum + shrunk_diff)
+            shrunk_diff = (self.right.value - self.value) / \
+                (1 + reg_param / self.n_samples)
+            self.right.shrink(reg_param, cum_sum + shrunk_diff)
+
+    def setattrs(self, **kwargs):
+        for k, v in kwargs.items():
+            setattr(self, k, v)
+
+    def __str__(self):
+        if self.split_or_linear == &#39;linear&#39;:
+            if self.is_root:
+                return f&#39;X_{self.feature} * {self.value:0.3f} (Tree #{self.tree_num} linear root)&#39;
+            else:
+                return f&#39;X_{self.feature} * {self.value:0.3f} (linear)&#39;
+        else:
+            if self.is_root:
+                return f&#39;X_{self.feature} &lt;= {self.threshold:0.3f} (Tree #{self.tree_num} root)&#39;
+            elif self.left is None and self.right is None:
+                return f&#39;Val: {self.value[0][0]:0.3f} (leaf)&#39;
+            else:
+                return f&#39;X_{self.feature} &lt;= {self.threshold:0.3f} (split)&#39;
+
+    def __repr__(self):
+        return self.__str__()
+
+
+class FIGSExt(BaseEstimator):
+    &#34;&#34;&#34;FIGSExt (sum of trees) classifier.
+    Fast Interpretable Greedy-Tree Sums (FIGS) is an algorithm for fitting concise rule-based models.
+    Specifically, FIGS generalizes CART to simultaneously grow a flexible number of trees in a summation.
+    The total number of splits across all the trees can be restricted by a pre-specified threshold, keeping the model interpretable.
+    Experiments across a wide array of real-world datasets show that FIGS achieves state-of-the-art prediction performance when restricted to just a few splits (e.g. less than 20).
+    https://arxiv.org/abs/2201.11931
+    &#34;&#34;&#34;
+
+    def __init__(self, max_rules: int = None, posthoc_ridge: bool = False,
+                 include_linear: bool = False,
+                 max_features=None, min_impurity_decrease: float = 0.0,
+                 k1: int = 0, k2: int = 0):
+        &#34;&#34;&#34;
+        max_features
+            The number of features to consider when looking for the best split
+        k1: number of iterations of tree-prediction backfitting to do after making each split
+        k2: number of iterations of tree-prediction backfitting to do after the end of the entire
+            tree-growing phase
+        &#34;&#34;&#34;
+        super().__init__()
+        self.max_rules = max_rules
+        self.posthoc_ridge = posthoc_ridge
+        self.include_linear = include_linear
+        self.max_features = max_features
+        self.weighted_model_ = None  # set if using posthoc_ridge
+        self.min_impurity_decrease = min_impurity_decrease
+        self.k1 = k1
+        self.k2 = k2
+        self._init_prediction_task()  # decides between regressor and classifier
+
+    def _init_prediction_task(self):
+        &#34;&#34;&#34;
+        FIGSExtRegressor and FIGSExtClassifier override this method
+        to alter the prediction task. When using this class directly,
+        it is equivalent to FIGSExtRegressor
+        &#34;&#34;&#34;
+        self.prediction_task = &#39;regression&#39;
+
+    def _init_decision_function(self):
+        &#34;&#34;&#34;Sets decision function based on prediction_task
+        &#34;&#34;&#34;
+        # used by sklearn GridSearchCV, BaggingClassifier
+        if self.prediction_task == &#39;classification&#39;:
+            def decision_function(x): return self.predict_proba(x)[:, 1]
+        elif self.prediction_task == &#39;regression&#39;:
+            decision_function = self.predict
+
+    def _construct_node_linear(self, X, y, idxs, tree_num=0, sample_weight=None):
+        &#34;&#34;&#34;This can be made a lot faster
+        Assumes there are at least 5 points in node
+        Doesn&#39;t currently support _sample_weight!
+        &#34;&#34;&#34;
+        y_target = y[idxs]
+        impurity_orig = np.mean(np.square(y_target)) * idxs.sum()
+
+        # find best linear split
+        best_impurity = impurity_orig
+        best_linear_coef = None
+        best_feature = None
+        for feature_num in range(X.shape[1]):
+            x = X[idxs, feature_num].reshape(-1, 1)
+            m = RidgeCV(fit_intercept=False)
+            m.fit(x, y_target)
+            impurity = np.min(-m.best_score_) * idxs.sum()
+            assert impurity &gt;= 0, &#39;impurity should not be negative&#39;
+            if impurity &lt; best_impurity:
+                best_impurity = impurity
+                best_linear_coef = m.coef_[0]
+                best_feature = feature_num
+        impurity_reduction = impurity_orig - best_impurity
+
+        # no good linear fit found
+        if impurity_reduction == 0:
+            return Node(idxs=idxs, value=np.mean(y_target), tree_num=tree_num,
+                        feature=None, threshold=None,
+                        impurity_reduction=-1, split_or_linear=&#39;split&#39;)  # leaf node that just returns its value
+        else:
+            assert isinstance(best_linear_coef,
+                              float), &#39;coef should be a float&#39;
+            return Node(idxs=idxs, value=best_linear_coef, tree_num=tree_num,
+                        feature=best_feature, threshold=None,
+                        impurity_reduction=impurity_reduction, split_or_linear=&#39;linear&#39;)
+
+    def _construct_node_with_stump(self, X, y, idxs, tree_num, sample_weight=None, max_features=None):
+        # array indices
+        SPLIT = 0
+        LEFT = 1
+        RIGHT = 2
+
+        # fit stump
+        stump = tree.DecisionTreeRegressor(
+            max_depth=1, max_features=max_features)
+        if sample_weight is not None:
+            sample_weight = sample_weight[idxs]
+        stump.fit(X[idxs], y[idxs], sample_weight=sample_weight)
+
+        # these are all arrays, arr[0] is split node
+        # note: -2 is dummy
+        feature = stump.tree_.feature
+        threshold = stump.tree_.threshold
+
+        impurity = stump.tree_.impurity
+        n_node_samples = stump.tree_.n_node_samples
+        value = stump.tree_.value
+
+        # no split
+        if len(feature) == 1:
+            # print(&#39;no split found!&#39;, idxs.sum(), impurity, feature)
+            return Node(idxs=idxs, value=value[SPLIT], tree_num=tree_num,
+                        feature=feature[SPLIT], threshold=threshold[SPLIT],
+                        impurity_reduction=-1, n_samples=n_node_samples)
+
+        # split node
+        impurity_reduction = (
+            impurity[SPLIT] -
+            impurity[LEFT] * n_node_samples[LEFT] / n_node_samples[SPLIT] -
+            impurity[RIGHT] * n_node_samples[RIGHT] / n_node_samples[SPLIT]
+        ) * idxs.sum()
+
+        node_split = Node(idxs=idxs, value=value[SPLIT], tree_num=tree_num,
+                          feature=feature[SPLIT], threshold=threshold[SPLIT],
+                          impurity_reduction=impurity_reduction, n_samples=n_node_samples)
+        # print(&#39;\t&gt;&gt;&gt;&#39;, node_split, &#39;impurity&#39;, impurity, &#39;num_pts&#39;, idxs.sum(), &#39;imp_reduc&#39;, impurity_reduction)
+
+        # manage children
+        idxs_split = X[:, feature[SPLIT]] &lt;= threshold[SPLIT]
+        idxs_left = idxs_split &amp; idxs
+        idxs_right = ~idxs_split &amp; idxs
+        node_left = Node(idxs=idxs_left, value=value[LEFT], tree_num=tree_num)
+        node_right = Node(
+            idxs=idxs_right, value=value[RIGHT], tree_num=tree_num)
+        node_split.setattrs(left_temp=node_left, right_temp=node_right, )
+        return node_split
+
+    def fit(self, X, y=None, feature_names=None, verbose=False, sample_weight=None):
+        &#34;&#34;&#34;
+        Params
+        ------
+        _sample_weight: array-like of shape (n_samples,), default=None
+            Sample weights. If None, then samples are equally weighted.
+            Splits that would create child nodes with net zero or negative weight
+            are ignored while searching for a split in each node.
+        &#34;&#34;&#34;
+
+        if self.prediction_task == &#39;classification&#39;:
+            self.classes_, y = np.unique(
+                y, return_inverse=True)  # deals with str inputs
+        X, y = check_X_y(X, y)
+        y = y.astype(float)
+        if feature_names is not None:
+            self.feature_names_ = feature_names
+
+        self.trees_ = []  # list of the root nodes of added trees
+        self.complexity_ = 0  # tracks the number of rules in the model
+        y_predictions_per_tree = {}  # predictions for each tree
+        y_residuals_per_tree = {}  # based on predictions above
+
+        def _update_tree_preds(n_iter):
+            for k in range(n_iter):
+                for tree_num_, tree_ in enumerate(self.trees_):
+                    y_residuals_per_tree[tree_num_] = deepcopy(y)
+
+                    # subtract predictions of all other trees
+                    for tree_num_2_ in range(len(self.trees_)):
+                        if not tree_num_2_ == tree_num_:
+                            y_residuals_per_tree[tree_num_] -= y_predictions_per_tree[tree_num_2_]
+                    tree_.update_values(X, y_residuals_per_tree[tree_num_])
+                    y_predictions_per_tree[tree_num_] = self._predict_tree(self.trees_[
+                                                                           tree_num_], X)
+
+        # set up initial potential_splits
+        # everything in potential_splits either is_root (so it can be added directly to self.trees_)
+        # or it is a child of a root node that has already been added
+        idxs = np.ones(X.shape[0], dtype=bool)
+        node_init = self._construct_node_with_stump(X=X, y=y, idxs=idxs, tree_num=-1,
+                                                    sample_weight=sample_weight, max_features=self.max_features)
+        potential_splits = [node_init]
+        if self.include_linear and idxs.sum() &gt;= 5:
+            node_init_linear = self._construct_node_linear(X=X, y=y, idxs=idxs, tree_num=-1,
+                                                           sample_weight=sample_weight)
+            potential_splits.append(node_init_linear)
+        for node in potential_splits:
+            node.setattrs(is_root=True)
+        potential_splits = sorted(
+            potential_splits, key=lambda x: x.impurity_reduction)
+
+        # start the greedy fitting algorithm
+        finished = False
+        while len(potential_splits) &gt; 0 and not finished:
+            # print(&#39;potential_splits&#39;, [str(s) for s in potential_splits])
+            # get node with max impurity_reduction (since it&#39;s sorted)
+            split_node = potential_splits.pop()
+
+            # don&#39;t split on node
+            if split_node.impurity_reduction &lt; self.min_impurity_decrease:
+                finished = True
+                break
+
+            # split on node
+            if verbose:
+                print(&#39;\nadding &#39; + str(split_node))
+            self.complexity_ += 1
+
+            # if added a tree root
+            if split_node.is_root:
+                # start a new tree
+                self.trees_.append(split_node)
+
+                # update tree_num
+                for node_ in [split_node, split_node.left_temp, split_node.right_temp]:
+                    if node_ is not None:
+                        node_.tree_num = len(self.trees_) - 1
+
+                # add new root potential node
+                node_new_root = Node(is_root=True, idxs=np.ones(X.shape[0], dtype=bool),
+                                     tree_num=-1, split_or_linear=split_node.split_or_linear)
+                potential_splits.append(node_new_root)
+
+            # add children to potential splits (note this doesn&#39;t currently add linear potential splits)
+            if split_node.split_or_linear == &#39;split&#39;:
+                # assign left_temp, right_temp to be proper children
+                # (basically adds them to tree in predict method)
+                split_node.setattrs(left=split_node.left_temp,
+                                    right=split_node.right_temp)
+
+                # add children to potential_splits
+                potential_splits.append(split_node.left)
+                potential_splits.append(split_node.right)
+
+            # update predictions for altered tree
+            for tree_num_ in range(len(self.trees_)):
+                y_predictions_per_tree[tree_num_] = self._predict_tree(self.trees_[
+                                                                       tree_num_], X)
+            # dummy 0 preds for possible new trees
+            y_predictions_per_tree[-1] = np.zeros(X.shape[0])
+
+            # update residuals for each tree
+            # -1 is key for potential new tree
+            for tree_num_ in list(range(len(self.trees_))) + [-1]:
+                y_residuals_per_tree[tree_num_] = deepcopy(y)
+
+                # subtract predictions of all other trees
+                for tree_num_2_ in range(len(self.trees_)):
+                    if not tree_num_2_ == tree_num_:
+                        y_residuals_per_tree[tree_num_] -= y_predictions_per_tree[tree_num_2_]
+
+            _update_tree_preds(self.k1)
+
+            # recompute all impurities + update potential_split children
+            potential_splits_new = []
+            for potential_split in potential_splits:
+                y_target = y_residuals_per_tree[potential_split.tree_num]
+
+                if potential_split.split_or_linear == &#39;split&#39;:
+                    # re-calculate the best split
+                    potential_split_updated = self._construct_node_with_stump(X=X,
+                                                                              y=y_target,
+                                                                              idxs=potential_split.idxs,
+                                                                              tree_num=potential_split.tree_num,
+                                                                              sample_weight=sample_weight,
+                                                                              max_features=self.max_features)
+
+                    # need to preserve certain attributes from before (value at this split + is_root)
+                    # value may change because residuals may have changed, but we want it to store the value from before
+                    potential_split.setattrs(
+                        feature=potential_split_updated.feature,
+                        threshold=potential_split_updated.threshold,
+                        impurity_reduction=potential_split_updated.impurity_reduction,
+                        left_temp=potential_split_updated.left_temp,
+                        right_temp=potential_split_updated.right_temp,
+                    )
+                elif potential_split.split_or_linear == &#39;linear&#39;:
+                    assert potential_split.is_root, &#39;Currently, linear node only supported as root&#39;
+                    assert potential_split.idxs.sum(
+                    ) == X.shape[0], &#39;Currently, linear node only supported as root&#39;
+                    potential_split_updated = self._construct_node_linear(idxs=potential_split.idxs,
+                                                                          X=X,
+                                                                          y=y_target,
+                                                                          tree_num=potential_split.tree_num,
+                                                                          sample_weight=sample_weight)
+
+                    # don&#39;t need to retain anything from before (besides maybe is_root)
+                    potential_split.setattrs(
+                        feature=potential_split_updated.feature,
+                        impurity_reduction=potential_split_updated.impurity_reduction,
+                        value=potential_split_updated.value,
+                    )
+
+                # this is a valid split
+                if potential_split.impurity_reduction is not None:
+                    potential_splits_new.append(potential_split)
+
+            # sort so largest impurity reduction comes last (should probs make this a heap later)
+            potential_splits = sorted(
+                potential_splits_new, key=lambda x: x.impurity_reduction)
+            if verbose:
+                print(self)
+            if self.max_rules is not None and self.complexity_ &gt;= self.max_rules:
+                finished = True
+                break
+
+        _update_tree_preds(self.k2)
+
+        # potentially fit linear model on the tree preds
+        if self.posthoc_ridge:
+            if self.prediction_task == &#39;regression&#39;:
+                self.weighted_model_ = RidgeCV(
+                    alphas=(0.01, 0.1, 0.5, 1.0, 5, 10))
+            elif self.prediction_task == &#39;classification&#39;:
+                self.weighted_model_ = RidgeClassifierCV(
+                    alphas=(0.01, 0.1, 0.5, 1.0, 5, 10))
+            X_feats = self._extract_tree_predictions(X)
+            self.weighted_model_.fit(X_feats, y)
+        return self
+
+    def _tree_to_str(self, root: Node, prefix=&#39;&#39;):
+        if root is None:
+            return &#39;&#39;
+        elif root.split_or_linear == &#39;linear&#39;:
+            return prefix + str(root)
+        elif root.threshold is None:
+            return &#39;&#39;
+        pprefix = prefix + &#39;\t&#39;
+        return prefix + str(root) + &#39;\n&#39; + self._tree_to_str(root.left, pprefix) + self._tree_to_str(root.right,
+                                                                                                     pprefix)
+
+    def __str__(self):
+        s = &#39;------------\n&#39; + \
+            &#39;\n\t+\n&#39;.join([self._tree_to_str(t) for t in self.trees_])
+        if hasattr(self, &#39;feature_names_&#39;) and self.feature_names_ is not None:
+            for i in range(len(self.feature_names_))[::-1]:
+                s = s.replace(f&#39;X_{i}&#39;, self.feature_names_[i])
+        return s
+
+    def predict(self, X):
+        if self.posthoc_ridge and self.weighted_model_:  # note, during fitting don&#39;t use the weighted moel
+            X_feats = self._extract_tree_predictions(X)
+            return self.weighted_model_.predict(X_feats)
+        preds = np.zeros(X.shape[0])
+        for tree in self.trees_:
+            preds += self._predict_tree(tree, X)
+        if self.prediction_task == &#39;regression&#39;:
+            return preds
+        elif self.prediction_task == &#39;classification&#39;:
+            return (preds &gt; 0.5).astype(int)
+
+    def predict_proba(self, X):
+        if self.prediction_task == &#39;regression&#39;:
+            return NotImplemented
+        elif self.posthoc_ridge and self.weighted_model_:  # note, during fitting don&#39;t use the weighted moel
+            X_feats = self._extract_tree_predictions(X)
+            d = self.weighted_model_.decision_function(
+                X_feats)  # for 2 classes, this (n_samples,)
+            probs = np.exp(d) / (1 + np.exp(d))
+            return np.vstack((1 - probs, probs)).transpose()
+        else:
+            preds = np.zeros(X.shape[0])
+            for tree in self.trees_:
+                preds += self._predict_tree(tree, X)
+            # constrain to range of probabilities
+            preds = np.clip(preds, a_min=0., a_max=1.)
+            return np.vstack((1 - preds, preds)).transpose()
+
+    def _extract_tree_predictions(self, X):
+        &#34;&#34;&#34;Extract predictions for all trees
+        &#34;&#34;&#34;
+        X_feats = np.zeros((X.shape[0], len(self.trees_)))
+        for tree_num_ in range(len(self.trees_)):
+            preds_tree = self._predict_tree(self.trees_[tree_num_], X)
+            X_feats[:, tree_num_] = preds_tree
+        return X_feats
+
+    def _predict_tree(self, root: Node, X):
+        &#34;&#34;&#34;Predict for a single tree
+        This can be made way faster
+        &#34;&#34;&#34;
+
+        def _predict_tree_single_point(root: Node, x):
+            if root.split_or_linear == &#39;linear&#39;:
+                return x[root.feature] * root.value
+            elif root.left is None and root.right is None:
+                return root.value
+            left = x[root.feature] &lt;= root.threshold
+            if left:
+                if root.left is None:  # we don&#39;t actually have to worry about this case
+                    return root.value
+                else:
+                    return _predict_tree_single_point(root.left, x)
+            else:
+                if root.right is None:  # we don&#39;t actually have to worry about this case
+                    return root.value
+                else:
+                    return _predict_tree_single_point(root.right, x)
+
+        preds = np.zeros(X.shape[0])
+        for i in range(X.shape[0]):
+            preds[i] = _predict_tree_single_point(root, X[i])
+        return preds
+
+    def plot(self, cols=2, feature_names=None, filename=None, label=&#34;all&#34;,
+             impurity=False, tree_number=None, dpi=150, fig_size=None):
+        is_single_tree = len(self.trees_) &lt; 2 or tree_number is not None
+        n_cols = int(cols)
+        n_rows = int(np.ceil(len(self.trees_) / n_cols))
+        # if is_single_tree:
+        #     fig, ax = plt.subplots(1)
+        # else:
+        #     fig, axs = plt.subplots(n_rows, n_cols)
+        n_plots = int(len(self.trees_)) if tree_number is None else 1
+        fig, axs = plt.subplots(n_plots, dpi=dpi)
+        if fig_size is not None:
+            fig.set_size_inches(fig_size, fig_size)
+        criterion = &#34;squared_error&#34; if self.prediction_task == &#34;regression&#34; else &#34;gini&#34;
+        n_classes = 1 if self.prediction_task == &#39;regression&#39; else 2
+        ax_size = int(len(self.trees_))  # n_cols * n_rows
+        for i in range(n_plots):
+            r = i // n_cols
+            c = i % n_cols
+            if not is_single_tree:
+                # ax = axs[r, c]
+                ax = axs[i]
+            else:
+                ax = axs
+            try:
+                dt = extract_sklearn_tree_from_figs(
+                    self, i if tree_number is None else tree_number, n_classes)
+                plot_tree(dt, ax=ax, feature_names=feature_names,
+                          label=label, impurity=impurity)
+            except IndexError:
+                ax.axis(&#39;off&#39;)
+                continue
+
+            ax.set_title(f&#34;Tree {i}&#34;)
+        if filename is not None:
+            plt.savefig(filename)
+            return
+        plt.show()
+
+
+class FIGSExtRegressor(FIGSExt):
+    def _init_prediction_task(self):
+        self.prediction_task = &#39;regression&#39;
+
+
+class FIGSExtClassifier(FIGSExt):
+    def _init_prediction_task(self):
+        self.prediction_task = &#39;classification&#39;
+
+
+if __name__ == &#39;__main__&#39;:
+    np.random.seed(13)
+    # X, y = datasets.load_breast_cancer(return_X_y=True)  # binary classification
+    X, y = datasets.load_diabetes(return_X_y=True)  # regression
+    # X = np.random.randn(500, 10)
+    # y = (X[:, 0] &gt; 0).astype(float) + (X[:, 1] &gt; 1).astype(float)
+
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.33, random_state=42
+    )
+    print(&#39;X.shape&#39;, X.shape)
+    print(&#39;ys&#39;, np.unique(y_train), &#39;\n\n&#39;)
+
+    m = FIGSExtClassifier(max_rules=50)
+    m.fit(X_train, y_train)
+    print(m.predict_proba(X_train))
+    m.plot(2, tree_number=0)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="imodels.experimental.figs_ensembles.FIGSExt"><code class="flex name class">
+<span>class <span class="ident">FIGSExt</span></span>
+<span>(</span><span>max_rules: int = None, posthoc_ridge: bool = False, include_linear: bool = False, max_features=None, min_impurity_decrease: float = 0.0, k1: int = 0, k2: int = 0)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>FIGSExt (sum of trees) classifier.
+Fast Interpretable Greedy-Tree Sums (FIGS) is an algorithm for fitting concise rule-based models.
+Specifically, FIGS generalizes CART to simultaneously grow a flexible number of trees in a summation.
+The total number of splits across all the trees can be restricted by a pre-specified threshold, keeping the model interpretable.
+Experiments across a wide array of real-world datasets show that FIGS achieves state-of-the-art prediction performance when restricted to just a few splits (e.g. less than 20).
+<a href="https://arxiv.org/abs/2201.11931">https://arxiv.org/abs/2201.11931</a></p>
+<p>max_features
+The number of features to consider when looking for the best split
+k1: number of iterations of tree-prediction backfitting to do after making each split
+k2: number of iterations of tree-prediction backfitting to do after the end of the entire
+tree-growing phase</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class FIGSExt(BaseEstimator):
+    &#34;&#34;&#34;FIGSExt (sum of trees) classifier.
+    Fast Interpretable Greedy-Tree Sums (FIGS) is an algorithm for fitting concise rule-based models.
+    Specifically, FIGS generalizes CART to simultaneously grow a flexible number of trees in a summation.
+    The total number of splits across all the trees can be restricted by a pre-specified threshold, keeping the model interpretable.
+    Experiments across a wide array of real-world datasets show that FIGS achieves state-of-the-art prediction performance when restricted to just a few splits (e.g. less than 20).
+    https://arxiv.org/abs/2201.11931
+    &#34;&#34;&#34;
+
+    def __init__(self, max_rules: int = None, posthoc_ridge: bool = False,
+                 include_linear: bool = False,
+                 max_features=None, min_impurity_decrease: float = 0.0,
+                 k1: int = 0, k2: int = 0):
+        &#34;&#34;&#34;
+        max_features
+            The number of features to consider when looking for the best split
+        k1: number of iterations of tree-prediction backfitting to do after making each split
+        k2: number of iterations of tree-prediction backfitting to do after the end of the entire
+            tree-growing phase
+        &#34;&#34;&#34;
+        super().__init__()
+        self.max_rules = max_rules
+        self.posthoc_ridge = posthoc_ridge
+        self.include_linear = include_linear
+        self.max_features = max_features
+        self.weighted_model_ = None  # set if using posthoc_ridge
+        self.min_impurity_decrease = min_impurity_decrease
+        self.k1 = k1
+        self.k2 = k2
+        self._init_prediction_task()  # decides between regressor and classifier
+
+    def _init_prediction_task(self):
+        &#34;&#34;&#34;
+        FIGSExtRegressor and FIGSExtClassifier override this method
+        to alter the prediction task. When using this class directly,
+        it is equivalent to FIGSExtRegressor
+        &#34;&#34;&#34;
+        self.prediction_task = &#39;regression&#39;
+
+    def _init_decision_function(self):
+        &#34;&#34;&#34;Sets decision function based on prediction_task
+        &#34;&#34;&#34;
+        # used by sklearn GridSearchCV, BaggingClassifier
+        if self.prediction_task == &#39;classification&#39;:
+            def decision_function(x): return self.predict_proba(x)[:, 1]
+        elif self.prediction_task == &#39;regression&#39;:
+            decision_function = self.predict
+
+    def _construct_node_linear(self, X, y, idxs, tree_num=0, sample_weight=None):
+        &#34;&#34;&#34;This can be made a lot faster
+        Assumes there are at least 5 points in node
+        Doesn&#39;t currently support _sample_weight!
+        &#34;&#34;&#34;
+        y_target = y[idxs]
+        impurity_orig = np.mean(np.square(y_target)) * idxs.sum()
+
+        # find best linear split
+        best_impurity = impurity_orig
+        best_linear_coef = None
+        best_feature = None
+        for feature_num in range(X.shape[1]):
+            x = X[idxs, feature_num].reshape(-1, 1)
+            m = RidgeCV(fit_intercept=False)
+            m.fit(x, y_target)
+            impurity = np.min(-m.best_score_) * idxs.sum()
+            assert impurity &gt;= 0, &#39;impurity should not be negative&#39;
+            if impurity &lt; best_impurity:
+                best_impurity = impurity
+                best_linear_coef = m.coef_[0]
+                best_feature = feature_num
+        impurity_reduction = impurity_orig - best_impurity
+
+        # no good linear fit found
+        if impurity_reduction == 0:
+            return Node(idxs=idxs, value=np.mean(y_target), tree_num=tree_num,
+                        feature=None, threshold=None,
+                        impurity_reduction=-1, split_or_linear=&#39;split&#39;)  # leaf node that just returns its value
+        else:
+            assert isinstance(best_linear_coef,
+                              float), &#39;coef should be a float&#39;
+            return Node(idxs=idxs, value=best_linear_coef, tree_num=tree_num,
+                        feature=best_feature, threshold=None,
+                        impurity_reduction=impurity_reduction, split_or_linear=&#39;linear&#39;)
+
+    def _construct_node_with_stump(self, X, y, idxs, tree_num, sample_weight=None, max_features=None):
+        # array indices
+        SPLIT = 0
+        LEFT = 1
+        RIGHT = 2
+
+        # fit stump
+        stump = tree.DecisionTreeRegressor(
+            max_depth=1, max_features=max_features)
+        if sample_weight is not None:
+            sample_weight = sample_weight[idxs]
+        stump.fit(X[idxs], y[idxs], sample_weight=sample_weight)
+
+        # these are all arrays, arr[0] is split node
+        # note: -2 is dummy
+        feature = stump.tree_.feature
+        threshold = stump.tree_.threshold
+
+        impurity = stump.tree_.impurity
+        n_node_samples = stump.tree_.n_node_samples
+        value = stump.tree_.value
+
+        # no split
+        if len(feature) == 1:
+            # print(&#39;no split found!&#39;, idxs.sum(), impurity, feature)
+            return Node(idxs=idxs, value=value[SPLIT], tree_num=tree_num,
+                        feature=feature[SPLIT], threshold=threshold[SPLIT],
+                        impurity_reduction=-1, n_samples=n_node_samples)
+
+        # split node
+        impurity_reduction = (
+            impurity[SPLIT] -
+            impurity[LEFT] * n_node_samples[LEFT] / n_node_samples[SPLIT] -
+            impurity[RIGHT] * n_node_samples[RIGHT] / n_node_samples[SPLIT]
+        ) * idxs.sum()
+
+        node_split = Node(idxs=idxs, value=value[SPLIT], tree_num=tree_num,
+                          feature=feature[SPLIT], threshold=threshold[SPLIT],
+                          impurity_reduction=impurity_reduction, n_samples=n_node_samples)
+        # print(&#39;\t&gt;&gt;&gt;&#39;, node_split, &#39;impurity&#39;, impurity, &#39;num_pts&#39;, idxs.sum(), &#39;imp_reduc&#39;, impurity_reduction)
+
+        # manage children
+        idxs_split = X[:, feature[SPLIT]] &lt;= threshold[SPLIT]
+        idxs_left = idxs_split &amp; idxs
+        idxs_right = ~idxs_split &amp; idxs
+        node_left = Node(idxs=idxs_left, value=value[LEFT], tree_num=tree_num)
+        node_right = Node(
+            idxs=idxs_right, value=value[RIGHT], tree_num=tree_num)
+        node_split.setattrs(left_temp=node_left, right_temp=node_right, )
+        return node_split
+
+    def fit(self, X, y=None, feature_names=None, verbose=False, sample_weight=None):
+        &#34;&#34;&#34;
+        Params
+        ------
+        _sample_weight: array-like of shape (n_samples,), default=None
+            Sample weights. If None, then samples are equally weighted.
+            Splits that would create child nodes with net zero or negative weight
+            are ignored while searching for a split in each node.
+        &#34;&#34;&#34;
+
+        if self.prediction_task == &#39;classification&#39;:
+            self.classes_, y = np.unique(
+                y, return_inverse=True)  # deals with str inputs
+        X, y = check_X_y(X, y)
+        y = y.astype(float)
+        if feature_names is not None:
+            self.feature_names_ = feature_names
+
+        self.trees_ = []  # list of the root nodes of added trees
+        self.complexity_ = 0  # tracks the number of rules in the model
+        y_predictions_per_tree = {}  # predictions for each tree
+        y_residuals_per_tree = {}  # based on predictions above
+
+        def _update_tree_preds(n_iter):
+            for k in range(n_iter):
+                for tree_num_, tree_ in enumerate(self.trees_):
+                    y_residuals_per_tree[tree_num_] = deepcopy(y)
+
+                    # subtract predictions of all other trees
+                    for tree_num_2_ in range(len(self.trees_)):
+                        if not tree_num_2_ == tree_num_:
+                            y_residuals_per_tree[tree_num_] -= y_predictions_per_tree[tree_num_2_]
+                    tree_.update_values(X, y_residuals_per_tree[tree_num_])
+                    y_predictions_per_tree[tree_num_] = self._predict_tree(self.trees_[
+                                                                           tree_num_], X)
+
+        # set up initial potential_splits
+        # everything in potential_splits either is_root (so it can be added directly to self.trees_)
+        # or it is a child of a root node that has already been added
+        idxs = np.ones(X.shape[0], dtype=bool)
+        node_init = self._construct_node_with_stump(X=X, y=y, idxs=idxs, tree_num=-1,
+                                                    sample_weight=sample_weight, max_features=self.max_features)
+        potential_splits = [node_init]
+        if self.include_linear and idxs.sum() &gt;= 5:
+            node_init_linear = self._construct_node_linear(X=X, y=y, idxs=idxs, tree_num=-1,
+                                                           sample_weight=sample_weight)
+            potential_splits.append(node_init_linear)
+        for node in potential_splits:
+            node.setattrs(is_root=True)
+        potential_splits = sorted(
+            potential_splits, key=lambda x: x.impurity_reduction)
+
+        # start the greedy fitting algorithm
+        finished = False
+        while len(potential_splits) &gt; 0 and not finished:
+            # print(&#39;potential_splits&#39;, [str(s) for s in potential_splits])
+            # get node with max impurity_reduction (since it&#39;s sorted)
+            split_node = potential_splits.pop()
+
+            # don&#39;t split on node
+            if split_node.impurity_reduction &lt; self.min_impurity_decrease:
+                finished = True
+                break
+
+            # split on node
+            if verbose:
+                print(&#39;\nadding &#39; + str(split_node))
+            self.complexity_ += 1
+
+            # if added a tree root
+            if split_node.is_root:
+                # start a new tree
+                self.trees_.append(split_node)
+
+                # update tree_num
+                for node_ in [split_node, split_node.left_temp, split_node.right_temp]:
+                    if node_ is not None:
+                        node_.tree_num = len(self.trees_) - 1
+
+                # add new root potential node
+                node_new_root = Node(is_root=True, idxs=np.ones(X.shape[0], dtype=bool),
+                                     tree_num=-1, split_or_linear=split_node.split_or_linear)
+                potential_splits.append(node_new_root)
+
+            # add children to potential splits (note this doesn&#39;t currently add linear potential splits)
+            if split_node.split_or_linear == &#39;split&#39;:
+                # assign left_temp, right_temp to be proper children
+                # (basically adds them to tree in predict method)
+                split_node.setattrs(left=split_node.left_temp,
+                                    right=split_node.right_temp)
+
+                # add children to potential_splits
+                potential_splits.append(split_node.left)
+                potential_splits.append(split_node.right)
+
+            # update predictions for altered tree
+            for tree_num_ in range(len(self.trees_)):
+                y_predictions_per_tree[tree_num_] = self._predict_tree(self.trees_[
+                                                                       tree_num_], X)
+            # dummy 0 preds for possible new trees
+            y_predictions_per_tree[-1] = np.zeros(X.shape[0])
+
+            # update residuals for each tree
+            # -1 is key for potential new tree
+            for tree_num_ in list(range(len(self.trees_))) + [-1]:
+                y_residuals_per_tree[tree_num_] = deepcopy(y)
+
+                # subtract predictions of all other trees
+                for tree_num_2_ in range(len(self.trees_)):
+                    if not tree_num_2_ == tree_num_:
+                        y_residuals_per_tree[tree_num_] -= y_predictions_per_tree[tree_num_2_]
+
+            _update_tree_preds(self.k1)
+
+            # recompute all impurities + update potential_split children
+            potential_splits_new = []
+            for potential_split in potential_splits:
+                y_target = y_residuals_per_tree[potential_split.tree_num]
+
+                if potential_split.split_or_linear == &#39;split&#39;:
+                    # re-calculate the best split
+                    potential_split_updated = self._construct_node_with_stump(X=X,
+                                                                              y=y_target,
+                                                                              idxs=potential_split.idxs,
+                                                                              tree_num=potential_split.tree_num,
+                                                                              sample_weight=sample_weight,
+                                                                              max_features=self.max_features)
+
+                    # need to preserve certain attributes from before (value at this split + is_root)
+                    # value may change because residuals may have changed, but we want it to store the value from before
+                    potential_split.setattrs(
+                        feature=potential_split_updated.feature,
+                        threshold=potential_split_updated.threshold,
+                        impurity_reduction=potential_split_updated.impurity_reduction,
+                        left_temp=potential_split_updated.left_temp,
+                        right_temp=potential_split_updated.right_temp,
+                    )
+                elif potential_split.split_or_linear == &#39;linear&#39;:
+                    assert potential_split.is_root, &#39;Currently, linear node only supported as root&#39;
+                    assert potential_split.idxs.sum(
+                    ) == X.shape[0], &#39;Currently, linear node only supported as root&#39;
+                    potential_split_updated = self._construct_node_linear(idxs=potential_split.idxs,
+                                                                          X=X,
+                                                                          y=y_target,
+                                                                          tree_num=potential_split.tree_num,
+                                                                          sample_weight=sample_weight)
+
+                    # don&#39;t need to retain anything from before (besides maybe is_root)
+                    potential_split.setattrs(
+                        feature=potential_split_updated.feature,
+                        impurity_reduction=potential_split_updated.impurity_reduction,
+                        value=potential_split_updated.value,
+                    )
+
+                # this is a valid split
+                if potential_split.impurity_reduction is not None:
+                    potential_splits_new.append(potential_split)
+
+            # sort so largest impurity reduction comes last (should probs make this a heap later)
+            potential_splits = sorted(
+                potential_splits_new, key=lambda x: x.impurity_reduction)
+            if verbose:
+                print(self)
+            if self.max_rules is not None and self.complexity_ &gt;= self.max_rules:
+                finished = True
+                break
+
+        _update_tree_preds(self.k2)
+
+        # potentially fit linear model on the tree preds
+        if self.posthoc_ridge:
+            if self.prediction_task == &#39;regression&#39;:
+                self.weighted_model_ = RidgeCV(
+                    alphas=(0.01, 0.1, 0.5, 1.0, 5, 10))
+            elif self.prediction_task == &#39;classification&#39;:
+                self.weighted_model_ = RidgeClassifierCV(
+                    alphas=(0.01, 0.1, 0.5, 1.0, 5, 10))
+            X_feats = self._extract_tree_predictions(X)
+            self.weighted_model_.fit(X_feats, y)
+        return self
+
+    def _tree_to_str(self, root: Node, prefix=&#39;&#39;):
+        if root is None:
+            return &#39;&#39;
+        elif root.split_or_linear == &#39;linear&#39;:
+            return prefix + str(root)
+        elif root.threshold is None:
+            return &#39;&#39;
+        pprefix = prefix + &#39;\t&#39;
+        return prefix + str(root) + &#39;\n&#39; + self._tree_to_str(root.left, pprefix) + self._tree_to_str(root.right,
+                                                                                                     pprefix)
+
+    def __str__(self):
+        s = &#39;------------\n&#39; + \
+            &#39;\n\t+\n&#39;.join([self._tree_to_str(t) for t in self.trees_])
+        if hasattr(self, &#39;feature_names_&#39;) and self.feature_names_ is not None:
+            for i in range(len(self.feature_names_))[::-1]:
+                s = s.replace(f&#39;X_{i}&#39;, self.feature_names_[i])
+        return s
+
+    def predict(self, X):
+        if self.posthoc_ridge and self.weighted_model_:  # note, during fitting don&#39;t use the weighted moel
+            X_feats = self._extract_tree_predictions(X)
+            return self.weighted_model_.predict(X_feats)
+        preds = np.zeros(X.shape[0])
+        for tree in self.trees_:
+            preds += self._predict_tree(tree, X)
+        if self.prediction_task == &#39;regression&#39;:
+            return preds
+        elif self.prediction_task == &#39;classification&#39;:
+            return (preds &gt; 0.5).astype(int)
+
+    def predict_proba(self, X):
+        if self.prediction_task == &#39;regression&#39;:
+            return NotImplemented
+        elif self.posthoc_ridge and self.weighted_model_:  # note, during fitting don&#39;t use the weighted moel
+            X_feats = self._extract_tree_predictions(X)
+            d = self.weighted_model_.decision_function(
+                X_feats)  # for 2 classes, this (n_samples,)
+            probs = np.exp(d) / (1 + np.exp(d))
+            return np.vstack((1 - probs, probs)).transpose()
+        else:
+            preds = np.zeros(X.shape[0])
+            for tree in self.trees_:
+                preds += self._predict_tree(tree, X)
+            # constrain to range of probabilities
+            preds = np.clip(preds, a_min=0., a_max=1.)
+            return np.vstack((1 - preds, preds)).transpose()
+
+    def _extract_tree_predictions(self, X):
+        &#34;&#34;&#34;Extract predictions for all trees
+        &#34;&#34;&#34;
+        X_feats = np.zeros((X.shape[0], len(self.trees_)))
+        for tree_num_ in range(len(self.trees_)):
+            preds_tree = self._predict_tree(self.trees_[tree_num_], X)
+            X_feats[:, tree_num_] = preds_tree
+        return X_feats
+
+    def _predict_tree(self, root: Node, X):
+        &#34;&#34;&#34;Predict for a single tree
+        This can be made way faster
+        &#34;&#34;&#34;
+
+        def _predict_tree_single_point(root: Node, x):
+            if root.split_or_linear == &#39;linear&#39;:
+                return x[root.feature] * root.value
+            elif root.left is None and root.right is None:
+                return root.value
+            left = x[root.feature] &lt;= root.threshold
+            if left:
+                if root.left is None:  # we don&#39;t actually have to worry about this case
+                    return root.value
+                else:
+                    return _predict_tree_single_point(root.left, x)
+            else:
+                if root.right is None:  # we don&#39;t actually have to worry about this case
+                    return root.value
+                else:
+                    return _predict_tree_single_point(root.right, x)
+
+        preds = np.zeros(X.shape[0])
+        for i in range(X.shape[0]):
+            preds[i] = _predict_tree_single_point(root, X[i])
+        return preds
+
+    def plot(self, cols=2, feature_names=None, filename=None, label=&#34;all&#34;,
+             impurity=False, tree_number=None, dpi=150, fig_size=None):
+        is_single_tree = len(self.trees_) &lt; 2 or tree_number is not None
+        n_cols = int(cols)
+        n_rows = int(np.ceil(len(self.trees_) / n_cols))
+        # if is_single_tree:
+        #     fig, ax = plt.subplots(1)
+        # else:
+        #     fig, axs = plt.subplots(n_rows, n_cols)
+        n_plots = int(len(self.trees_)) if tree_number is None else 1
+        fig, axs = plt.subplots(n_plots, dpi=dpi)
+        if fig_size is not None:
+            fig.set_size_inches(fig_size, fig_size)
+        criterion = &#34;squared_error&#34; if self.prediction_task == &#34;regression&#34; else &#34;gini&#34;
+        n_classes = 1 if self.prediction_task == &#39;regression&#39; else 2
+        ax_size = int(len(self.trees_))  # n_cols * n_rows
+        for i in range(n_plots):
+            r = i // n_cols
+            c = i % n_cols
+            if not is_single_tree:
+                # ax = axs[r, c]
+                ax = axs[i]
+            else:
+                ax = axs
+            try:
+                dt = extract_sklearn_tree_from_figs(
+                    self, i if tree_number is None else tree_number, n_classes)
+                plot_tree(dt, ax=ax, feature_names=feature_names,
+                          label=label, impurity=impurity)
+            except IndexError:
+                ax.axis(&#39;off&#39;)
+                continue
+
+            ax.set_title(f&#34;Tree {i}&#34;)
+        if filename is not None:
+            plt.savefig(filename)
+            return
+        plt.show()</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sklearn.base.BaseEstimator</li>
+<li>sklearn.utils._estimator_html_repr._HTMLDocumentationLinkMixin</li>
+<li>sklearn.utils._metadata_requests._MetadataRequester</li>
+</ul>
+<h3>Subclasses</h3>
+<ul class="hlist">
+<li><a title="imodels.experimental.figs_ensembles.FIGSExtClassifier" href="#imodels.experimental.figs_ensembles.FIGSExtClassifier">FIGSExtClassifier</a></li>
+<li><a title="imodels.experimental.figs_ensembles.FIGSExtRegressor" href="#imodels.experimental.figs_ensembles.FIGSExtRegressor">FIGSExtRegressor</a></li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="imodels.experimental.figs_ensembles.FIGSExt.fit"><code class="name flex">
+<span>def <span class="ident">fit</span></span>(<span>self, X, y=None, feature_names=None, verbose=False, sample_weight=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="params">Params</h2>
+<p>_sample_weight: array-like of shape (n_samples,), default=None
+Sample weights. If None, then samples are equally weighted.
+Splits that would create child nodes with net zero or negative weight
+are ignored while searching for a split in each node.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def fit(self, X, y=None, feature_names=None, verbose=False, sample_weight=None):
+    &#34;&#34;&#34;
+    Params
+    ------
+    _sample_weight: array-like of shape (n_samples,), default=None
+        Sample weights. If None, then samples are equally weighted.
+        Splits that would create child nodes with net zero or negative weight
+        are ignored while searching for a split in each node.
+    &#34;&#34;&#34;
+
+    if self.prediction_task == &#39;classification&#39;:
+        self.classes_, y = np.unique(
+            y, return_inverse=True)  # deals with str inputs
+    X, y = check_X_y(X, y)
+    y = y.astype(float)
+    if feature_names is not None:
+        self.feature_names_ = feature_names
+
+    self.trees_ = []  # list of the root nodes of added trees
+    self.complexity_ = 0  # tracks the number of rules in the model
+    y_predictions_per_tree = {}  # predictions for each tree
+    y_residuals_per_tree = {}  # based on predictions above
+
+    def _update_tree_preds(n_iter):
+        for k in range(n_iter):
+            for tree_num_, tree_ in enumerate(self.trees_):
+                y_residuals_per_tree[tree_num_] = deepcopy(y)
+
+                # subtract predictions of all other trees
+                for tree_num_2_ in range(len(self.trees_)):
+                    if not tree_num_2_ == tree_num_:
+                        y_residuals_per_tree[tree_num_] -= y_predictions_per_tree[tree_num_2_]
+                tree_.update_values(X, y_residuals_per_tree[tree_num_])
+                y_predictions_per_tree[tree_num_] = self._predict_tree(self.trees_[
+                                                                       tree_num_], X)
+
+    # set up initial potential_splits
+    # everything in potential_splits either is_root (so it can be added directly to self.trees_)
+    # or it is a child of a root node that has already been added
+    idxs = np.ones(X.shape[0], dtype=bool)
+    node_init = self._construct_node_with_stump(X=X, y=y, idxs=idxs, tree_num=-1,
+                                                sample_weight=sample_weight, max_features=self.max_features)
+    potential_splits = [node_init]
+    if self.include_linear and idxs.sum() &gt;= 5:
+        node_init_linear = self._construct_node_linear(X=X, y=y, idxs=idxs, tree_num=-1,
+                                                       sample_weight=sample_weight)
+        potential_splits.append(node_init_linear)
+    for node in potential_splits:
+        node.setattrs(is_root=True)
+    potential_splits = sorted(
+        potential_splits, key=lambda x: x.impurity_reduction)
+
+    # start the greedy fitting algorithm
+    finished = False
+    while len(potential_splits) &gt; 0 and not finished:
+        # print(&#39;potential_splits&#39;, [str(s) for s in potential_splits])
+        # get node with max impurity_reduction (since it&#39;s sorted)
+        split_node = potential_splits.pop()
+
+        # don&#39;t split on node
+        if split_node.impurity_reduction &lt; self.min_impurity_decrease:
+            finished = True
+            break
+
+        # split on node
+        if verbose:
+            print(&#39;\nadding &#39; + str(split_node))
+        self.complexity_ += 1
+
+        # if added a tree root
+        if split_node.is_root:
+            # start a new tree
+            self.trees_.append(split_node)
+
+            # update tree_num
+            for node_ in [split_node, split_node.left_temp, split_node.right_temp]:
+                if node_ is not None:
+                    node_.tree_num = len(self.trees_) - 1
+
+            # add new root potential node
+            node_new_root = Node(is_root=True, idxs=np.ones(X.shape[0], dtype=bool),
+                                 tree_num=-1, split_or_linear=split_node.split_or_linear)
+            potential_splits.append(node_new_root)
+
+        # add children to potential splits (note this doesn&#39;t currently add linear potential splits)
+        if split_node.split_or_linear == &#39;split&#39;:
+            # assign left_temp, right_temp to be proper children
+            # (basically adds them to tree in predict method)
+            split_node.setattrs(left=split_node.left_temp,
+                                right=split_node.right_temp)
+
+            # add children to potential_splits
+            potential_splits.append(split_node.left)
+            potential_splits.append(split_node.right)
+
+        # update predictions for altered tree
+        for tree_num_ in range(len(self.trees_)):
+            y_predictions_per_tree[tree_num_] = self._predict_tree(self.trees_[
+                                                                   tree_num_], X)
+        # dummy 0 preds for possible new trees
+        y_predictions_per_tree[-1] = np.zeros(X.shape[0])
+
+        # update residuals for each tree
+        # -1 is key for potential new tree
+        for tree_num_ in list(range(len(self.trees_))) + [-1]:
+            y_residuals_per_tree[tree_num_] = deepcopy(y)
+
+            # subtract predictions of all other trees
+            for tree_num_2_ in range(len(self.trees_)):
+                if not tree_num_2_ == tree_num_:
+                    y_residuals_per_tree[tree_num_] -= y_predictions_per_tree[tree_num_2_]
+
+        _update_tree_preds(self.k1)
+
+        # recompute all impurities + update potential_split children
+        potential_splits_new = []
+        for potential_split in potential_splits:
+            y_target = y_residuals_per_tree[potential_split.tree_num]
+
+            if potential_split.split_or_linear == &#39;split&#39;:
+                # re-calculate the best split
+                potential_split_updated = self._construct_node_with_stump(X=X,
+                                                                          y=y_target,
+                                                                          idxs=potential_split.idxs,
+                                                                          tree_num=potential_split.tree_num,
+                                                                          sample_weight=sample_weight,
+                                                                          max_features=self.max_features)
+
+                # need to preserve certain attributes from before (value at this split + is_root)
+                # value may change because residuals may have changed, but we want it to store the value from before
+                potential_split.setattrs(
+                    feature=potential_split_updated.feature,
+                    threshold=potential_split_updated.threshold,
+                    impurity_reduction=potential_split_updated.impurity_reduction,
+                    left_temp=potential_split_updated.left_temp,
+                    right_temp=potential_split_updated.right_temp,
+                )
+            elif potential_split.split_or_linear == &#39;linear&#39;:
+                assert potential_split.is_root, &#39;Currently, linear node only supported as root&#39;
+                assert potential_split.idxs.sum(
+                ) == X.shape[0], &#39;Currently, linear node only supported as root&#39;
+                potential_split_updated = self._construct_node_linear(idxs=potential_split.idxs,
+                                                                      X=X,
+                                                                      y=y_target,
+                                                                      tree_num=potential_split.tree_num,
+                                                                      sample_weight=sample_weight)
+
+                # don&#39;t need to retain anything from before (besides maybe is_root)
+                potential_split.setattrs(
+                    feature=potential_split_updated.feature,
+                    impurity_reduction=potential_split_updated.impurity_reduction,
+                    value=potential_split_updated.value,
+                )
+
+            # this is a valid split
+            if potential_split.impurity_reduction is not None:
+                potential_splits_new.append(potential_split)
+
+        # sort so largest impurity reduction comes last (should probs make this a heap later)
+        potential_splits = sorted(
+            potential_splits_new, key=lambda x: x.impurity_reduction)
+        if verbose:
+            print(self)
+        if self.max_rules is not None and self.complexity_ &gt;= self.max_rules:
+            finished = True
+            break
+
+    _update_tree_preds(self.k2)
+
+    # potentially fit linear model on the tree preds
+    if self.posthoc_ridge:
+        if self.prediction_task == &#39;regression&#39;:
+            self.weighted_model_ = RidgeCV(
+                alphas=(0.01, 0.1, 0.5, 1.0, 5, 10))
+        elif self.prediction_task == &#39;classification&#39;:
+            self.weighted_model_ = RidgeClassifierCV(
+                alphas=(0.01, 0.1, 0.5, 1.0, 5, 10))
+        X_feats = self._extract_tree_predictions(X)
+        self.weighted_model_.fit(X_feats, y)
+    return self</code></pre>
+</details>
+</dd>
+<dt id="imodels.experimental.figs_ensembles.FIGSExt.plot"><code class="name flex">
+<span>def <span class="ident">plot</span></span>(<span>self, cols=2, feature_names=None, filename=None, label='all', impurity=False, tree_number=None, dpi=150, fig_size=None)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def plot(self, cols=2, feature_names=None, filename=None, label=&#34;all&#34;,
+         impurity=False, tree_number=None, dpi=150, fig_size=None):
+    is_single_tree = len(self.trees_) &lt; 2 or tree_number is not None
+    n_cols = int(cols)
+    n_rows = int(np.ceil(len(self.trees_) / n_cols))
+    # if is_single_tree:
+    #     fig, ax = plt.subplots(1)
+    # else:
+    #     fig, axs = plt.subplots(n_rows, n_cols)
+    n_plots = int(len(self.trees_)) if tree_number is None else 1
+    fig, axs = plt.subplots(n_plots, dpi=dpi)
+    if fig_size is not None:
+        fig.set_size_inches(fig_size, fig_size)
+    criterion = &#34;squared_error&#34; if self.prediction_task == &#34;regression&#34; else &#34;gini&#34;
+    n_classes = 1 if self.prediction_task == &#39;regression&#39; else 2
+    ax_size = int(len(self.trees_))  # n_cols * n_rows
+    for i in range(n_plots):
+        r = i // n_cols
+        c = i % n_cols
+        if not is_single_tree:
+            # ax = axs[r, c]
+            ax = axs[i]
+        else:
+            ax = axs
+        try:
+            dt = extract_sklearn_tree_from_figs(
+                self, i if tree_number is None else tree_number, n_classes)
+            plot_tree(dt, ax=ax, feature_names=feature_names,
+                      label=label, impurity=impurity)
+        except IndexError:
+            ax.axis(&#39;off&#39;)
+            continue
+
+        ax.set_title(f&#34;Tree {i}&#34;)
+    if filename is not None:
+        plt.savefig(filename)
+        return
+    plt.show()</code></pre>
+</details>
+</dd>
+<dt id="imodels.experimental.figs_ensembles.FIGSExt.predict"><code class="name flex">
+<span>def <span class="ident">predict</span></span>(<span>self, X)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def predict(self, X):
+    if self.posthoc_ridge and self.weighted_model_:  # note, during fitting don&#39;t use the weighted moel
+        X_feats = self._extract_tree_predictions(X)
+        return self.weighted_model_.predict(X_feats)
+    preds = np.zeros(X.shape[0])
+    for tree in self.trees_:
+        preds += self._predict_tree(tree, X)
+    if self.prediction_task == &#39;regression&#39;:
+        return preds
+    elif self.prediction_task == &#39;classification&#39;:
+        return (preds &gt; 0.5).astype(int)</code></pre>
+</details>
+</dd>
+<dt id="imodels.experimental.figs_ensembles.FIGSExt.predict_proba"><code class="name flex">
+<span>def <span class="ident">predict_proba</span></span>(<span>self, X)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def predict_proba(self, X):
+    if self.prediction_task == &#39;regression&#39;:
+        return NotImplemented
+    elif self.posthoc_ridge and self.weighted_model_:  # note, during fitting don&#39;t use the weighted moel
+        X_feats = self._extract_tree_predictions(X)
+        d = self.weighted_model_.decision_function(
+            X_feats)  # for 2 classes, this (n_samples,)
+        probs = np.exp(d) / (1 + np.exp(d))
+        return np.vstack((1 - probs, probs)).transpose()
+    else:
+        preds = np.zeros(X.shape[0])
+        for tree in self.trees_:
+            preds += self._predict_tree(tree, X)
+        # constrain to range of probabilities
+        preds = np.clip(preds, a_min=0., a_max=1.)
+        return np.vstack((1 - preds, preds)).transpose()</code></pre>
+</details>
+</dd>
+<dt id="imodels.experimental.figs_ensembles.FIGSExt.set_fit_request"><code class="name flex">
+<span>def <span class="ident">set_fit_request</span></span>(<span>self: <a title="imodels.experimental.figs_ensembles.FIGSExt" href="#imodels.experimental.figs_ensembles.FIGSExt">FIGSExt</a>, *, feature_names: Union[bool, ForwardRef(None), str] = '$UNCHANGED$', sample_weight: Union[bool, ForwardRef(None), str] = '$UNCHANGED$', verbose: Union[bool, ForwardRef(None), str] = '$UNCHANGED$') ‑> <a title="imodels.experimental.figs_ensembles.FIGSExt" href="#imodels.experimental.figs_ensembles.FIGSExt">FIGSExt</a></span>
+</code></dt>
+<dd>
+<div class="desc"><p>Request metadata passed to the <code>fit</code> method.</p>
+<p>Note that this method is only relevant if
+<code>enable_metadata_routing=True</code> (see :func:<code>sklearn.set_config</code>).
+Please see :ref:<code>User Guide &lt;metadata_routing&gt;</code> on how the routing
+mechanism works.</p>
+<p>The options for each parameter are:</p>
+<ul>
+<li>
+<p><code>True</code>: metadata is requested, and passed to <code>fit</code> if provided. The request is ignored if metadata is not provided.</p>
+</li>
+<li>
+<p><code>False</code>: metadata is not requested and the meta-estimator will not pass it to <code>fit</code>.</p>
+</li>
+<li>
+<p><code>None</code>: metadata is not requested, and the meta-estimator will raise an error if the user provides it.</p>
+</li>
+<li>
+<p><code>str</code>: metadata should be passed to the meta-estimator with this given alias instead of the original name.</p>
+</li>
+</ul>
+<p>The default (<code>sklearn.utils.metadata_routing.UNCHANGED</code>) retains the
+existing request. This allows you to change the request for some
+parameters and not others.</p>
+<div class="admonition versionadded">
+<p class="admonition-title">Added in version:&ensp;1.3</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method is only relevant if this estimator is used as a
+sub-estimator of a meta-estimator, e.g. used inside a
+:class:<code>~sklearn.pipeline.Pipeline</code>. Otherwise it has no effect.</p>
+</div>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>feature_names</code></strong> :&ensp;<code>str, True, False,</code> or <code>None</code>,
+default=<code>sklearn.utils.metadata_routing.UNCHANGED</code></dt>
+<dd>Metadata routing for <code>feature_names</code> parameter in <code>fit</code>.</dd>
+<dt><strong><code>sample_weight</code></strong> :&ensp;<code>str, True, False,</code> or <code>None</code>,
+default=<code>sklearn.utils.metadata_routing.UNCHANGED</code></dt>
+<dd>Metadata routing for <code>sample_weight</code> parameter in <code>fit</code>.</dd>
+<dt><strong><code>verbose</code></strong> :&ensp;<code>str, True, False,</code> or <code>None</code>,
+default=<code>sklearn.utils.metadata_routing.UNCHANGED</code></dt>
+<dd>Metadata routing for <code>verbose</code> parameter in <code>fit</code>.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><strong><code>self</code></strong> :&ensp;<code>object</code></dt>
+<dd>The updated object.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def func(*args, **kw):
+    &#34;&#34;&#34;Updates the request for provided parameters
+
+    This docstring is overwritten below.
+    See REQUESTER_DOC for expected functionality
+    &#34;&#34;&#34;
+    if not _routing_enabled():
+        raise RuntimeError(
+            &#34;This method is only available when metadata routing is enabled.&#34;
+            &#34; You can enable it using&#34;
+            &#34; sklearn.set_config(enable_metadata_routing=True).&#34;
+        )
+
+    if self.validate_keys and (set(kw) - set(self.keys)):
+        raise TypeError(
+            f&#34;Unexpected args: {set(kw) - set(self.keys)} in {self.name}. &#34;
+            f&#34;Accepted arguments are: {set(self.keys)}&#34;
+        )
+
+    # This makes it possible to use the decorated method as an unbound method,
+    # for instance when monkeypatching.
+    # https://github.com/scikit-learn/scikit-learn/issues/28632
+    if instance is None:
+        _instance = args[0]
+        args = args[1:]
+    else:
+        _instance = instance
+
+    # Replicating python&#39;s behavior when positional args are given other than
+    # `self`, and `self` is only allowed if this method is unbound.
+    if args:
+        raise TypeError(
+            f&#34;set_{self.name}_request() takes 0 positional argument but&#34;
+            f&#34; {len(args)} were given&#34;
+        )
+
+    requests = _instance._get_metadata_request()
+    method_metadata_request = getattr(requests, self.name)
+
+    for prop, alias in kw.items():
+        if alias is not UNCHANGED:
+            method_metadata_request.add_request(param=prop, alias=alias)
+    _instance._metadata_request = requests
+
+    return _instance</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="imodels.experimental.figs_ensembles.FIGSExtClassifier"><code class="flex name class">
+<span>class <span class="ident">FIGSExtClassifier</span></span>
+<span>(</span><span>max_rules: int = None, posthoc_ridge: bool = False, include_linear: bool = False, max_features=None, min_impurity_decrease: float = 0.0, k1: int = 0, k2: int = 0)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>FIGSExt (sum of trees) classifier.
+Fast Interpretable Greedy-Tree Sums (FIGS) is an algorithm for fitting concise rule-based models.
+Specifically, FIGS generalizes CART to simultaneously grow a flexible number of trees in a summation.
+The total number of splits across all the trees can be restricted by a pre-specified threshold, keeping the model interpretable.
+Experiments across a wide array of real-world datasets show that FIGS achieves state-of-the-art prediction performance when restricted to just a few splits (e.g. less than 20).
+<a href="https://arxiv.org/abs/2201.11931">https://arxiv.org/abs/2201.11931</a></p>
+<p>max_features
+The number of features to consider when looking for the best split
+k1: number of iterations of tree-prediction backfitting to do after making each split
+k2: number of iterations of tree-prediction backfitting to do after the end of the entire
+tree-growing phase</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class FIGSExtClassifier(FIGSExt):
+    def _init_prediction_task(self):
+        self.prediction_task = &#39;classification&#39;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="imodels.experimental.figs_ensembles.FIGSExt" href="#imodels.experimental.figs_ensembles.FIGSExt">FIGSExt</a></li>
+<li>sklearn.base.BaseEstimator</li>
+<li>sklearn.utils._estimator_html_repr._HTMLDocumentationLinkMixin</li>
+<li>sklearn.utils._metadata_requests._MetadataRequester</li>
+</ul>
+<h3>Inherited members</h3>
+<ul class="hlist">
+<li><code><b><a title="imodels.experimental.figs_ensembles.FIGSExt" href="#imodels.experimental.figs_ensembles.FIGSExt">FIGSExt</a></b></code>:
+<ul class="hlist">
+<li><code><a title="imodels.experimental.figs_ensembles.FIGSExt.fit" href="#imodels.experimental.figs_ensembles.FIGSExt.fit">fit</a></code></li>
+<li><code><a title="imodels.experimental.figs_ensembles.FIGSExt.set_fit_request" href="#imodels.experimental.figs_ensembles.FIGSExt.set_fit_request">set_fit_request</a></code></li>
+</ul>
+</li>
+</ul>
+</dd>
+<dt id="imodels.experimental.figs_ensembles.FIGSExtRegressor"><code class="flex name class">
+<span>class <span class="ident">FIGSExtRegressor</span></span>
+<span>(</span><span>max_rules: int = None, posthoc_ridge: bool = False, include_linear: bool = False, max_features=None, min_impurity_decrease: float = 0.0, k1: int = 0, k2: int = 0)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>FIGSExt (sum of trees) classifier.
+Fast Interpretable Greedy-Tree Sums (FIGS) is an algorithm for fitting concise rule-based models.
+Specifically, FIGS generalizes CART to simultaneously grow a flexible number of trees in a summation.
+The total number of splits across all the trees can be restricted by a pre-specified threshold, keeping the model interpretable.
+Experiments across a wide array of real-world datasets show that FIGS achieves state-of-the-art prediction performance when restricted to just a few splits (e.g. less than 20).
+<a href="https://arxiv.org/abs/2201.11931">https://arxiv.org/abs/2201.11931</a></p>
+<p>max_features
+The number of features to consider when looking for the best split
+k1: number of iterations of tree-prediction backfitting to do after making each split
+k2: number of iterations of tree-prediction backfitting to do after the end of the entire
+tree-growing phase</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class FIGSExtRegressor(FIGSExt):
+    def _init_prediction_task(self):
+        self.prediction_task = &#39;regression&#39;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="imodels.experimental.figs_ensembles.FIGSExt" href="#imodels.experimental.figs_ensembles.FIGSExt">FIGSExt</a></li>
+<li>sklearn.base.BaseEstimator</li>
+<li>sklearn.utils._estimator_html_repr._HTMLDocumentationLinkMixin</li>
+<li>sklearn.utils._metadata_requests._MetadataRequester</li>
+</ul>
+<h3>Inherited members</h3>
+<ul class="hlist">
+<li><code><b><a title="imodels.experimental.figs_ensembles.FIGSExt" href="#imodels.experimental.figs_ensembles.FIGSExt">FIGSExt</a></b></code>:
+<ul class="hlist">
+<li><code><a title="imodels.experimental.figs_ensembles.FIGSExt.fit" href="#imodels.experimental.figs_ensembles.FIGSExt.fit">fit</a></code></li>
+<li><code><a title="imodels.experimental.figs_ensembles.FIGSExt.set_fit_request" href="#imodels.experimental.figs_ensembles.FIGSExt.set_fit_request">set_fit_request</a></code></li>
+</ul>
+</li>
+</ul>
+</dd>
+<dt id="imodels.experimental.figs_ensembles.Node"><code class="flex name class">
+<span>class <span class="ident">Node</span></span>
+<span>(</span><span>feature: int = None, threshold: int = None, value=None, idxs=None, is_root: bool = False, left=None, impurity_reduction: float = None, tree_num: int = None, right=None, split_or_linear='split', n_samples=0)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Node class for splitting</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Node:
+    def __init__(self, feature: int = None, threshold: int = None,
+                 value=None, idxs=None, is_root: bool = False, left=None,
+                 impurity_reduction: float = None, tree_num: int = None,
+                 right=None, split_or_linear=&#39;split&#39;, n_samples=0):
+        &#34;&#34;&#34;Node class for splitting
+        &#34;&#34;&#34;
+
+        # split or linear
+        self.is_root = is_root
+        self.idxs = idxs
+        self.tree_num = tree_num
+        self.split_or_linear = split_or_linear
+        self.feature = feature
+        self.n_samples = n_samples
+        self.impurity_reduction = impurity_reduction
+
+        # different meanings
+        self.value = value  # for split this is mean, for linear this is weight
+
+        # split-specific (for linear these should all be None)
+        self.threshold = threshold
+        self.left = left
+        self.right = right
+        self.left_temp = None
+        self.right_temp = None
+
+    def update_values(self, X, y):
+        self.value = y.mean()
+        if self.threshold is not None:
+            right_indicator = np.apply_along_axis(
+                lambda x: x[self.feature] &gt; self.threshold, 1, X)
+            X_right = X[right_indicator, :]
+            X_left = X[~right_indicator, :]
+            y_right = y[right_indicator]
+            y_left = y[~right_indicator]
+            if self.left is not None:
+                self.left.update_values(X_left, y_left)
+            if self.right is not None:
+                self.right.update_values(X_right, y_right)
+
+    def shrink(self, reg_param, cum_sum=0):
+        if self.is_root:
+            cum_sum = self.value
+        if self.left is None:  # if leaf node, change prediction
+            self.value = cum_sum
+        else:
+            shrunk_diff = (self.left.value - self.value) / \
+                (1 + reg_param / self.n_samples)
+            self.left.shrink(reg_param, cum_sum + shrunk_diff)
+            shrunk_diff = (self.right.value - self.value) / \
+                (1 + reg_param / self.n_samples)
+            self.right.shrink(reg_param, cum_sum + shrunk_diff)
+
+    def setattrs(self, **kwargs):
+        for k, v in kwargs.items():
+            setattr(self, k, v)
+
+    def __str__(self):
+        if self.split_or_linear == &#39;linear&#39;:
+            if self.is_root:
+                return f&#39;X_{self.feature} * {self.value:0.3f} (Tree #{self.tree_num} linear root)&#39;
+            else:
+                return f&#39;X_{self.feature} * {self.value:0.3f} (linear)&#39;
+        else:
+            if self.is_root:
+                return f&#39;X_{self.feature} &lt;= {self.threshold:0.3f} (Tree #{self.tree_num} root)&#39;
+            elif self.left is None and self.right is None:
+                return f&#39;Val: {self.value[0][0]:0.3f} (leaf)&#39;
+            else:
+                return f&#39;X_{self.feature} &lt;= {self.threshold:0.3f} (split)&#39;
+
+    def __repr__(self):
+        return self.__str__()</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="imodels.experimental.figs_ensembles.Node.setattrs"><code class="name flex">
+<span>def <span class="ident">setattrs</span></span>(<span>self, **kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def setattrs(self, **kwargs):
+    for k, v in kwargs.items():
+        setattr(self, k, v)</code></pre>
+</details>
+</dd>
+<dt id="imodels.experimental.figs_ensembles.Node.shrink"><code class="name flex">
+<span>def <span class="ident">shrink</span></span>(<span>self, reg_param, cum_sum=0)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def shrink(self, reg_param, cum_sum=0):
+    if self.is_root:
+        cum_sum = self.value
+    if self.left is None:  # if leaf node, change prediction
+        self.value = cum_sum
+    else:
+        shrunk_diff = (self.left.value - self.value) / \
+            (1 + reg_param / self.n_samples)
+        self.left.shrink(reg_param, cum_sum + shrunk_diff)
+        shrunk_diff = (self.right.value - self.value) / \
+            (1 + reg_param / self.n_samples)
+        self.right.shrink(reg_param, cum_sum + shrunk_diff)</code></pre>
+</details>
+</dd>
+<dt id="imodels.experimental.figs_ensembles.Node.update_values"><code class="name flex">
+<span>def <span class="ident">update_values</span></span>(<span>self, X, y)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def update_values(self, X, y):
+    self.value = y.mean()
+    if self.threshold is not None:
+        right_indicator = np.apply_along_axis(
+            lambda x: x[self.feature] &gt; self.threshold, 1, X)
+        X_right = X[right_indicator, :]
+        X_left = X[~right_indicator, :]
+        y_right = y[right_indicator]
+        y_left = y[~right_indicator]
+        if self.left is not None:
+            self.left.update_values(X_left, y_left)
+        if self.right is not None:
+            self.right.update_values(X_right, y_right)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index 🔍</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="imodels.experimental" href="index.html">imodels.experimental</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="imodels.experimental.figs_ensembles.FIGSExt" href="#imodels.experimental.figs_ensembles.FIGSExt">FIGSExt</a></code></h4>
+<ul class="">
+<li><code><a title="imodels.experimental.figs_ensembles.FIGSExt.fit" href="#imodels.experimental.figs_ensembles.FIGSExt.fit">fit</a></code></li>
+<li><code><a title="imodels.experimental.figs_ensembles.FIGSExt.plot" href="#imodels.experimental.figs_ensembles.FIGSExt.plot">plot</a></code></li>
+<li><code><a title="imodels.experimental.figs_ensembles.FIGSExt.predict" href="#imodels.experimental.figs_ensembles.FIGSExt.predict">predict</a></code></li>
+<li><code><a title="imodels.experimental.figs_ensembles.FIGSExt.predict_proba" href="#imodels.experimental.figs_ensembles.FIGSExt.predict_proba">predict_proba</a></code></li>
+<li><code><a title="imodels.experimental.figs_ensembles.FIGSExt.set_fit_request" href="#imodels.experimental.figs_ensembles.FIGSExt.set_fit_request">set_fit_request</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="imodels.experimental.figs_ensembles.FIGSExtClassifier" href="#imodels.experimental.figs_ensembles.FIGSExtClassifier">FIGSExtClassifier</a></code></h4>
+</li>
+<li>
+<h4><code><a title="imodels.experimental.figs_ensembles.FIGSExtRegressor" href="#imodels.experimental.figs_ensembles.FIGSExtRegressor">FIGSExtRegressor</a></code></h4>
+</li>
+<li>
+<h4><code><a title="imodels.experimental.figs_ensembles.Node" href="#imodels.experimental.figs_ensembles.Node">Node</a></code></h4>
+<ul class="">
+<li><code><a title="imodels.experimental.figs_ensembles.Node.setattrs" href="#imodels.experimental.figs_ensembles.Node.setattrs">setattrs</a></code></li>
+<li><code><a title="imodels.experimental.figs_ensembles.Node.shrink" href="#imodels.experimental.figs_ensembles.Node.shrink">shrink</a></code></li>
+<li><code><a title="imodels.experimental.figs_ensembles.Node.update_values" href="#imodels.experimental.figs_ensembles.Node.update_values">update_values</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img align="center" width=100% src="https://csinva.io/imodels/img/anim.gif"> </img></p>
+<!-- add wave animation -->
+</nav>
+</main>
+<footer id="footer">
+</footer>
+</body>
+</html>
+<!-- add github corner -->
+<a href="https://github.com/csinva/imodels" class="github-corner" aria-label="View source on GitHub"><svg width="120" height="120" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="m128.3,109.0 c113.8,99.7 119.0,89.6 119.0,89.6 c122.0,82.7 120.5,78.6 120.5,78.6 c119.2,72.0 123.4,76.3 123.4,76.3 c127.3,80.9 125.5,87.3 125.5,87.3 c122.9,97.6 130.6,101.9 134.4,103.2" fill="currentcolor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<!-- add wave animation stylesheet -->
+<link rel="stylesheet" href="github.css">

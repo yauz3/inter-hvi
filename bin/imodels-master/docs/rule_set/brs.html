@@ -1,0 +1,1469 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<section id="section-intro">
+<p>Original implementation at <a href="https://github.com/wangtongada/BOA">https://github.com/wangtongada/BOA</a></p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">&#39;&#39;&#39;Original implementation at https://github.com/wangtongada/BOA
+&#39;&#39;&#39;
+
+import itertools
+import operator
+import os
+import warnings
+from os.path import join as oj
+from bisect import bisect_left
+from collections import defaultdict
+from copy import deepcopy
+from itertools import combinations
+from random import sample
+
+import numpy as np
+import pandas as pd
+from mlxtend.frequent_patterns import fpgrowth
+from numpy.random import random
+from pandas import read_csv
+from scipy.sparse import csc_matrix
+from sklearn.base import BaseEstimator, ClassifierMixin
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.utils.multiclass import check_classification_targets
+from sklearn.utils.validation import check_X_y, check_is_fitted
+
+from imodels.rule_set.rule_set import RuleSet
+from imodels.util.arguments import check_fit_arguments
+
+
+class BayesianRuleSetClassifier(RuleSet, BaseEstimator, ClassifierMixin):
+    &#39;&#39;&#39;Bayesian or-of-and algorithm.
+    Generates patterns that satisfy the minimum support and maximum length and then select the Nrules rules that have the highest entropy.
+    In function SA_patternbased, each local maximum is stored in maps and the best BOA is returned.
+    Remember here the BOA contains only the index of selected rules from Nrules self.rules_
+    &#39;&#39;&#39;
+
+    def __init__(self, n_rules: int = 2000,
+                 supp=5, maxlen: int = 10,
+                 num_iterations=5000, num_chains=3, q=0.1,
+                 alpha_pos=100, beta_pos=1,
+                 alpha_neg=100, beta_neg=1,
+                 alpha_l=None, beta_l=None,
+                 discretization_method=&#39;randomforest&#39;, random_state=0):
+        &#39;&#39;&#39;
+        Params
+        ------
+        n_rules
+            number of rules to be used in SA_patternbased and also the output of generate_rules
+        supp
+            The higher this supp, the &#39;larger&#39; a pattern is. 5% is a generally good number
+        maxlen
+            maximum length of a pattern
+        num_iterations
+            number of iterations in each chain
+        num_chains
+            number of chains in the simulated annealing search algorithm
+        q
+        alpha_pos
+            $\rho = alpha/(alpha+beta)$. Make sure $\rho$ is close to one when choosing alpha and beta
+            The alpha and beta parameters alter the prior distributions for different rules
+        beta_pos
+        alpha_neg
+        beta_neg
+        alpha_l
+        beta_l
+        discretization_method
+            discretization method
+        &#39;&#39;&#39;
+        self.n_rules = n_rules
+        self.supp = supp
+        self.maxlen = maxlen
+
+        self.num_iterations = num_iterations
+        self.num_chains = num_chains
+        self.q = q
+
+        self.alpha_pos = alpha_pos
+        self.beta_pos = beta_pos
+        self.alpha_neg = alpha_neg
+        self.beta_neg = beta_neg
+        self.discretization_method = discretization_method
+
+        self.alpha_l = alpha_l
+        self.beta_l = beta_l
+        self.random_state = 0
+
+    def fit(self, X, y, feature_names: list = None, init=[], verbose=False):
+        &#39;&#39;&#39;
+        Parameters
+        ----------
+        X : array-like, shape = [n_samples, n_features]
+            Training data
+        y : array_like, shape = [n_samples]
+            Labels
+
+        feature_names : array_like, shape = [n_features], optional (default: [])
+            String labels for each feature.
+            If empty and X is a DataFrame, column labels are used.
+            If empty and X is not a DataFrame, then features are simply enumerated
+        &#39;&#39;&#39;
+        # check inputs
+        self.attr_level_num = defaultdict(int)  # any missing value defaults to 0
+        self.attr_names = []
+
+        X, y, feature_names = check_fit_arguments(self, X, y, feature_names)
+        np.random.seed(self.random_state)
+
+        # convert to pandas DataFrame
+        X = pd.DataFrame(X, columns=feature_names)
+
+        for i, name in enumerate(X.columns):
+            self.attr_level_num[name] += 1
+            self.attr_names.append(name)
+        self.attr_names_orig = deepcopy(self.attr_names)
+        self.attr_names = list(set(self.attr_names))
+
+        # set up patterns
+        self._set_pattern_space()
+
+        # parameter checking
+        if self.alpha_l is None or self.beta_l is None or len(self.alpha_l) != self.maxlen or len(
+                self.beta_l) != self.maxlen:
+            if verbose:
+                print(&#39;No or wrong input for alpha_l and beta_l - the model will use default parameters.&#39;)
+            self.C = [1.0 / self.maxlen] * self.maxlen
+            self.C.insert(0, -1)
+            self.alpha_l = [10] * (self.maxlen + 1)
+            self.beta_l = [10 * self.pattern_space[i] / self.C[i] for i in range(self.maxlen + 1)]
+        else:
+            self.alpha_l = [1] + list(self.alpha_l)
+            self.beta_l = [1] + list(self.beta_l)
+
+        # setup
+        self._generate_rules(X, y, verbose)
+        n_rules_current = len(self.rules_)
+        self.rules_len_list = [len(rule) for rule in self.rules_]
+        maps = defaultdict(list)
+        T0 = 1000  # initial temperature for simulated annealing
+        split = 0.7 * self.num_iterations
+
+        # run simulated annealing
+        for chain in range(self.num_chains):
+            # initialize with a random pattern set
+            if init != []:
+                rules_curr = init.copy()
+            else:
+                assert n_rules_current &gt; 1, f&#39;Only {n_rules_current} potential rules found, change hyperparams to allow for more&#39;
+                N = sample(range(1, min(8, n_rules_current), 1), 1)[0]
+                rules_curr = sample(range(n_rules_current), N)
+            rules_curr_norm = self._normalize(rules_curr)
+            pt_curr = -100000000000
+            maps[chain].append(
+                [-1, [pt_curr / 3, pt_curr / 3, pt_curr / 3], rules_curr, [self.rules_[i] for i in rules_curr]])
+
+            for iter in range(self.num_iterations):
+                if iter &gt;= split:
+                    p = np.array(range(1 + len(maps[chain])))
+                    p = np.array(list(_accumulate(p)))
+                    p = p / p[-1]
+                    index = _find_lt(p, random())
+                    rules_curr = maps[chain][index][2].copy()
+                    rules_curr_norm = maps[chain][index][2].copy()
+
+                # propose new rules
+                rules_new, rules_norm = self._propose(rules_curr.copy(), rules_curr_norm.copy(), self.q, y)
+
+                # compute probability of new rules
+                cfmatrix, prob = self._compute_prob(rules_new, y)
+                T = T0 ** (1 - iter / self.num_iterations)  # temperature for simulated annealing
+                pt_new = sum(prob)
+                with warnings.catch_warnings():
+                    if not verbose:
+                        warnings.simplefilter(&#34;ignore&#34;)
+                    alpha = np.exp(float(pt_new - pt_curr) / T)
+
+                if pt_new &gt; sum(maps[chain][-1][1]):
+                    maps[chain].append([iter, prob, rules_new, [self.rules_[i] for i in rules_new]])
+                    if verbose:
+                        print((
+                            &#39;\n** chain = {}, max at iter = {} ** \n accuracy = {}, TP = {},FP = {}, TN = {}, FN = {}&#39;
+                            &#39;\n pt_new is {}, prior_ChsRules={}, likelihood_1 = {}, likelihood_2 = {}\n&#39;).format(
+                            chain, iter, (cfmatrix[0] + cfmatrix[2] + 0.0) / len(y), cfmatrix[0], cfmatrix[1],
+                            cfmatrix[2], cfmatrix[3], sum(prob), prob[0], prob[1], prob[2])
+                        )
+                        self._print_rules(rules_new)
+                        print(rules_new)
+                if random() &lt;= alpha:
+                    rules_curr_norm, rules_curr, pt_curr = rules_norm.copy(), rules_new.copy(), pt_new
+        pt_max = [sum(maps[chain][-1][1]) for chain in range(self.num_chains)]
+        index = pt_max.index(max(pt_max))
+        self.rules_ = maps[index][-1][3]
+        return self
+
+    def __str__(self):
+        return &#39; &#39;.join(str(r) for r in self.rules_)
+
+    def predict(self, X):
+        check_is_fitted(self)
+        if isinstance(X, np.ndarray):
+            df = pd.DataFrame(X, columns=self.attr_names_orig)
+        else:
+            df = X
+        Z = [[]] * len(self.rules_)
+        dfn = 1 - df  # df has negative associations
+        dfn.columns = [name.strip() + &#39;_neg&#39; for name in df.columns]
+        df = pd.concat([df, dfn], axis=1)
+        for i, rule in enumerate(self.rules_):
+            Z[i] = (np.sum(df[list(rule)], axis=1) == len(rule)).astype(int)
+        Yhat = (np.sum(Z, axis=0) &gt; 0).astype(int)
+        return Yhat
+
+    def predict_proba(self, X):
+        raise Exception(&#39;BOA does not support predicted probabilities.&#39;)
+
+    def _set_pattern_space(self):
+        &#34;&#34;&#34;Compute the rule space from the levels in each attribute
+        &#34;&#34;&#34;
+        # add feat_neg to each existing feature feat
+        for item in self.attr_names:
+            self.attr_level_num[item + &#39;_neg&#39;] = self.attr_level_num[item]
+        tmp = [item + &#39;_neg&#39; for item in self.attr_names]
+        self.attr_names.extend(tmp)
+
+        # set up pattern_space
+        self.pattern_space = np.zeros(self.maxlen + 1)
+        for k in range(1, self.maxlen + 1, 1):
+            for subset in combinations(self.attr_names, k):
+                tmp = 1
+                for i in subset:
+                    tmp = tmp * self.attr_level_num[i]
+                # print(&#39;subset&#39;, subset, &#39;tmp&#39;, tmp, &#39;k&#39;, k)
+                self.pattern_space[k] = self.pattern_space[k] + tmp
+
+    def _generate_rules(self, X, y, verbose):
+        &#39;&#39;&#39;This function generates rules that satisfy supp and maxlen using fpgrowth, then it selects the top n_rules rules that make data have the biggest decrease in entropy.
+        There are two ways to generate rules. fpgrowth can handle cases where the maxlen is small. If maxlen&lt;=3, fpgrowth can generates rules much faster than randomforest.
+        If maxlen is big, fpgrowth tends to generate too many rules that overflow the memory.
+        &#39;&#39;&#39;
+
+        df = 1 - X  # df has negative associations
+        df.columns = [name.strip() + &#39;_neg&#39; for name in X.columns]
+        df = pd.concat([X, df], axis=1)
+        if self.discretization_method == &#39;fpgrowth&#39; and self.maxlen &lt;= 3:
+            itemMatrix = [[item for item in df.columns if row[item] == 1] for i, row in df.iterrows()]
+            pindex = np.where(y == 1)[0]
+            rules = fpgrowth([itemMatrix[i] for i in pindex], supp=self.supp, zmin=1, zmax=self.maxlen)
+            rules = [tuple(np.sort(rule[0])) for rule in rules]
+            rules = list(set(rules))
+        else:
+            &#39;&#39;&#39;todo: replace this with imodels.RFDiscretizer
+            &#39;&#39;&#39;
+            rules = []
+            for length in range(1, self.maxlen + 1, 1):
+                n_estimators = min(pow(df.shape[1], length), 4000)
+                clf = RandomForestClassifier(n_estimators=n_estimators, max_depth=length)
+                clf.fit(X, y)
+                for n in range(n_estimators):
+                    rules.extend(_extract_rules(clf.estimators_[n], df.columns))
+            rules = [list(x) for x in set(tuple(x) for x in rules)]
+        self.rules_ = rules
+
+        # select the top n_rules rules using secondary criteria, information gain
+        self._screen_rules(df, y, verbose)  # updates self.rules_
+        self._set_pattern_space()
+
+    def _screen_rules(self, df, y, verbose):
+        &#39;&#39;&#39;Screening rules using information gain
+        &#39;&#39;&#39;
+        item_ind_dict = {}
+        for i, name in enumerate(df.columns):
+            item_ind_dict[name] = i
+        indices = np.array(
+            list(itertools.chain.from_iterable([[
+                item_ind_dict[x] for x in rule]
+                for rule in self.rules_])))
+        len_rules = [len(rule) for rule in self.rules_]
+        indptr = list(_accumulate(len_rules))
+        indptr.insert(0, 0)
+        indptr = np.array(indptr)
+        data = np.ones(len(indices))
+        rule_matrix = csc_matrix((data, indices, indptr),
+                                 shape=(len(df.columns),
+                                        len(self.rules_)))
+        mat = df.values @ rule_matrix
+        print(&#39;mat.shape&#39;, mat.shape)
+        len_matrix = np.array([len_rules] * df.shape[0])
+        Z = (mat == len_matrix).astype(int)
+        Zpos = [Z[i] for i in np.where(y &gt; 0)][0]
+        TP = np.sum(Zpos, axis=0)
+        supp_select = np.where(TP &gt;= self.supp * sum(y) / 100)[0]
+        FP = np.sum(Z, axis=0) - TP
+        TN = len(y) - np.sum(y) - FP
+        FN = np.sum(y) - TP
+        p1 = TP.astype(float) / (TP + FP)
+        p2 = FN.astype(float) / (FN + TN)
+        pp = (TP + FP).astype(float) / (TP + FP + TN + FN)
+        # p1 = np.clip(p1, a_min=1e-10, a_max=1-1e-10)
+        print(&#39;\n\n\n\np1.shape&#39;, p1.shape, &#39;pp.shape&#39;, pp.shape, &#39;cond_entropy.shape&#39;)  # , cond_entropy.shape)
+        with warnings.catch_warnings():
+            if not verbose:
+                warnings.simplefilter(&#34;ignore&#34;)  # ignore warnings about invalid values (e.g. log(0))
+            cond_entropy = -pp * (p1 * np.log(p1) + (1 - p1) * np.log(1 - p1)) - (1 - pp) * (
+                    p2 * np.log(p2) + (1 - p2) * np.log(1 - p2))
+            cond_entropy[p1 * (1 - p1) == 0] = -((1 - pp) * (p2 * np.log(p2) + (1 - p2) * np.log(1 - p2)))[
+                p1 * (1 - p1) == 0]
+            cond_entropy[p2 * (1 - p2) == 0] = -(pp * (p1 * np.log(p1) + (1 - p1) * np.log(1 - p1)))[p2 * (1 - p2) == 0]
+            cond_entropy[p1 * (1 - p1) * p2 * (1 - p2) == 0] = 0
+        select = np.argsort(cond_entropy[supp_select])[::-1][-self.n_rules:]
+        self.rules_ = [self.rules_[i] for i in supp_select[select]]
+        self.RMatrix = np.array(Z[:, supp_select[select]])
+
+    def _propose(self, rules_curr, rules_norm, q, y):
+        nRules = len(self.rules_)
+        yhat = (np.sum(self.RMatrix[:, rules_curr], axis=1) &gt; 0).astype(int)
+        incorr = np.where(y != yhat)[0]
+        N = len(rules_curr)
+
+        if len(incorr) == 0:
+            # BOA correctly classified all points but there could be redundant patterns, so cleaning is needed
+            move = [&#39;clean&#39;]
+        else:
+            ex = sample(incorr.tolist(), 1)[0]
+            t = random()
+            if y[ex] == 1 or N == 1:
+                if t &lt; 1.0 / 2 or N == 1:
+                    move = [&#39;add&#39;]  # action: add
+                else:
+                    move = [&#39;cut&#39;, &#39;add&#39;]  # action: replace
+            else:
+                if t &lt; 1.0 / 2:
+                    move = [&#39;cut&#39;]  # action: cut
+                else:
+                    move = [&#39;cut&#39;, &#39;add&#39;]  # action: replace
+        if move[0] == &#39;cut&#39;:
+            &#34;&#34;&#34; cut &#34;&#34;&#34;
+            if random() &lt; q:
+                candidate = list(set(np.where(self.RMatrix[ex, :] == 1)[0]).intersection(rules_curr))
+                if len(candidate) == 0:
+                    candidate = rules_curr
+                cut_rule = sample(candidate, 1)[0]
+            else:
+                p = []
+                all_sum = np.sum(self.RMatrix[:, rules_curr], axis=1)
+                for index, rule in enumerate(rules_curr):
+                    yhat = ((all_sum - np.array(self.RMatrix[:, rule])) &gt; 0).astype(int)
+                    TP, FP, TN, FN = _get_confusion_matrix(yhat, y)
+                    p.append(TP.astype(float) / (TP + FP + 1))
+                p = [x - min(p) for x in p]
+                p = np.exp(p)
+                p = np.insert(p, 0, 0)
+                p = np.array(list(_accumulate(p)))
+                if p[-1] == 0:
+                    index = sample(range(len(rules_curr)), 1)[0]
+                else:
+                    p = p / p[-1]
+                index = _find_lt(p, random())
+                cut_rule = rules_curr[index]
+            rules_curr.remove(cut_rule)
+            rules_norm = self._normalize(rules_curr)
+            move.remove(&#39;cut&#39;)
+
+        if len(move) &gt; 0 and move[0] == &#39;add&#39;:
+            &#34;&#34;&#34; add &#34;&#34;&#34;
+            if random() &lt; q:
+                add_rule = sample(range(nRules), 1)[0]
+            else:
+                Yhat_neg_index = list(np.where(np.sum(self.RMatrix[:, rules_curr], axis=1) &lt; 1)[0])
+                mat = np.multiply(self.RMatrix[Yhat_neg_index, :].transpose(), y[Yhat_neg_index])
+                TP = np.sum(mat, axis=1)
+                FP = np.array((np.sum(self.RMatrix[Yhat_neg_index, :], axis=0) - TP))
+                p = (TP.astype(float) / (TP + FP + 1))
+                p[rules_curr] = 0
+                add_rule = sample(np.where(p == max(p))[0].tolist(), 1)[0]
+            if add_rule not in rules_curr:
+                rules_curr.append(add_rule)
+                rules_norm = self._normalize(rules_curr)
+
+        if len(move) &gt; 0 and move[0] == &#39;clean&#39;:
+            remove = []
+            for i, rule in enumerate(rules_norm):
+                yhat = (np.sum(
+                    self.RMatrix[:, [rule for j, rule in enumerate(rules_norm) if (j != i and j not in remove)]],
+                    axis=1) &gt; 0).astype(int)
+                TP, FP, TN, FN = _get_confusion_matrix(yhat, y)
+                if TP + FP == 0:
+                    remove.append(i)
+            for x in remove:
+                rules_norm.remove(x)
+            return rules_curr, rules_norm
+        return rules_curr, rules_norm
+
+    def _compute_prob(self, rules, y):
+        Yhat = (np.sum(self.RMatrix[:, rules], axis=1) &gt; 0).astype(int)
+        TP, FP, TN, FN = _get_confusion_matrix(Yhat, y)
+        Kn_count = list(np.bincount([self.rules_len_list[x] for x in rules], minlength=self.maxlen + 1))
+        prior_ChsRules = sum([_log_betabin(Kn_count[i], self.pattern_space[i], self.alpha_l[i], self.beta_l[i]) for i in
+                              range(1, len(Kn_count), 1)])
+        likelihood_1 = _log_betabin(TP, TP + FP, self.alpha_pos, self.beta_pos)
+        likelihood_2 = _log_betabin(TN, FN + TN, self.alpha_neg, self.beta_neg)
+        return [TP, FP, TN, FN], [prior_ChsRules, likelihood_1, likelihood_2]
+
+    def _normalize_add(self, rules_new, rule_index):
+        rules = rules_new.copy()
+        for rule in rules_new:
+            if set(self.rules_[rule]).issubset(self.rules_[rule_index]):
+                return rules_new.copy()
+            if set(self.rules_[rule_index]).issubset(self.rules_[rule]):
+                rules.remove(rule)
+        rules.append(rule_index)
+        return rules
+
+    def _normalize(self, rules_new):
+        try:
+            rules_len = [len(self.rules_[index]) for index in rules_new]
+            rules = [rules_new[i] for i in np.argsort(rules_len)[::-1][:len(rules_len)]]
+            p1 = 0
+            while p1 &lt; len(rules):
+                for p2 in range(p1 + 1, len(rules), 1):
+                    if set(self.rules_[rules[p2]]).issubset(set(self.rules_[rules[p1]])):
+                        rules.remove(rules[p1])
+                        p1 -= 1
+                        break
+                p1 += 1
+            return rules
+        except:
+            return rules_new.copy()
+
+    def _print_rules(self, rules_max):
+        for rule_index in rules_max:
+            print(self.rules_[rule_index])
+
+
+def _accumulate(iterable, func=operator.add):
+    &#39;&#39;&#39;Return running totals
+    Ex. _accumulate([1,2,3,4,5]) --&gt; 1 3 6 10 15
+    Ex. _accumulate([1,2,3,4,5], operator.mul) --&gt; 1 2 6 24 120
+    &#39;&#39;&#39;
+    it = iter(iterable)
+    total = next(it)
+    yield total
+    for element in it:
+        total = func(total, element)
+        yield total
+
+
+def _find_lt(a, x):
+    &#34;&#34;&#34; Find rightmost value less than x&#34;&#34;&#34;
+    i = bisect_left(a, x)
+    if i:
+        return int(i - 1)
+    print(&#39;in _find_lt,{}&#39;.format(a))
+    raise ValueError
+
+
+def _log_gampoiss(k, alpha, beta):
+    import math
+    k = int(k)
+    return math.lgamma(k + alpha) + alpha * np.log(beta) - math.lgamma(alpha) - math.lgamma(k + 1) - (
+            alpha + k) * np.log(1 + beta)
+
+
+def _log_betabin(k, n, alpha, beta):
+    import math
+    try:
+        const = math.lgamma(alpha + beta) - math.lgamma(alpha) - math.lgamma(beta)
+    except:
+        print(&#39;alpha = {}, beta = {}&#39;.format(alpha, beta))
+    if isinstance(k, list) or isinstance(k, np.ndarray):
+        if len(k) != len(n):
+            print(&#39;length of k is %d and length of n is %d&#39; % (len(k), len(n)))
+            raise ValueError
+        lbeta = []
+        for ki, ni in zip(k, n):
+            lbeta.append(math.lgamma(ki + alpha) + math.lgamma(ni - ki + beta) - math.lgamma(ni + alpha + beta) + const)
+        return np.array(lbeta)
+    else:
+        return math.lgamma(k + alpha) + math.lgamma(n - k + beta) - math.lgamma(n + alpha + beta) + const
+
+
+def _get_confusion_matrix(Yhat, Y):
+    if len(Yhat) != len(Y):
+        raise NameError(&#39;Yhat has different length&#39;)
+    TP = np.dot(np.array(Y), np.array(Yhat))
+    FP = np.sum(Yhat) - TP
+    TN = len(Y) - np.sum(Y) - FP
+    FN = len(Yhat) - np.sum(Yhat) - TN
+    return TP, FP, TN, FN
+
+
+def _extract_rules(tree, feature_names):
+    left = tree.tree_.children_left
+    right = tree.tree_.children_right
+    features = [feature_names[i] for i in tree.tree_.feature]
+
+    # get ids of child nodes
+    idx = np.argwhere(left == -1)[:, 0]
+
+    def _recurse(left, right, child, lineage=None):
+        if lineage is None:
+            lineage = []
+        if child in left:
+            parent = np.where(left == child)[0].item()
+            suffix = &#39;_neg&#39;
+        else:
+            parent = np.where(right == child)[0].item()
+            suffix = &#39;&#39;
+        lineage.append((features[parent].strip() + suffix))
+
+        if parent == 0:
+            lineage.reverse()
+            return lineage
+        else:
+            return _recurse(left, right, parent, lineage)
+
+    rules = []
+    for child in idx:
+        rule = []
+        for node in _recurse(left, right, child):
+            rule.append(node)
+        rules.append(rule)
+    return rules
+
+
+if __name__ == &#39;__main__&#39;:
+    test_dir = os.path.dirname(os.path.abspath(__file__))
+
+    df = read_csv(oj(test_dir, &#39;../../tests/test_data&#39;, &#39;tictactoe_X.txt&#39;), header=0, sep=&#34; &#34;)
+    Y = np.loadtxt(open(oj(test_dir, &#39;../../tests/test_data&#39;, &#39;tictactoe_Y.txt&#39;), &#34;rb&#34;), delimiter=&#34; &#34;)
+
+    lenY = len(Y)
+    idxs_train = sample(range(lenY), int(0.50 * lenY))
+    idxs_test = [i for i in range(lenY) if i not in idxs_train]
+    y_test = Y[idxs_test]
+    model = BayesianRuleSetClassifier(n_rules=100,
+                                      supp=5,
+                                      maxlen=3,
+                                      num_iterations=100,
+                                      num_chains=2,
+                                      alpha_pos=500, beta_pos=1,
+                                      alpha_neg=500, beta_neg=1,
+                                      alpha_l=None, beta_l=None)
+
+    # fit and check accuracy
+    np.random.seed(13)
+    # random.seed(13)
+    model.fit(df.iloc[idxs_train], Y[idxs_train])
+    y_pred = model.predict(df.iloc[idxs_test])
+    acc1 = np.mean(y_pred == y_test)
+    assert acc1 &gt; 0.8
+
+    # try fitting np version
+    np.random.seed(13)
+    # random.seed(13)
+    model.fit(df.iloc[idxs_train].values, Y[idxs_train])
+    y_pred = model.predict(df.iloc[idxs_test].values)
+    y_test = Y[idxs_test]
+    acc2 = np.mean(y_pred == y_test)
+    assert acc2 &gt; 0.8
+
+    # assert np.abs(acc1 - acc2) &lt; 0.05 # todo: fix seeding</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="imodels.rule_set.brs.random"><code class="name flex">
+<span>def <span class="ident">random</span></span>(<span>size=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Return random floats in the half-open interval [0.0, 1.0). Alias for
+<code>random_sample</code> to ease forward-porting to the new random API.</p></div>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="imodels.rule_set.brs.BayesianRuleSetClassifier"><code class="flex name class">
+<span>class <span class="ident">BayesianRuleSetClassifier</span></span>
+<span>(</span><span>n_rules: int = 2000, supp=5, maxlen: int = 10, num_iterations=5000, num_chains=3, q=0.1, alpha_pos=100, beta_pos=1, alpha_neg=100, beta_neg=1, alpha_l=None, beta_l=None, discretization_method='randomforest', random_state=0)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Bayesian or-of-and algorithm.
+Generates patterns that satisfy the minimum support and maximum length and then select the Nrules rules that have the highest entropy.
+In function SA_patternbased, each local maximum is stored in maps and the best BOA is returned.
+Remember here the BOA contains only the index of selected rules from Nrules self.rules_</p>
+<h2 id="params">Params</h2>
+<p>n_rules
+number of rules to be used in SA_patternbased and also the output of generate_rules
+supp
+The higher this supp, the 'larger' a pattern is. 5% is a generally good number
+maxlen
+maximum length of a pattern
+num_iterations
+number of iterations in each chain
+num_chains
+number of chains in the simulated annealing search algorithm
+q
+alpha_pos
+$
+ho = alpha/(alpha+beta)$. Make sure $
+ho$ is close to one when choosing alpha and beta
+The alpha and beta parameters alter the prior distributions for different rules
+beta_pos
+alpha_neg
+beta_neg
+alpha_l
+beta_l
+discretization_method
+discretization method</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class BayesianRuleSetClassifier(RuleSet, BaseEstimator, ClassifierMixin):
+    &#39;&#39;&#39;Bayesian or-of-and algorithm.
+    Generates patterns that satisfy the minimum support and maximum length and then select the Nrules rules that have the highest entropy.
+    In function SA_patternbased, each local maximum is stored in maps and the best BOA is returned.
+    Remember here the BOA contains only the index of selected rules from Nrules self.rules_
+    &#39;&#39;&#39;
+
+    def __init__(self, n_rules: int = 2000,
+                 supp=5, maxlen: int = 10,
+                 num_iterations=5000, num_chains=3, q=0.1,
+                 alpha_pos=100, beta_pos=1,
+                 alpha_neg=100, beta_neg=1,
+                 alpha_l=None, beta_l=None,
+                 discretization_method=&#39;randomforest&#39;, random_state=0):
+        &#39;&#39;&#39;
+        Params
+        ------
+        n_rules
+            number of rules to be used in SA_patternbased and also the output of generate_rules
+        supp
+            The higher this supp, the &#39;larger&#39; a pattern is. 5% is a generally good number
+        maxlen
+            maximum length of a pattern
+        num_iterations
+            number of iterations in each chain
+        num_chains
+            number of chains in the simulated annealing search algorithm
+        q
+        alpha_pos
+            $\rho = alpha/(alpha+beta)$. Make sure $\rho$ is close to one when choosing alpha and beta
+            The alpha and beta parameters alter the prior distributions for different rules
+        beta_pos
+        alpha_neg
+        beta_neg
+        alpha_l
+        beta_l
+        discretization_method
+            discretization method
+        &#39;&#39;&#39;
+        self.n_rules = n_rules
+        self.supp = supp
+        self.maxlen = maxlen
+
+        self.num_iterations = num_iterations
+        self.num_chains = num_chains
+        self.q = q
+
+        self.alpha_pos = alpha_pos
+        self.beta_pos = beta_pos
+        self.alpha_neg = alpha_neg
+        self.beta_neg = beta_neg
+        self.discretization_method = discretization_method
+
+        self.alpha_l = alpha_l
+        self.beta_l = beta_l
+        self.random_state = 0
+
+    def fit(self, X, y, feature_names: list = None, init=[], verbose=False):
+        &#39;&#39;&#39;
+        Parameters
+        ----------
+        X : array-like, shape = [n_samples, n_features]
+            Training data
+        y : array_like, shape = [n_samples]
+            Labels
+
+        feature_names : array_like, shape = [n_features], optional (default: [])
+            String labels for each feature.
+            If empty and X is a DataFrame, column labels are used.
+            If empty and X is not a DataFrame, then features are simply enumerated
+        &#39;&#39;&#39;
+        # check inputs
+        self.attr_level_num = defaultdict(int)  # any missing value defaults to 0
+        self.attr_names = []
+
+        X, y, feature_names = check_fit_arguments(self, X, y, feature_names)
+        np.random.seed(self.random_state)
+
+        # convert to pandas DataFrame
+        X = pd.DataFrame(X, columns=feature_names)
+
+        for i, name in enumerate(X.columns):
+            self.attr_level_num[name] += 1
+            self.attr_names.append(name)
+        self.attr_names_orig = deepcopy(self.attr_names)
+        self.attr_names = list(set(self.attr_names))
+
+        # set up patterns
+        self._set_pattern_space()
+
+        # parameter checking
+        if self.alpha_l is None or self.beta_l is None or len(self.alpha_l) != self.maxlen or len(
+                self.beta_l) != self.maxlen:
+            if verbose:
+                print(&#39;No or wrong input for alpha_l and beta_l - the model will use default parameters.&#39;)
+            self.C = [1.0 / self.maxlen] * self.maxlen
+            self.C.insert(0, -1)
+            self.alpha_l = [10] * (self.maxlen + 1)
+            self.beta_l = [10 * self.pattern_space[i] / self.C[i] for i in range(self.maxlen + 1)]
+        else:
+            self.alpha_l = [1] + list(self.alpha_l)
+            self.beta_l = [1] + list(self.beta_l)
+
+        # setup
+        self._generate_rules(X, y, verbose)
+        n_rules_current = len(self.rules_)
+        self.rules_len_list = [len(rule) for rule in self.rules_]
+        maps = defaultdict(list)
+        T0 = 1000  # initial temperature for simulated annealing
+        split = 0.7 * self.num_iterations
+
+        # run simulated annealing
+        for chain in range(self.num_chains):
+            # initialize with a random pattern set
+            if init != []:
+                rules_curr = init.copy()
+            else:
+                assert n_rules_current &gt; 1, f&#39;Only {n_rules_current} potential rules found, change hyperparams to allow for more&#39;
+                N = sample(range(1, min(8, n_rules_current), 1), 1)[0]
+                rules_curr = sample(range(n_rules_current), N)
+            rules_curr_norm = self._normalize(rules_curr)
+            pt_curr = -100000000000
+            maps[chain].append(
+                [-1, [pt_curr / 3, pt_curr / 3, pt_curr / 3], rules_curr, [self.rules_[i] for i in rules_curr]])
+
+            for iter in range(self.num_iterations):
+                if iter &gt;= split:
+                    p = np.array(range(1 + len(maps[chain])))
+                    p = np.array(list(_accumulate(p)))
+                    p = p / p[-1]
+                    index = _find_lt(p, random())
+                    rules_curr = maps[chain][index][2].copy()
+                    rules_curr_norm = maps[chain][index][2].copy()
+
+                # propose new rules
+                rules_new, rules_norm = self._propose(rules_curr.copy(), rules_curr_norm.copy(), self.q, y)
+
+                # compute probability of new rules
+                cfmatrix, prob = self._compute_prob(rules_new, y)
+                T = T0 ** (1 - iter / self.num_iterations)  # temperature for simulated annealing
+                pt_new = sum(prob)
+                with warnings.catch_warnings():
+                    if not verbose:
+                        warnings.simplefilter(&#34;ignore&#34;)
+                    alpha = np.exp(float(pt_new - pt_curr) / T)
+
+                if pt_new &gt; sum(maps[chain][-1][1]):
+                    maps[chain].append([iter, prob, rules_new, [self.rules_[i] for i in rules_new]])
+                    if verbose:
+                        print((
+                            &#39;\n** chain = {}, max at iter = {} ** \n accuracy = {}, TP = {},FP = {}, TN = {}, FN = {}&#39;
+                            &#39;\n pt_new is {}, prior_ChsRules={}, likelihood_1 = {}, likelihood_2 = {}\n&#39;).format(
+                            chain, iter, (cfmatrix[0] + cfmatrix[2] + 0.0) / len(y), cfmatrix[0], cfmatrix[1],
+                            cfmatrix[2], cfmatrix[3], sum(prob), prob[0], prob[1], prob[2])
+                        )
+                        self._print_rules(rules_new)
+                        print(rules_new)
+                if random() &lt;= alpha:
+                    rules_curr_norm, rules_curr, pt_curr = rules_norm.copy(), rules_new.copy(), pt_new
+        pt_max = [sum(maps[chain][-1][1]) for chain in range(self.num_chains)]
+        index = pt_max.index(max(pt_max))
+        self.rules_ = maps[index][-1][3]
+        return self
+
+    def __str__(self):
+        return &#39; &#39;.join(str(r) for r in self.rules_)
+
+    def predict(self, X):
+        check_is_fitted(self)
+        if isinstance(X, np.ndarray):
+            df = pd.DataFrame(X, columns=self.attr_names_orig)
+        else:
+            df = X
+        Z = [[]] * len(self.rules_)
+        dfn = 1 - df  # df has negative associations
+        dfn.columns = [name.strip() + &#39;_neg&#39; for name in df.columns]
+        df = pd.concat([df, dfn], axis=1)
+        for i, rule in enumerate(self.rules_):
+            Z[i] = (np.sum(df[list(rule)], axis=1) == len(rule)).astype(int)
+        Yhat = (np.sum(Z, axis=0) &gt; 0).astype(int)
+        return Yhat
+
+    def predict_proba(self, X):
+        raise Exception(&#39;BOA does not support predicted probabilities.&#39;)
+
+    def _set_pattern_space(self):
+        &#34;&#34;&#34;Compute the rule space from the levels in each attribute
+        &#34;&#34;&#34;
+        # add feat_neg to each existing feature feat
+        for item in self.attr_names:
+            self.attr_level_num[item + &#39;_neg&#39;] = self.attr_level_num[item]
+        tmp = [item + &#39;_neg&#39; for item in self.attr_names]
+        self.attr_names.extend(tmp)
+
+        # set up pattern_space
+        self.pattern_space = np.zeros(self.maxlen + 1)
+        for k in range(1, self.maxlen + 1, 1):
+            for subset in combinations(self.attr_names, k):
+                tmp = 1
+                for i in subset:
+                    tmp = tmp * self.attr_level_num[i]
+                # print(&#39;subset&#39;, subset, &#39;tmp&#39;, tmp, &#39;k&#39;, k)
+                self.pattern_space[k] = self.pattern_space[k] + tmp
+
+    def _generate_rules(self, X, y, verbose):
+        &#39;&#39;&#39;This function generates rules that satisfy supp and maxlen using fpgrowth, then it selects the top n_rules rules that make data have the biggest decrease in entropy.
+        There are two ways to generate rules. fpgrowth can handle cases where the maxlen is small. If maxlen&lt;=3, fpgrowth can generates rules much faster than randomforest.
+        If maxlen is big, fpgrowth tends to generate too many rules that overflow the memory.
+        &#39;&#39;&#39;
+
+        df = 1 - X  # df has negative associations
+        df.columns = [name.strip() + &#39;_neg&#39; for name in X.columns]
+        df = pd.concat([X, df], axis=1)
+        if self.discretization_method == &#39;fpgrowth&#39; and self.maxlen &lt;= 3:
+            itemMatrix = [[item for item in df.columns if row[item] == 1] for i, row in df.iterrows()]
+            pindex = np.where(y == 1)[0]
+            rules = fpgrowth([itemMatrix[i] for i in pindex], supp=self.supp, zmin=1, zmax=self.maxlen)
+            rules = [tuple(np.sort(rule[0])) for rule in rules]
+            rules = list(set(rules))
+        else:
+            &#39;&#39;&#39;todo: replace this with imodels.RFDiscretizer
+            &#39;&#39;&#39;
+            rules = []
+            for length in range(1, self.maxlen + 1, 1):
+                n_estimators = min(pow(df.shape[1], length), 4000)
+                clf = RandomForestClassifier(n_estimators=n_estimators, max_depth=length)
+                clf.fit(X, y)
+                for n in range(n_estimators):
+                    rules.extend(_extract_rules(clf.estimators_[n], df.columns))
+            rules = [list(x) for x in set(tuple(x) for x in rules)]
+        self.rules_ = rules
+
+        # select the top n_rules rules using secondary criteria, information gain
+        self._screen_rules(df, y, verbose)  # updates self.rules_
+        self._set_pattern_space()
+
+    def _screen_rules(self, df, y, verbose):
+        &#39;&#39;&#39;Screening rules using information gain
+        &#39;&#39;&#39;
+        item_ind_dict = {}
+        for i, name in enumerate(df.columns):
+            item_ind_dict[name] = i
+        indices = np.array(
+            list(itertools.chain.from_iterable([[
+                item_ind_dict[x] for x in rule]
+                for rule in self.rules_])))
+        len_rules = [len(rule) for rule in self.rules_]
+        indptr = list(_accumulate(len_rules))
+        indptr.insert(0, 0)
+        indptr = np.array(indptr)
+        data = np.ones(len(indices))
+        rule_matrix = csc_matrix((data, indices, indptr),
+                                 shape=(len(df.columns),
+                                        len(self.rules_)))
+        mat = df.values @ rule_matrix
+        print(&#39;mat.shape&#39;, mat.shape)
+        len_matrix = np.array([len_rules] * df.shape[0])
+        Z = (mat == len_matrix).astype(int)
+        Zpos = [Z[i] for i in np.where(y &gt; 0)][0]
+        TP = np.sum(Zpos, axis=0)
+        supp_select = np.where(TP &gt;= self.supp * sum(y) / 100)[0]
+        FP = np.sum(Z, axis=0) - TP
+        TN = len(y) - np.sum(y) - FP
+        FN = np.sum(y) - TP
+        p1 = TP.astype(float) / (TP + FP)
+        p2 = FN.astype(float) / (FN + TN)
+        pp = (TP + FP).astype(float) / (TP + FP + TN + FN)
+        # p1 = np.clip(p1, a_min=1e-10, a_max=1-1e-10)
+        print(&#39;\n\n\n\np1.shape&#39;, p1.shape, &#39;pp.shape&#39;, pp.shape, &#39;cond_entropy.shape&#39;)  # , cond_entropy.shape)
+        with warnings.catch_warnings():
+            if not verbose:
+                warnings.simplefilter(&#34;ignore&#34;)  # ignore warnings about invalid values (e.g. log(0))
+            cond_entropy = -pp * (p1 * np.log(p1) + (1 - p1) * np.log(1 - p1)) - (1 - pp) * (
+                    p2 * np.log(p2) + (1 - p2) * np.log(1 - p2))
+            cond_entropy[p1 * (1 - p1) == 0] = -((1 - pp) * (p2 * np.log(p2) + (1 - p2) * np.log(1 - p2)))[
+                p1 * (1 - p1) == 0]
+            cond_entropy[p2 * (1 - p2) == 0] = -(pp * (p1 * np.log(p1) + (1 - p1) * np.log(1 - p1)))[p2 * (1 - p2) == 0]
+            cond_entropy[p1 * (1 - p1) * p2 * (1 - p2) == 0] = 0
+        select = np.argsort(cond_entropy[supp_select])[::-1][-self.n_rules:]
+        self.rules_ = [self.rules_[i] for i in supp_select[select]]
+        self.RMatrix = np.array(Z[:, supp_select[select]])
+
+    def _propose(self, rules_curr, rules_norm, q, y):
+        nRules = len(self.rules_)
+        yhat = (np.sum(self.RMatrix[:, rules_curr], axis=1) &gt; 0).astype(int)
+        incorr = np.where(y != yhat)[0]
+        N = len(rules_curr)
+
+        if len(incorr) == 0:
+            # BOA correctly classified all points but there could be redundant patterns, so cleaning is needed
+            move = [&#39;clean&#39;]
+        else:
+            ex = sample(incorr.tolist(), 1)[0]
+            t = random()
+            if y[ex] == 1 or N == 1:
+                if t &lt; 1.0 / 2 or N == 1:
+                    move = [&#39;add&#39;]  # action: add
+                else:
+                    move = [&#39;cut&#39;, &#39;add&#39;]  # action: replace
+            else:
+                if t &lt; 1.0 / 2:
+                    move = [&#39;cut&#39;]  # action: cut
+                else:
+                    move = [&#39;cut&#39;, &#39;add&#39;]  # action: replace
+        if move[0] == &#39;cut&#39;:
+            &#34;&#34;&#34; cut &#34;&#34;&#34;
+            if random() &lt; q:
+                candidate = list(set(np.where(self.RMatrix[ex, :] == 1)[0]).intersection(rules_curr))
+                if len(candidate) == 0:
+                    candidate = rules_curr
+                cut_rule = sample(candidate, 1)[0]
+            else:
+                p = []
+                all_sum = np.sum(self.RMatrix[:, rules_curr], axis=1)
+                for index, rule in enumerate(rules_curr):
+                    yhat = ((all_sum - np.array(self.RMatrix[:, rule])) &gt; 0).astype(int)
+                    TP, FP, TN, FN = _get_confusion_matrix(yhat, y)
+                    p.append(TP.astype(float) / (TP + FP + 1))
+                p = [x - min(p) for x in p]
+                p = np.exp(p)
+                p = np.insert(p, 0, 0)
+                p = np.array(list(_accumulate(p)))
+                if p[-1] == 0:
+                    index = sample(range(len(rules_curr)), 1)[0]
+                else:
+                    p = p / p[-1]
+                index = _find_lt(p, random())
+                cut_rule = rules_curr[index]
+            rules_curr.remove(cut_rule)
+            rules_norm = self._normalize(rules_curr)
+            move.remove(&#39;cut&#39;)
+
+        if len(move) &gt; 0 and move[0] == &#39;add&#39;:
+            &#34;&#34;&#34; add &#34;&#34;&#34;
+            if random() &lt; q:
+                add_rule = sample(range(nRules), 1)[0]
+            else:
+                Yhat_neg_index = list(np.where(np.sum(self.RMatrix[:, rules_curr], axis=1) &lt; 1)[0])
+                mat = np.multiply(self.RMatrix[Yhat_neg_index, :].transpose(), y[Yhat_neg_index])
+                TP = np.sum(mat, axis=1)
+                FP = np.array((np.sum(self.RMatrix[Yhat_neg_index, :], axis=0) - TP))
+                p = (TP.astype(float) / (TP + FP + 1))
+                p[rules_curr] = 0
+                add_rule = sample(np.where(p == max(p))[0].tolist(), 1)[0]
+            if add_rule not in rules_curr:
+                rules_curr.append(add_rule)
+                rules_norm = self._normalize(rules_curr)
+
+        if len(move) &gt; 0 and move[0] == &#39;clean&#39;:
+            remove = []
+            for i, rule in enumerate(rules_norm):
+                yhat = (np.sum(
+                    self.RMatrix[:, [rule for j, rule in enumerate(rules_norm) if (j != i and j not in remove)]],
+                    axis=1) &gt; 0).astype(int)
+                TP, FP, TN, FN = _get_confusion_matrix(yhat, y)
+                if TP + FP == 0:
+                    remove.append(i)
+            for x in remove:
+                rules_norm.remove(x)
+            return rules_curr, rules_norm
+        return rules_curr, rules_norm
+
+    def _compute_prob(self, rules, y):
+        Yhat = (np.sum(self.RMatrix[:, rules], axis=1) &gt; 0).astype(int)
+        TP, FP, TN, FN = _get_confusion_matrix(Yhat, y)
+        Kn_count = list(np.bincount([self.rules_len_list[x] for x in rules], minlength=self.maxlen + 1))
+        prior_ChsRules = sum([_log_betabin(Kn_count[i], self.pattern_space[i], self.alpha_l[i], self.beta_l[i]) for i in
+                              range(1, len(Kn_count), 1)])
+        likelihood_1 = _log_betabin(TP, TP + FP, self.alpha_pos, self.beta_pos)
+        likelihood_2 = _log_betabin(TN, FN + TN, self.alpha_neg, self.beta_neg)
+        return [TP, FP, TN, FN], [prior_ChsRules, likelihood_1, likelihood_2]
+
+    def _normalize_add(self, rules_new, rule_index):
+        rules = rules_new.copy()
+        for rule in rules_new:
+            if set(self.rules_[rule]).issubset(self.rules_[rule_index]):
+                return rules_new.copy()
+            if set(self.rules_[rule_index]).issubset(self.rules_[rule]):
+                rules.remove(rule)
+        rules.append(rule_index)
+        return rules
+
+    def _normalize(self, rules_new):
+        try:
+            rules_len = [len(self.rules_[index]) for index in rules_new]
+            rules = [rules_new[i] for i in np.argsort(rules_len)[::-1][:len(rules_len)]]
+            p1 = 0
+            while p1 &lt; len(rules):
+                for p2 in range(p1 + 1, len(rules), 1):
+                    if set(self.rules_[rules[p2]]).issubset(set(self.rules_[rules[p1]])):
+                        rules.remove(rules[p1])
+                        p1 -= 1
+                        break
+                p1 += 1
+            return rules
+        except:
+            return rules_new.copy()
+
+    def _print_rules(self, rules_max):
+        for rule_index in rules_max:
+            print(self.rules_[rule_index])</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="imodels.rule_set.rule_set.RuleSet" href="rule_set.html#imodels.rule_set.rule_set.RuleSet">RuleSet</a></li>
+<li>sklearn.base.BaseEstimator</li>
+<li>sklearn.utils._estimator_html_repr._HTMLDocumentationLinkMixin</li>
+<li>sklearn.utils._metadata_requests._MetadataRequester</li>
+<li>sklearn.base.ClassifierMixin</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="imodels.rule_set.brs.BayesianRuleSetClassifier.fit"><code class="name flex">
+<span>def <span class="ident">fit</span></span>(<span>self, X, y, feature_names: list = None, init=[], verbose=False)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>X</code></strong> :&ensp;<code>array-like, shape = [n_samples, n_features]</code></dt>
+<dd>Training data</dd>
+<dt><strong><code>y</code></strong> :&ensp;<code>array_like, shape = [n_samples]</code></dt>
+<dd>Labels</dd>
+<dt><strong><code>feature_names</code></strong> :&ensp;<code>array_like, shape = [n_features]</code>, optional <code>(default: [])</code></dt>
+<dd>String labels for each feature.
+If empty and X is a DataFrame, column labels are used.
+If empty and X is not a DataFrame, then features are simply enumerated</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def fit(self, X, y, feature_names: list = None, init=[], verbose=False):
+    &#39;&#39;&#39;
+    Parameters
+    ----------
+    X : array-like, shape = [n_samples, n_features]
+        Training data
+    y : array_like, shape = [n_samples]
+        Labels
+
+    feature_names : array_like, shape = [n_features], optional (default: [])
+        String labels for each feature.
+        If empty and X is a DataFrame, column labels are used.
+        If empty and X is not a DataFrame, then features are simply enumerated
+    &#39;&#39;&#39;
+    # check inputs
+    self.attr_level_num = defaultdict(int)  # any missing value defaults to 0
+    self.attr_names = []
+
+    X, y, feature_names = check_fit_arguments(self, X, y, feature_names)
+    np.random.seed(self.random_state)
+
+    # convert to pandas DataFrame
+    X = pd.DataFrame(X, columns=feature_names)
+
+    for i, name in enumerate(X.columns):
+        self.attr_level_num[name] += 1
+        self.attr_names.append(name)
+    self.attr_names_orig = deepcopy(self.attr_names)
+    self.attr_names = list(set(self.attr_names))
+
+    # set up patterns
+    self._set_pattern_space()
+
+    # parameter checking
+    if self.alpha_l is None or self.beta_l is None or len(self.alpha_l) != self.maxlen or len(
+            self.beta_l) != self.maxlen:
+        if verbose:
+            print(&#39;No or wrong input for alpha_l and beta_l - the model will use default parameters.&#39;)
+        self.C = [1.0 / self.maxlen] * self.maxlen
+        self.C.insert(0, -1)
+        self.alpha_l = [10] * (self.maxlen + 1)
+        self.beta_l = [10 * self.pattern_space[i] / self.C[i] for i in range(self.maxlen + 1)]
+    else:
+        self.alpha_l = [1] + list(self.alpha_l)
+        self.beta_l = [1] + list(self.beta_l)
+
+    # setup
+    self._generate_rules(X, y, verbose)
+    n_rules_current = len(self.rules_)
+    self.rules_len_list = [len(rule) for rule in self.rules_]
+    maps = defaultdict(list)
+    T0 = 1000  # initial temperature for simulated annealing
+    split = 0.7 * self.num_iterations
+
+    # run simulated annealing
+    for chain in range(self.num_chains):
+        # initialize with a random pattern set
+        if init != []:
+            rules_curr = init.copy()
+        else:
+            assert n_rules_current &gt; 1, f&#39;Only {n_rules_current} potential rules found, change hyperparams to allow for more&#39;
+            N = sample(range(1, min(8, n_rules_current), 1), 1)[0]
+            rules_curr = sample(range(n_rules_current), N)
+        rules_curr_norm = self._normalize(rules_curr)
+        pt_curr = -100000000000
+        maps[chain].append(
+            [-1, [pt_curr / 3, pt_curr / 3, pt_curr / 3], rules_curr, [self.rules_[i] for i in rules_curr]])
+
+        for iter in range(self.num_iterations):
+            if iter &gt;= split:
+                p = np.array(range(1 + len(maps[chain])))
+                p = np.array(list(_accumulate(p)))
+                p = p / p[-1]
+                index = _find_lt(p, random())
+                rules_curr = maps[chain][index][2].copy()
+                rules_curr_norm = maps[chain][index][2].copy()
+
+            # propose new rules
+            rules_new, rules_norm = self._propose(rules_curr.copy(), rules_curr_norm.copy(), self.q, y)
+
+            # compute probability of new rules
+            cfmatrix, prob = self._compute_prob(rules_new, y)
+            T = T0 ** (1 - iter / self.num_iterations)  # temperature for simulated annealing
+            pt_new = sum(prob)
+            with warnings.catch_warnings():
+                if not verbose:
+                    warnings.simplefilter(&#34;ignore&#34;)
+                alpha = np.exp(float(pt_new - pt_curr) / T)
+
+            if pt_new &gt; sum(maps[chain][-1][1]):
+                maps[chain].append([iter, prob, rules_new, [self.rules_[i] for i in rules_new]])
+                if verbose:
+                    print((
+                        &#39;\n** chain = {}, max at iter = {} ** \n accuracy = {}, TP = {},FP = {}, TN = {}, FN = {}&#39;
+                        &#39;\n pt_new is {}, prior_ChsRules={}, likelihood_1 = {}, likelihood_2 = {}\n&#39;).format(
+                        chain, iter, (cfmatrix[0] + cfmatrix[2] + 0.0) / len(y), cfmatrix[0], cfmatrix[1],
+                        cfmatrix[2], cfmatrix[3], sum(prob), prob[0], prob[1], prob[2])
+                    )
+                    self._print_rules(rules_new)
+                    print(rules_new)
+            if random() &lt;= alpha:
+                rules_curr_norm, rules_curr, pt_curr = rules_norm.copy(), rules_new.copy(), pt_new
+    pt_max = [sum(maps[chain][-1][1]) for chain in range(self.num_chains)]
+    index = pt_max.index(max(pt_max))
+    self.rules_ = maps[index][-1][3]
+    return self</code></pre>
+</details>
+</dd>
+<dt id="imodels.rule_set.brs.BayesianRuleSetClassifier.predict"><code class="name flex">
+<span>def <span class="ident">predict</span></span>(<span>self, X)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def predict(self, X):
+    check_is_fitted(self)
+    if isinstance(X, np.ndarray):
+        df = pd.DataFrame(X, columns=self.attr_names_orig)
+    else:
+        df = X
+    Z = [[]] * len(self.rules_)
+    dfn = 1 - df  # df has negative associations
+    dfn.columns = [name.strip() + &#39;_neg&#39; for name in df.columns]
+    df = pd.concat([df, dfn], axis=1)
+    for i, rule in enumerate(self.rules_):
+        Z[i] = (np.sum(df[list(rule)], axis=1) == len(rule)).astype(int)
+    Yhat = (np.sum(Z, axis=0) &gt; 0).astype(int)
+    return Yhat</code></pre>
+</details>
+</dd>
+<dt id="imodels.rule_set.brs.BayesianRuleSetClassifier.predict_proba"><code class="name flex">
+<span>def <span class="ident">predict_proba</span></span>(<span>self, X)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def predict_proba(self, X):
+    raise Exception(&#39;BOA does not support predicted probabilities.&#39;)</code></pre>
+</details>
+</dd>
+<dt id="imodels.rule_set.brs.BayesianRuleSetClassifier.set_fit_request"><code class="name flex">
+<span>def <span class="ident">set_fit_request</span></span>(<span>self: <a title="imodels.rule_set.brs.BayesianRuleSetClassifier" href="#imodels.rule_set.brs.BayesianRuleSetClassifier">BayesianRuleSetClassifier</a>, *, feature_names: Union[bool, ForwardRef(None), str] = '$UNCHANGED$', init: Union[bool, ForwardRef(None), str] = '$UNCHANGED$', verbose: Union[bool, ForwardRef(None), str] = '$UNCHANGED$') ‑> <a title="imodels.rule_set.brs.BayesianRuleSetClassifier" href="#imodels.rule_set.brs.BayesianRuleSetClassifier">BayesianRuleSetClassifier</a></span>
+</code></dt>
+<dd>
+<div class="desc"><p>Request metadata passed to the <code>fit</code> method.</p>
+<p>Note that this method is only relevant if
+<code>enable_metadata_routing=True</code> (see :func:<code>sklearn.set_config</code>).
+Please see :ref:<code>User Guide &lt;metadata_routing&gt;</code> on how the routing
+mechanism works.</p>
+<p>The options for each parameter are:</p>
+<ul>
+<li>
+<p><code>True</code>: metadata is requested, and passed to <code>fit</code> if provided. The request is ignored if metadata is not provided.</p>
+</li>
+<li>
+<p><code>False</code>: metadata is not requested and the meta-estimator will not pass it to <code>fit</code>.</p>
+</li>
+<li>
+<p><code>None</code>: metadata is not requested, and the meta-estimator will raise an error if the user provides it.</p>
+</li>
+<li>
+<p><code>str</code>: metadata should be passed to the meta-estimator with this given alias instead of the original name.</p>
+</li>
+</ul>
+<p>The default (<code>sklearn.utils.metadata_routing.UNCHANGED</code>) retains the
+existing request. This allows you to change the request for some
+parameters and not others.</p>
+<div class="admonition versionadded">
+<p class="admonition-title">Added in version:&ensp;1.3</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method is only relevant if this estimator is used as a
+sub-estimator of a meta-estimator, e.g. used inside a
+:class:<code>~sklearn.pipeline.Pipeline</code>. Otherwise it has no effect.</p>
+</div>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>feature_names</code></strong> :&ensp;<code>str, True, False,</code> or <code>None</code>,
+default=<code>sklearn.utils.metadata_routing.UNCHANGED</code></dt>
+<dd>Metadata routing for <code>feature_names</code> parameter in <code>fit</code>.</dd>
+<dt><strong><code>init</code></strong> :&ensp;<code>str, True, False,</code> or <code>None</code>,
+default=<code>sklearn.utils.metadata_routing.UNCHANGED</code></dt>
+<dd>Metadata routing for <code>init</code> parameter in <code>fit</code>.</dd>
+<dt><strong><code>verbose</code></strong> :&ensp;<code>str, True, False,</code> or <code>None</code>,
+default=<code>sklearn.utils.metadata_routing.UNCHANGED</code></dt>
+<dd>Metadata routing for <code>verbose</code> parameter in <code>fit</code>.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><strong><code>self</code></strong> :&ensp;<code>object</code></dt>
+<dd>The updated object.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def func(*args, **kw):
+    &#34;&#34;&#34;Updates the request for provided parameters
+
+    This docstring is overwritten below.
+    See REQUESTER_DOC for expected functionality
+    &#34;&#34;&#34;
+    if not _routing_enabled():
+        raise RuntimeError(
+            &#34;This method is only available when metadata routing is enabled.&#34;
+            &#34; You can enable it using&#34;
+            &#34; sklearn.set_config(enable_metadata_routing=True).&#34;
+        )
+
+    if self.validate_keys and (set(kw) - set(self.keys)):
+        raise TypeError(
+            f&#34;Unexpected args: {set(kw) - set(self.keys)} in {self.name}. &#34;
+            f&#34;Accepted arguments are: {set(self.keys)}&#34;
+        )
+
+    # This makes it possible to use the decorated method as an unbound method,
+    # for instance when monkeypatching.
+    # https://github.com/scikit-learn/scikit-learn/issues/28632
+    if instance is None:
+        _instance = args[0]
+        args = args[1:]
+    else:
+        _instance = instance
+
+    # Replicating python&#39;s behavior when positional args are given other than
+    # `self`, and `self` is only allowed if this method is unbound.
+    if args:
+        raise TypeError(
+            f&#34;set_{self.name}_request() takes 0 positional argument but&#34;
+            f&#34; {len(args)} were given&#34;
+        )
+
+    requests = _instance._get_metadata_request()
+    method_metadata_request = getattr(requests, self.name)
+
+    for prop, alias in kw.items():
+        if alias is not UNCHANGED:
+            method_metadata_request.add_request(param=prop, alias=alias)
+    _instance._metadata_request = requests
+
+    return _instance</code></pre>
+</details>
+</dd>
+<dt id="imodels.rule_set.brs.BayesianRuleSetClassifier.set_score_request"><code class="name flex">
+<span>def <span class="ident">set_score_request</span></span>(<span>self: <a title="imodels.rule_set.brs.BayesianRuleSetClassifier" href="#imodels.rule_set.brs.BayesianRuleSetClassifier">BayesianRuleSetClassifier</a>, *, sample_weight: Union[bool, ForwardRef(None), str] = '$UNCHANGED$') ‑> <a title="imodels.rule_set.brs.BayesianRuleSetClassifier" href="#imodels.rule_set.brs.BayesianRuleSetClassifier">BayesianRuleSetClassifier</a></span>
+</code></dt>
+<dd>
+<div class="desc"><p>Request metadata passed to the <code>score</code> method.</p>
+<p>Note that this method is only relevant if
+<code>enable_metadata_routing=True</code> (see :func:<code>sklearn.set_config</code>).
+Please see :ref:<code>User Guide &lt;metadata_routing&gt;</code> on how the routing
+mechanism works.</p>
+<p>The options for each parameter are:</p>
+<ul>
+<li>
+<p><code>True</code>: metadata is requested, and passed to <code>score</code> if provided. The request is ignored if metadata is not provided.</p>
+</li>
+<li>
+<p><code>False</code>: metadata is not requested and the meta-estimator will not pass it to <code>score</code>.</p>
+</li>
+<li>
+<p><code>None</code>: metadata is not requested, and the meta-estimator will raise an error if the user provides it.</p>
+</li>
+<li>
+<p><code>str</code>: metadata should be passed to the meta-estimator with this given alias instead of the original name.</p>
+</li>
+</ul>
+<p>The default (<code>sklearn.utils.metadata_routing.UNCHANGED</code>) retains the
+existing request. This allows you to change the request for some
+parameters and not others.</p>
+<div class="admonition versionadded">
+<p class="admonition-title">Added in version:&ensp;1.3</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method is only relevant if this estimator is used as a
+sub-estimator of a meta-estimator, e.g. used inside a
+:class:<code>~sklearn.pipeline.Pipeline</code>. Otherwise it has no effect.</p>
+</div>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>sample_weight</code></strong> :&ensp;<code>str, True, False,</code> or <code>None</code>,
+default=<code>sklearn.utils.metadata_routing.UNCHANGED</code></dt>
+<dd>Metadata routing for <code>sample_weight</code> parameter in <code>score</code>.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><strong><code>self</code></strong> :&ensp;<code>object</code></dt>
+<dd>The updated object.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def func(*args, **kw):
+    &#34;&#34;&#34;Updates the request for provided parameters
+
+    This docstring is overwritten below.
+    See REQUESTER_DOC for expected functionality
+    &#34;&#34;&#34;
+    if not _routing_enabled():
+        raise RuntimeError(
+            &#34;This method is only available when metadata routing is enabled.&#34;
+            &#34; You can enable it using&#34;
+            &#34; sklearn.set_config(enable_metadata_routing=True).&#34;
+        )
+
+    if self.validate_keys and (set(kw) - set(self.keys)):
+        raise TypeError(
+            f&#34;Unexpected args: {set(kw) - set(self.keys)} in {self.name}. &#34;
+            f&#34;Accepted arguments are: {set(self.keys)}&#34;
+        )
+
+    # This makes it possible to use the decorated method as an unbound method,
+    # for instance when monkeypatching.
+    # https://github.com/scikit-learn/scikit-learn/issues/28632
+    if instance is None:
+        _instance = args[0]
+        args = args[1:]
+    else:
+        _instance = instance
+
+    # Replicating python&#39;s behavior when positional args are given other than
+    # `self`, and `self` is only allowed if this method is unbound.
+    if args:
+        raise TypeError(
+            f&#34;set_{self.name}_request() takes 0 positional argument but&#34;
+            f&#34; {len(args)} were given&#34;
+        )
+
+    requests = _instance._get_metadata_request()
+    method_metadata_request = getattr(requests, self.name)
+
+    for prop, alias in kw.items():
+        if alias is not UNCHANGED:
+            method_metadata_request.add_request(param=prop, alias=alias)
+    _instance._metadata_request = requests
+
+    return _instance</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index 🔍</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="imodels.rule_set" href="index.html">imodels.rule_set</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="imodels.rule_set.brs.random" href="#imodels.rule_set.brs.random">random</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="imodels.rule_set.brs.BayesianRuleSetClassifier" href="#imodels.rule_set.brs.BayesianRuleSetClassifier">BayesianRuleSetClassifier</a></code></h4>
+<ul class="">
+<li><code><a title="imodels.rule_set.brs.BayesianRuleSetClassifier.fit" href="#imodels.rule_set.brs.BayesianRuleSetClassifier.fit">fit</a></code></li>
+<li><code><a title="imodels.rule_set.brs.BayesianRuleSetClassifier.predict" href="#imodels.rule_set.brs.BayesianRuleSetClassifier.predict">predict</a></code></li>
+<li><code><a title="imodels.rule_set.brs.BayesianRuleSetClassifier.predict_proba" href="#imodels.rule_set.brs.BayesianRuleSetClassifier.predict_proba">predict_proba</a></code></li>
+<li><code><a title="imodels.rule_set.brs.BayesianRuleSetClassifier.set_fit_request" href="#imodels.rule_set.brs.BayesianRuleSetClassifier.set_fit_request">set_fit_request</a></code></li>
+<li><code><a title="imodels.rule_set.brs.BayesianRuleSetClassifier.set_score_request" href="#imodels.rule_set.brs.BayesianRuleSetClassifier.set_score_request">set_score_request</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img align="center" width=100% src="https://csinva.io/imodels/img/anim.gif"> </img></p>
+<!-- add wave animation -->
+</nav>
+</main>
+<footer id="footer">
+</footer>
+</body>
+</html>
+<!-- add github corner -->
+<a href="https://github.com/csinva/imodels" class="github-corner" aria-label="View source on GitHub"><svg width="120" height="120" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="m128.3,109.0 c113.8,99.7 119.0,89.6 119.0,89.6 c122.0,82.7 120.5,78.6 120.5,78.6 c119.2,72.0 123.4,76.3 123.4,76.3 c127.3,80.9 125.5,87.3 125.5,87.3 c122.9,97.6 130.6,101.9 134.4,103.2" fill="currentcolor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<!-- add wave animation stylesheet -->
+<link rel="stylesheet" href="github.css">

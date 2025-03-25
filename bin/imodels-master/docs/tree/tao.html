@@ -1,0 +1,1577 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import random
+from copy import deepcopy
+from queue import deque
+
+import numpy as np
+from mlxtend.classifier import LogisticRegression
+from sklearn import datasets
+from sklearn.base import BaseEstimator, RegressorMixin, ClassifierMixin
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import get_scorer
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor, export_text
+from sklearn.utils import check_X_y
+
+from imodels.util.arguments import check_fit_arguments
+
+
+class TaoTree(BaseEstimator):
+
+    def __init__(self, model_type: str = &#39;CART&#39;,
+                 n_iters: int = 20,
+                 model_args: dict = {&#39;max_leaf_nodes&#39;: 15},
+                 randomize_tree=False,
+                 update_scoring=&#39;accuracy&#39;,
+                 min_node_samples_tao=3,
+                 min_leaf_samples_tao=2,
+                 node_model=&#39;stump&#39;,
+                 node_model_args: dict = {},
+                 reg_param: float = 1e-3,
+                 weight_errors: bool = False,
+                 verbose: int = 0,
+                 ):
+        &#34;&#34;&#34;TAO: Alternating optimization of decision trees, with application to learning sparse oblique trees (Neurips 2018)
+        https://proceedings.neurips.cc/paper/2018/hash/185c29dc24325934ee377cfda20e414c-Abstract.html
+        Note: this implementation learns single-feature splits rather than oblique trees.
+
+        Currently supports
+        - given a CART tree, posthoc improve it with TAO
+            - also works with HSTreeCV
+
+        Todo
+        - update bottom to top otherwise input points don&#39;t get updated
+        - update leaf nodes
+        - support regression
+        - support FIGS
+        - support error-weighting
+        - support oblique trees
+            - support generic models at decision node
+            - support pruning (e.g. if weights -&gt; 0, then remove a node)
+        - support classifiers in leaves
+
+        Parameters
+        ----------
+
+        model_type: str
+            &#39;CART&#39; or &#39;FIGS&#39;
+
+        n_iters
+            Number of iterations to run TAO
+
+        model_args
+            Arguments to pass to the model
+
+        randomize_tree
+            Whether to randomize the tree before each iteration
+
+        min_node_samples_tao: int
+            Minimum number of samples in a node to apply tao
+
+        min_leaf_samples_tao: int
+
+        node_model: str
+            &#39;stump&#39; or &#39;linear&#39;
+
+        reg_param
+            Regularization parameter for node-wise linear model (if node_model is &#39;linear&#39;)
+
+        verbose: int
+            Verbosity level
+        &#34;&#34;&#34;
+        super().__init__()
+        self.model_type = model_type
+        self.n_iters = n_iters
+        self.model_args = model_args
+        self.randomize_tree = randomize_tree
+        self.update_scoring = update_scoring
+        self.min_node_samples_tao = min_node_samples_tao
+        self.min_leaf_samples_tao = min_leaf_samples_tao
+        self.node_model = node_model
+        self.node_model_args = node_model_args
+        self.reg_param = reg_param
+        self.weight_errors = weight_errors
+        self.verbose = verbose
+        self._init_prediction_task()  # decides between regressor and classifier
+
+    def _init_prediction_task(self):
+        &#34;&#34;&#34;
+        TaoRegressor and TaoClassifier override this method
+        to alter the prediction task. When using this class directly,
+        it is equivalent to SuperCARTRegressor
+        &#34;&#34;&#34;
+        self.prediction_task = &#39;classification&#39;
+
+    def fit(self, X, y=None, feature_names=None, sample_weight=None):
+        &#34;&#34;&#34;
+        Params
+        ------
+        _sample_weight: array-like of shape (n_samples,), default=None
+            Sample weights. If None, then samples are equally weighted.
+            Splits that would create child nodes with net zero or negative weight
+            are ignored while searching for a split in each node.
+        &#34;&#34;&#34;
+        X, y, feature_names = check_fit_arguments(self, X, y, feature_names)
+        if isinstance(self, RegressorMixin):
+            raise Warning(&#39;TAO Regression is not yet tested&#39;)
+        X, y = check_X_y(X, y)
+        y = y.astype(float)
+        if feature_names is not None:
+            self.feature_names_ = feature_names
+        if self.model_type == &#39;CART&#39;:
+            if isinstance(self, ClassifierMixin):
+                self.model = DecisionTreeClassifier(**self.model_args)
+            elif isinstance(self, RegressorMixin):
+                self.model = DecisionTreeRegressor(**self.model_args)
+            self.model.fit(X, y, sample_weight=sample_weight)
+            if self.verbose:
+                print(export_text(self.model))
+            # plot_tree(self.model)
+            # plt.savefig(&#39;/Users/chandan/Desktop/tree.png&#39;, dpi=300)
+            # plt.show()
+
+        if self.randomize_tree:
+            # shuffle CART features
+            np.random.shuffle(self.model.tree_.feature)
+            # np.random.shuffle(self.model.tree_.threshold)
+            for i in range(self.model.tree_.node_count):  # split on feature medians
+                self.model.tree_.threshold[i] = np.median(
+                    X[:, self.model.tree_.feature[i]])
+        if self.verbose:
+            print(&#39;starting score&#39;, self.model.score(X, y))
+        for i in range(self.n_iters):
+            num_updates = self._tao_iter_cart(
+                X, y, self.model.tree_, sample_weight=sample_weight)
+            if num_updates == 0:
+                break
+
+        return self
+
+    def _tao_iter_cart(self, X, y, tree, X_score=None, y_score=None, sample_weight=None):
+        &#34;&#34;&#34;Updates tree by applying the tao algorithm to the tree
+        Params
+        ------
+        X: array-like of shape (n_samples, n_features)
+            The input samples.
+        y: array-like of shape (n_samples,)
+            The target values.
+        model: DecisionTreeClassifier.tree_ or DecisionTreeRegressor.tree_
+            The model to be post-hoc improved
+        &#34;&#34;&#34;
+
+        # Tree properties
+        children_left = tree.children_left
+        children_right = tree.children_right
+        feature = tree.feature
+        threshold = tree.threshold
+        value = tree.value
+
+        # For each node, store the path to that node #######################################################
+        # data structure with (index, path_to_node_index)
+        indexes_with_prefix_paths = []
+        # e.g. if if node 3 is the left child of node 1 which is the right child of node 0
+        # then we get (3, [(0, R), (1, L)])
+
+        # start with the root node id (0) and its depth (0)
+        queue = deque()
+        queue.append((0, []))
+        while len(queue) &gt; 0:
+            node_id, path_to_node_index = queue.popleft()
+            indexes_with_prefix_paths.append((node_id, path_to_node_index))
+
+            # If a split node, append left and right children and depth to queue
+            if children_left[node_id] != children_right[node_id]:
+                queue.append(
+                    (children_left[node_id], path_to_node_index + [(node_id, &#39;L&#39;)]))
+                queue.append(
+                    (children_right[node_id], path_to_node_index + [(node_id, &#39;R&#39;)]))
+        # print(indexes_with_prefix_paths)
+
+        num_updates = 0
+
+        # Reversing BFS queue presents nodes bottom -&gt; top one level at a time
+        for (node_id, path_to_node_index) in reversed(indexes_with_prefix_paths):
+            # For each each node, try a TAO update
+            # print(&#39;node_id&#39;, node_id, path_to_node_index)
+
+            # Compute the points being input to the node ######################################
+            def filter_points_by_path(X, y, path_to_node_index):
+                &#34;&#34;&#34;Returns the points in X that are in the path to the node&#34;&#34;&#34;
+                for node_id, direction in path_to_node_index:
+                    idxs = X[:, feature[node_id]] &lt;= threshold[node_id]
+                    if direction == &#39;R&#39;:
+                        idxs = ~idxs
+                    # print(&#39;idxs&#39;, idxs.size, idxs.sum())
+                    X = X[idxs]
+                    y = y[idxs]
+                return X, y
+
+            X_node, y_node = filter_points_by_path(X, y, path_to_node_index)
+
+            if sample_weight is not None:
+                sample_weight_node = filter_points_by_path(
+                    X, sample_weight, path_to_node_index)[1]
+            else:
+                sample_weight_node = np.ones(y_node.size)
+
+            # Skip over leaf nodes and nodes with too few samples ######################################
+            if children_left[node_id] == children_right[node_id]:  # is leaf node
+                if isinstance(self, RegressorMixin) and X_node.shape[0] &gt;= self.min_leaf_samples_tao:
+                    # old_score = self.model.score(X, y)
+                    value[node_id] = np.mean(y_node)
+                    &#34;&#34;&#34;
+                    new_score = self.model.score(X, y)
+                    if new_score &gt; old_score:
+                        print(f&#39;\tLeaf improved score from {old_score:0.3f} to {new_score:0.3f}&#39;)
+                    if new_score &lt; old_score:
+                        print(f&#39;\tLeaf reduced score from {old_score:0.3f} to {new_score:0.3f}&#39;)
+                        # raise ValueError(&#39;Leaf update reduced score&#39;)
+                    &#34;&#34;&#34;
+                # print(&#39;\tshapes&#39;, X_node.shape, y_node.shape)
+                # print(&#39;\tvals:&#39;, value[node_id][0][0], np.mean(y_node))
+                # assert value[node_id][0][0] == np.mean(y_node), &#39;unless tree changed, vals should be leaf means&#39;
+                continue
+            elif X_node.shape[0] &lt; self.min_node_samples_tao:
+                continue
+
+            # Compute the outputs for these points if they go left or right ######################################
+            def predict_from_node(X, node_id):
+                &#34;&#34;&#34;Returns predictions for X starting at node node_id&#34;&#34;&#34;
+
+                def predict_from_node(x, node_id):
+                    &#34;&#34;&#34;Returns predictions for x starting at node node_id&#34;&#34;&#34;
+                    if children_left[node_id] == children_right[node_id]:
+                        if isinstance(self, RegressorMixin):
+                            return value[node_id]
+                        if isinstance(self, ClassifierMixin):
+                            # note value stores counts for each class
+                            return np.argmax(value[node_id])
+                    if x[feature[node_id]] &lt;= threshold[node_id]:
+                        return predict_from_node(x, children_left[node_id])
+                    else:
+                        return predict_from_node(x, children_right[node_id])
+
+                preds = np.zeros(X.shape[0])
+                for i in range(X.shape[0]):
+                    preds[i] = predict_from_node(X[i], node_id)
+                return preds
+
+            y_node_left = predict_from_node(X_node, children_left[node_id])
+            y_node_right = predict_from_node(X_node, children_right[node_id])
+            if node_id == 0:  # root node
+                assert np.all(np.logical_or(self.model.predict(X_node) == y_node_left,
+                                            self.model.predict(
+                                                X_node) == y_node_right)), \
+                    &#39;actual predictions should match either predict_from_node left or right&#39;
+
+            # Decide on prediction target (want to go left (0) / right (1) when advantageous)
+            # TAO paper binarizes these (e.g. predict 0 or 1 depending on which of these is better)
+            y_node_absolute_errors = np.abs(np.vstack((y_node - y_node_left,
+                                                       y_node - y_node_right))).T
+
+            # screen out indexes where going left/right has no effect
+            idxs_relevant = y_node_absolute_errors[:,
+                                                   0] != y_node_absolute_errors[:, 1]
+            if idxs_relevant.sum() &lt;= 1:  # nothing to change
+                if self.verbose:
+                    print(&#39;no errors to change&#39;)
+                continue
+            # assert np.all((self.model.predict(X) != y)[idxs_relevant]), &#39;relevant indexes should be errors&#39;
+            y_node_target = np.argmin(y_node_absolute_errors, axis=1)
+            y_node_target = y_node_target[idxs_relevant]
+
+            # here, we optionally weight these errors by the size of the error
+            # if we want this to work for classification, must switch to predict_proba
+            # if self.prediction_task == &#39;regression&#39;:
+            # weight by the difference in error ###############################################################
+            if self.weight_errors:
+                sample_weight_node *= np.abs(
+                    y_node_absolute_errors[:, 1] - y_node_absolute_errors[:, 0])
+            sample_weight_node_target = sample_weight_node[idxs_relevant]
+            X_node = X_node[idxs_relevant]
+
+            # Fit a 1-variable binary classification model on these outputs ######################################
+            # Note: this could be customized (e.g. for sparse oblique trees)
+            best_score = -np.inf
+            best_feat_num = None
+            for feat_num in range(X.shape[1]):
+                if isinstance(self, ClassifierMixin):
+                    if self.node_model == &#39;linear&#39;:
+                        m = LogisticRegression(**self.node_model_args)
+                    elif self.node_model == &#39;stump&#39;:
+                        m = DecisionTreeClassifier(
+                            max_depth=1, **self.node_model_args)
+                if isinstance(self, RegressorMixin):
+                    if self.node_model == &#39;linear&#39;:
+                        m = LinearRegression(**self.node_model_args)
+                    elif self.node_model == &#39;stump&#39;:
+                        m = DecisionTreeRegressor(
+                            max_depth=1, **self.node_model_args)
+                X_node_single_feat = X_node[:, feat_num: feat_num + 1]
+                m.fit(X_node_single_feat, y_node_target,
+                      sample_weight=sample_weight_node_target)
+                score = m.score(X_node_single_feat, y_node_target,
+                                sample_weight=sample_weight_node_target)
+                if score &gt; best_score:
+                    best_score = score
+                    best_feat_num = feat_num
+                    best_model = deepcopy(m)
+                    if self.node_model == &#39;linear&#39;:
+                        best_threshold = -best_model.intercept_ / \
+                            best_model.coef_[0]
+                    elif self.node_model == &#39;stump&#39;:
+                        best_threshold = best_model.tree_.threshold[0]
+            # print((feature[node_id], threshold[node_id]), &#39;\n-&gt;&#39;,
+            #       (best_feat_num, best_threshold))
+
+            # Update the node with the new feature / threshold ######################################
+            old_feat_num = feature[node_id]
+            old_threshold = threshold[node_id]
+            # print(X.sum(), y.sum())
+
+            if X_score is None:
+                X_score = X
+            if y_score is None:
+                y_score = y
+
+            scorer = get_scorer(self.update_scoring)
+
+            old_score = scorer(self.model, X_score, y_score)
+
+            feature[node_id] = best_feat_num
+            threshold[node_id] = best_threshold
+            new_score = scorer(self.model, X_score, y_score)
+
+            # debugging
+            if self.verbose &gt; 1:
+                if old_score == new_score:
+                    print(&#39;\tno change&#39;, best_feat_num, old_feat_num)
+                print(f&#39;\tscore_total {old_score:0.4f} -&gt; {new_score:0.4f}&#39;)
+            if old_score &gt;= new_score:
+                feature[node_id] = old_feat_num
+                threshold[node_id] = old_threshold
+            else:
+                # (Track if any updates were necessary)
+                num_updates += 1
+                if self.verbose &gt; 0:
+                    print(
+                        f&#39;Improved score from {old_score:0.4f} to {new_score:0.4f}&#39;)
+
+            # debugging snippet (if score_m_new &gt; score_m_old, then new_score should be &gt; old_score, but it isn&#39;t!!!!)
+            if self.verbose &gt; 1:
+                &#34;&#34;&#34;
+                X_node_single_feat = X_node[:, best_feat_num: best_feat_num + 1]
+                score_m_new = best_model.score(X_node_single_feat, y_node_target, sample_weight=sample_weight)
+                best_model.tree_.feature[0] = old_feat_num
+                best_model.tree_.threshold[0] = old_threshold
+                X_node_single_feat = X_node[:, old_feat_num: old_feat_num + 1]
+                score_m_old = best_model.score(X_node_single_feat, y_node_target, sample_weight=sample_weight)
+                print(&#39;\t\t&#39;, f&#39;score_local {score_m_old:0.4f} -&gt; {score_m_new:0.4f}&#39;)
+                &#34;&#34;&#34;
+
+        return num_updates
+
+    def predict(self, X):
+        preds = self.model.predict(X)
+        if hasattr(self, &#34;classes_&#34;):
+            print(&#34;classes_&#34;, self.classes_, &#39;preds&#39;, preds)
+            return np.array([self.classes_[int(i)] for i in preds])
+        else:
+            return preds
+
+    def predict_proba(self, X):
+        return self.model.predict_proba(X)
+
+    # def score(self, X, y):
+        # return self.model.score(X, y)
+
+
+class TaoTreeRegressor(TaoTree, RegressorMixin):
+    pass
+
+
+class TaoTreeClassifier(TaoTree, ClassifierMixin):
+    pass
+
+
+if __name__ == &#39;__main__&#39;:
+    np.random.seed(13)
+    random.seed(13)
+    X, y = datasets.load_breast_cancer(return_X_y=True)
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.33, random_state=42
+    )
+    print(&#39;X.shape&#39;, X.shape)
+    print(&#39;ys&#39;, np.unique(y_train), &#39;\n\n&#39;)
+    m = TaoTreeClassifier(randomize_tree=False, weight_errors=False,
+                          node_model=&#39;stump&#39;, model_args={&#39;max_depth&#39;: 3},
+                          verbose=1)
+    m.fit(X_train, y_train)
+    print(&#39;Train acc&#39;, np.mean(m.predict(X_train) == y_train))
+    print(&#39;Test acc&#39;, np.mean(m.predict(X_test) == y_test))
+    # print(m.predict(X_train), m.predict_proba(X_train).shape)
+    # print(m.predict_proba(X_train))
+
+    # X, y = datasets.load_diabetes(return_X_y=True)  # regression
+    # X = np.random.randn(500, 10)
+    # y = (X[:, 0] &gt; 0).astype(float) + (X[:, 1] &gt; 1).astype(float)
+    # X_train, X_test, y_train, y_test = train_test_split(
+    #     X, y, test_size=0.33, random_state=42
+    # )
+    # m = TaoRegressor()
+    # m.fit(X_train, y_train)
+    # print(&#39;mse&#39;, np.mean(np.square(m.predict(X_test) - y_test)),
+    #       &#39;baseline&#39;, np.mean(np.square(y_test)))</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="imodels.tree.tao.TaoTree"><code class="flex name class">
+<span>class <span class="ident">TaoTree</span></span>
+<span>(</span><span>model_type: str = 'CART', n_iters: int = 20, model_args: dict = {'max_leaf_nodes': 15}, randomize_tree=False, update_scoring='accuracy', min_node_samples_tao=3, min_leaf_samples_tao=2, node_model='stump', node_model_args: dict = {}, reg_param: float = 0.001, weight_errors: bool = False, verbose: int = 0)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Base class for all estimators in scikit-learn.</p>
+<p>Inheriting from this class provides default implementations of:</p>
+<ul>
+<li>setting and getting parameters used by <code>GridSearchCV</code> and friends;</li>
+<li>textual and HTML representation displayed in terminals and IDEs;</li>
+<li>estimator serialization;</li>
+<li>parameters validation;</li>
+<li>data validation;</li>
+<li>feature names validation.</li>
+</ul>
+<p>Read more in the :ref:<code>User Guide &lt;rolling_your_own_estimator&gt;</code>.</p>
+<h2 id="notes">Notes</h2>
+<p>All estimators should specify all the parameters that can be set
+at the class level in their <code>__init__</code> as explicit keyword
+arguments (no <code>*args</code> or <code>**kwargs</code>).</p>
+<h2 id="examples">Examples</h2>
+<pre><code class="language-python-repl">&gt;&gt;&gt; import numpy as np
+&gt;&gt;&gt; from sklearn.base import BaseEstimator
+&gt;&gt;&gt; class MyEstimator(BaseEstimator):
+...     def __init__(self, *, param=1):
+...         self.param = param
+...     def fit(self, X, y=None):
+...         self.is_fitted_ = True
+...         return self
+...     def predict(self, X):
+...         return np.full(shape=X.shape[0], fill_value=self.param)
+&gt;&gt;&gt; estimator = MyEstimator(param=2)
+&gt;&gt;&gt; estimator.get_params()
+{'param': 2}
+&gt;&gt;&gt; X = np.array([[1, 2], [2, 3], [3, 4]])
+&gt;&gt;&gt; y = np.array([1, 0, 1])
+&gt;&gt;&gt; estimator.fit(X, y).predict(X)
+array([2, 2, 2])
+&gt;&gt;&gt; estimator.set_params(param=3).fit(X, y).predict(X)
+array([3, 3, 3])
+</code></pre>
+<p>TAO: Alternating optimization of decision trees, with application to learning sparse oblique trees (Neurips 2018)
+<a href="https://proceedings.neurips.cc/paper/2018/hash/185c29dc24325934ee377cfda20e414c-Abstract.html">https://proceedings.neurips.cc/paper/2018/hash/185c29dc24325934ee377cfda20e414c-Abstract.html</a>
+Note: this implementation learns single-feature splits rather than oblique trees.</p>
+<p>Currently supports
+- given a CART tree, posthoc improve it with TAO
+- also works with HSTreeCV</p>
+<p>Todo
+- update bottom to top otherwise input points don't get updated
+- update leaf nodes
+- support regression
+- support FIGS
+- support error-weighting
+- support oblique trees
+- support generic models at decision node
+- support pruning (e.g. if weights -&gt; 0, then remove a node)
+- support classifiers in leaves</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>model_type</code></strong> :&ensp;<code>str</code></dt>
+<dd>'CART' or 'FIGS'</dd>
+<dt><strong><code>n_iters</code></strong></dt>
+<dd>Number of iterations to run TAO</dd>
+<dt><strong><code>model_args</code></strong></dt>
+<dd>Arguments to pass to the model</dd>
+<dt><strong><code>randomize_tree</code></strong></dt>
+<dd>Whether to randomize the tree before each iteration</dd>
+<dt><strong><code>min_node_samples_tao</code></strong> :&ensp;<code>int</code></dt>
+<dd>Minimum number of samples in a node to apply tao</dd>
+<dt><strong><code>min_leaf_samples_tao</code></strong> :&ensp;<code>int</code></dt>
+<dd>&nbsp;</dd>
+<dt><strong><code>node_model</code></strong> :&ensp;<code>str</code></dt>
+<dd>'stump' or 'linear'</dd>
+<dt><strong><code>reg_param</code></strong></dt>
+<dd>Regularization parameter for node-wise linear model (if node_model is 'linear')</dd>
+<dt><strong><code>verbose</code></strong> :&ensp;<code>int</code></dt>
+<dd>Verbosity level</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class TaoTree(BaseEstimator):
+
+    def __init__(self, model_type: str = &#39;CART&#39;,
+                 n_iters: int = 20,
+                 model_args: dict = {&#39;max_leaf_nodes&#39;: 15},
+                 randomize_tree=False,
+                 update_scoring=&#39;accuracy&#39;,
+                 min_node_samples_tao=3,
+                 min_leaf_samples_tao=2,
+                 node_model=&#39;stump&#39;,
+                 node_model_args: dict = {},
+                 reg_param: float = 1e-3,
+                 weight_errors: bool = False,
+                 verbose: int = 0,
+                 ):
+        &#34;&#34;&#34;TAO: Alternating optimization of decision trees, with application to learning sparse oblique trees (Neurips 2018)
+        https://proceedings.neurips.cc/paper/2018/hash/185c29dc24325934ee377cfda20e414c-Abstract.html
+        Note: this implementation learns single-feature splits rather than oblique trees.
+
+        Currently supports
+        - given a CART tree, posthoc improve it with TAO
+            - also works with HSTreeCV
+
+        Todo
+        - update bottom to top otherwise input points don&#39;t get updated
+        - update leaf nodes
+        - support regression
+        - support FIGS
+        - support error-weighting
+        - support oblique trees
+            - support generic models at decision node
+            - support pruning (e.g. if weights -&gt; 0, then remove a node)
+        - support classifiers in leaves
+
+        Parameters
+        ----------
+
+        model_type: str
+            &#39;CART&#39; or &#39;FIGS&#39;
+
+        n_iters
+            Number of iterations to run TAO
+
+        model_args
+            Arguments to pass to the model
+
+        randomize_tree
+            Whether to randomize the tree before each iteration
+
+        min_node_samples_tao: int
+            Minimum number of samples in a node to apply tao
+
+        min_leaf_samples_tao: int
+
+        node_model: str
+            &#39;stump&#39; or &#39;linear&#39;
+
+        reg_param
+            Regularization parameter for node-wise linear model (if node_model is &#39;linear&#39;)
+
+        verbose: int
+            Verbosity level
+        &#34;&#34;&#34;
+        super().__init__()
+        self.model_type = model_type
+        self.n_iters = n_iters
+        self.model_args = model_args
+        self.randomize_tree = randomize_tree
+        self.update_scoring = update_scoring
+        self.min_node_samples_tao = min_node_samples_tao
+        self.min_leaf_samples_tao = min_leaf_samples_tao
+        self.node_model = node_model
+        self.node_model_args = node_model_args
+        self.reg_param = reg_param
+        self.weight_errors = weight_errors
+        self.verbose = verbose
+        self._init_prediction_task()  # decides between regressor and classifier
+
+    def _init_prediction_task(self):
+        &#34;&#34;&#34;
+        TaoRegressor and TaoClassifier override this method
+        to alter the prediction task. When using this class directly,
+        it is equivalent to SuperCARTRegressor
+        &#34;&#34;&#34;
+        self.prediction_task = &#39;classification&#39;
+
+    def fit(self, X, y=None, feature_names=None, sample_weight=None):
+        &#34;&#34;&#34;
+        Params
+        ------
+        _sample_weight: array-like of shape (n_samples,), default=None
+            Sample weights. If None, then samples are equally weighted.
+            Splits that would create child nodes with net zero or negative weight
+            are ignored while searching for a split in each node.
+        &#34;&#34;&#34;
+        X, y, feature_names = check_fit_arguments(self, X, y, feature_names)
+        if isinstance(self, RegressorMixin):
+            raise Warning(&#39;TAO Regression is not yet tested&#39;)
+        X, y = check_X_y(X, y)
+        y = y.astype(float)
+        if feature_names is not None:
+            self.feature_names_ = feature_names
+        if self.model_type == &#39;CART&#39;:
+            if isinstance(self, ClassifierMixin):
+                self.model = DecisionTreeClassifier(**self.model_args)
+            elif isinstance(self, RegressorMixin):
+                self.model = DecisionTreeRegressor(**self.model_args)
+            self.model.fit(X, y, sample_weight=sample_weight)
+            if self.verbose:
+                print(export_text(self.model))
+            # plot_tree(self.model)
+            # plt.savefig(&#39;/Users/chandan/Desktop/tree.png&#39;, dpi=300)
+            # plt.show()
+
+        if self.randomize_tree:
+            # shuffle CART features
+            np.random.shuffle(self.model.tree_.feature)
+            # np.random.shuffle(self.model.tree_.threshold)
+            for i in range(self.model.tree_.node_count):  # split on feature medians
+                self.model.tree_.threshold[i] = np.median(
+                    X[:, self.model.tree_.feature[i]])
+        if self.verbose:
+            print(&#39;starting score&#39;, self.model.score(X, y))
+        for i in range(self.n_iters):
+            num_updates = self._tao_iter_cart(
+                X, y, self.model.tree_, sample_weight=sample_weight)
+            if num_updates == 0:
+                break
+
+        return self
+
+    def _tao_iter_cart(self, X, y, tree, X_score=None, y_score=None, sample_weight=None):
+        &#34;&#34;&#34;Updates tree by applying the tao algorithm to the tree
+        Params
+        ------
+        X: array-like of shape (n_samples, n_features)
+            The input samples.
+        y: array-like of shape (n_samples,)
+            The target values.
+        model: DecisionTreeClassifier.tree_ or DecisionTreeRegressor.tree_
+            The model to be post-hoc improved
+        &#34;&#34;&#34;
+
+        # Tree properties
+        children_left = tree.children_left
+        children_right = tree.children_right
+        feature = tree.feature
+        threshold = tree.threshold
+        value = tree.value
+
+        # For each node, store the path to that node #######################################################
+        # data structure with (index, path_to_node_index)
+        indexes_with_prefix_paths = []
+        # e.g. if if node 3 is the left child of node 1 which is the right child of node 0
+        # then we get (3, [(0, R), (1, L)])
+
+        # start with the root node id (0) and its depth (0)
+        queue = deque()
+        queue.append((0, []))
+        while len(queue) &gt; 0:
+            node_id, path_to_node_index = queue.popleft()
+            indexes_with_prefix_paths.append((node_id, path_to_node_index))
+
+            # If a split node, append left and right children and depth to queue
+            if children_left[node_id] != children_right[node_id]:
+                queue.append(
+                    (children_left[node_id], path_to_node_index + [(node_id, &#39;L&#39;)]))
+                queue.append(
+                    (children_right[node_id], path_to_node_index + [(node_id, &#39;R&#39;)]))
+        # print(indexes_with_prefix_paths)
+
+        num_updates = 0
+
+        # Reversing BFS queue presents nodes bottom -&gt; top one level at a time
+        for (node_id, path_to_node_index) in reversed(indexes_with_prefix_paths):
+            # For each each node, try a TAO update
+            # print(&#39;node_id&#39;, node_id, path_to_node_index)
+
+            # Compute the points being input to the node ######################################
+            def filter_points_by_path(X, y, path_to_node_index):
+                &#34;&#34;&#34;Returns the points in X that are in the path to the node&#34;&#34;&#34;
+                for node_id, direction in path_to_node_index:
+                    idxs = X[:, feature[node_id]] &lt;= threshold[node_id]
+                    if direction == &#39;R&#39;:
+                        idxs = ~idxs
+                    # print(&#39;idxs&#39;, idxs.size, idxs.sum())
+                    X = X[idxs]
+                    y = y[idxs]
+                return X, y
+
+            X_node, y_node = filter_points_by_path(X, y, path_to_node_index)
+
+            if sample_weight is not None:
+                sample_weight_node = filter_points_by_path(
+                    X, sample_weight, path_to_node_index)[1]
+            else:
+                sample_weight_node = np.ones(y_node.size)
+
+            # Skip over leaf nodes and nodes with too few samples ######################################
+            if children_left[node_id] == children_right[node_id]:  # is leaf node
+                if isinstance(self, RegressorMixin) and X_node.shape[0] &gt;= self.min_leaf_samples_tao:
+                    # old_score = self.model.score(X, y)
+                    value[node_id] = np.mean(y_node)
+                    &#34;&#34;&#34;
+                    new_score = self.model.score(X, y)
+                    if new_score &gt; old_score:
+                        print(f&#39;\tLeaf improved score from {old_score:0.3f} to {new_score:0.3f}&#39;)
+                    if new_score &lt; old_score:
+                        print(f&#39;\tLeaf reduced score from {old_score:0.3f} to {new_score:0.3f}&#39;)
+                        # raise ValueError(&#39;Leaf update reduced score&#39;)
+                    &#34;&#34;&#34;
+                # print(&#39;\tshapes&#39;, X_node.shape, y_node.shape)
+                # print(&#39;\tvals:&#39;, value[node_id][0][0], np.mean(y_node))
+                # assert value[node_id][0][0] == np.mean(y_node), &#39;unless tree changed, vals should be leaf means&#39;
+                continue
+            elif X_node.shape[0] &lt; self.min_node_samples_tao:
+                continue
+
+            # Compute the outputs for these points if they go left or right ######################################
+            def predict_from_node(X, node_id):
+                &#34;&#34;&#34;Returns predictions for X starting at node node_id&#34;&#34;&#34;
+
+                def predict_from_node(x, node_id):
+                    &#34;&#34;&#34;Returns predictions for x starting at node node_id&#34;&#34;&#34;
+                    if children_left[node_id] == children_right[node_id]:
+                        if isinstance(self, RegressorMixin):
+                            return value[node_id]
+                        if isinstance(self, ClassifierMixin):
+                            # note value stores counts for each class
+                            return np.argmax(value[node_id])
+                    if x[feature[node_id]] &lt;= threshold[node_id]:
+                        return predict_from_node(x, children_left[node_id])
+                    else:
+                        return predict_from_node(x, children_right[node_id])
+
+                preds = np.zeros(X.shape[0])
+                for i in range(X.shape[0]):
+                    preds[i] = predict_from_node(X[i], node_id)
+                return preds
+
+            y_node_left = predict_from_node(X_node, children_left[node_id])
+            y_node_right = predict_from_node(X_node, children_right[node_id])
+            if node_id == 0:  # root node
+                assert np.all(np.logical_or(self.model.predict(X_node) == y_node_left,
+                                            self.model.predict(
+                                                X_node) == y_node_right)), \
+                    &#39;actual predictions should match either predict_from_node left or right&#39;
+
+            # Decide on prediction target (want to go left (0) / right (1) when advantageous)
+            # TAO paper binarizes these (e.g. predict 0 or 1 depending on which of these is better)
+            y_node_absolute_errors = np.abs(np.vstack((y_node - y_node_left,
+                                                       y_node - y_node_right))).T
+
+            # screen out indexes where going left/right has no effect
+            idxs_relevant = y_node_absolute_errors[:,
+                                                   0] != y_node_absolute_errors[:, 1]
+            if idxs_relevant.sum() &lt;= 1:  # nothing to change
+                if self.verbose:
+                    print(&#39;no errors to change&#39;)
+                continue
+            # assert np.all((self.model.predict(X) != y)[idxs_relevant]), &#39;relevant indexes should be errors&#39;
+            y_node_target = np.argmin(y_node_absolute_errors, axis=1)
+            y_node_target = y_node_target[idxs_relevant]
+
+            # here, we optionally weight these errors by the size of the error
+            # if we want this to work for classification, must switch to predict_proba
+            # if self.prediction_task == &#39;regression&#39;:
+            # weight by the difference in error ###############################################################
+            if self.weight_errors:
+                sample_weight_node *= np.abs(
+                    y_node_absolute_errors[:, 1] - y_node_absolute_errors[:, 0])
+            sample_weight_node_target = sample_weight_node[idxs_relevant]
+            X_node = X_node[idxs_relevant]
+
+            # Fit a 1-variable binary classification model on these outputs ######################################
+            # Note: this could be customized (e.g. for sparse oblique trees)
+            best_score = -np.inf
+            best_feat_num = None
+            for feat_num in range(X.shape[1]):
+                if isinstance(self, ClassifierMixin):
+                    if self.node_model == &#39;linear&#39;:
+                        m = LogisticRegression(**self.node_model_args)
+                    elif self.node_model == &#39;stump&#39;:
+                        m = DecisionTreeClassifier(
+                            max_depth=1, **self.node_model_args)
+                if isinstance(self, RegressorMixin):
+                    if self.node_model == &#39;linear&#39;:
+                        m = LinearRegression(**self.node_model_args)
+                    elif self.node_model == &#39;stump&#39;:
+                        m = DecisionTreeRegressor(
+                            max_depth=1, **self.node_model_args)
+                X_node_single_feat = X_node[:, feat_num: feat_num + 1]
+                m.fit(X_node_single_feat, y_node_target,
+                      sample_weight=sample_weight_node_target)
+                score = m.score(X_node_single_feat, y_node_target,
+                                sample_weight=sample_weight_node_target)
+                if score &gt; best_score:
+                    best_score = score
+                    best_feat_num = feat_num
+                    best_model = deepcopy(m)
+                    if self.node_model == &#39;linear&#39;:
+                        best_threshold = -best_model.intercept_ / \
+                            best_model.coef_[0]
+                    elif self.node_model == &#39;stump&#39;:
+                        best_threshold = best_model.tree_.threshold[0]
+            # print((feature[node_id], threshold[node_id]), &#39;\n-&gt;&#39;,
+            #       (best_feat_num, best_threshold))
+
+            # Update the node with the new feature / threshold ######################################
+            old_feat_num = feature[node_id]
+            old_threshold = threshold[node_id]
+            # print(X.sum(), y.sum())
+
+            if X_score is None:
+                X_score = X
+            if y_score is None:
+                y_score = y
+
+            scorer = get_scorer(self.update_scoring)
+
+            old_score = scorer(self.model, X_score, y_score)
+
+            feature[node_id] = best_feat_num
+            threshold[node_id] = best_threshold
+            new_score = scorer(self.model, X_score, y_score)
+
+            # debugging
+            if self.verbose &gt; 1:
+                if old_score == new_score:
+                    print(&#39;\tno change&#39;, best_feat_num, old_feat_num)
+                print(f&#39;\tscore_total {old_score:0.4f} -&gt; {new_score:0.4f}&#39;)
+            if old_score &gt;= new_score:
+                feature[node_id] = old_feat_num
+                threshold[node_id] = old_threshold
+            else:
+                # (Track if any updates were necessary)
+                num_updates += 1
+                if self.verbose &gt; 0:
+                    print(
+                        f&#39;Improved score from {old_score:0.4f} to {new_score:0.4f}&#39;)
+
+            # debugging snippet (if score_m_new &gt; score_m_old, then new_score should be &gt; old_score, but it isn&#39;t!!!!)
+            if self.verbose &gt; 1:
+                &#34;&#34;&#34;
+                X_node_single_feat = X_node[:, best_feat_num: best_feat_num + 1]
+                score_m_new = best_model.score(X_node_single_feat, y_node_target, sample_weight=sample_weight)
+                best_model.tree_.feature[0] = old_feat_num
+                best_model.tree_.threshold[0] = old_threshold
+                X_node_single_feat = X_node[:, old_feat_num: old_feat_num + 1]
+                score_m_old = best_model.score(X_node_single_feat, y_node_target, sample_weight=sample_weight)
+                print(&#39;\t\t&#39;, f&#39;score_local {score_m_old:0.4f} -&gt; {score_m_new:0.4f}&#39;)
+                &#34;&#34;&#34;
+
+        return num_updates
+
+    def predict(self, X):
+        preds = self.model.predict(X)
+        if hasattr(self, &#34;classes_&#34;):
+            print(&#34;classes_&#34;, self.classes_, &#39;preds&#39;, preds)
+            return np.array([self.classes_[int(i)] for i in preds])
+        else:
+            return preds
+
+    def predict_proba(self, X):
+        return self.model.predict_proba(X)
+
+    # def score(self, X, y):
+        # return self.model.score(X, y)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sklearn.base.BaseEstimator</li>
+<li>sklearn.utils._estimator_html_repr._HTMLDocumentationLinkMixin</li>
+<li>sklearn.utils._metadata_requests._MetadataRequester</li>
+</ul>
+<h3>Subclasses</h3>
+<ul class="hlist">
+<li><a title="imodels.tree.tao.TaoTreeClassifier" href="#imodels.tree.tao.TaoTreeClassifier">TaoTreeClassifier</a></li>
+<li><a title="imodels.tree.tao.TaoTreeRegressor" href="#imodels.tree.tao.TaoTreeRegressor">TaoTreeRegressor</a></li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="imodels.tree.tao.TaoTree.fit"><code class="name flex">
+<span>def <span class="ident">fit</span></span>(<span>self, X, y=None, feature_names=None, sample_weight=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="params">Params</h2>
+<p>_sample_weight: array-like of shape (n_samples,), default=None
+Sample weights. If None, then samples are equally weighted.
+Splits that would create child nodes with net zero or negative weight
+are ignored while searching for a split in each node.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def fit(self, X, y=None, feature_names=None, sample_weight=None):
+    &#34;&#34;&#34;
+    Params
+    ------
+    _sample_weight: array-like of shape (n_samples,), default=None
+        Sample weights. If None, then samples are equally weighted.
+        Splits that would create child nodes with net zero or negative weight
+        are ignored while searching for a split in each node.
+    &#34;&#34;&#34;
+    X, y, feature_names = check_fit_arguments(self, X, y, feature_names)
+    if isinstance(self, RegressorMixin):
+        raise Warning(&#39;TAO Regression is not yet tested&#39;)
+    X, y = check_X_y(X, y)
+    y = y.astype(float)
+    if feature_names is not None:
+        self.feature_names_ = feature_names
+    if self.model_type == &#39;CART&#39;:
+        if isinstance(self, ClassifierMixin):
+            self.model = DecisionTreeClassifier(**self.model_args)
+        elif isinstance(self, RegressorMixin):
+            self.model = DecisionTreeRegressor(**self.model_args)
+        self.model.fit(X, y, sample_weight=sample_weight)
+        if self.verbose:
+            print(export_text(self.model))
+        # plot_tree(self.model)
+        # plt.savefig(&#39;/Users/chandan/Desktop/tree.png&#39;, dpi=300)
+        # plt.show()
+
+    if self.randomize_tree:
+        # shuffle CART features
+        np.random.shuffle(self.model.tree_.feature)
+        # np.random.shuffle(self.model.tree_.threshold)
+        for i in range(self.model.tree_.node_count):  # split on feature medians
+            self.model.tree_.threshold[i] = np.median(
+                X[:, self.model.tree_.feature[i]])
+    if self.verbose:
+        print(&#39;starting score&#39;, self.model.score(X, y))
+    for i in range(self.n_iters):
+        num_updates = self._tao_iter_cart(
+            X, y, self.model.tree_, sample_weight=sample_weight)
+        if num_updates == 0:
+            break
+
+    return self</code></pre>
+</details>
+</dd>
+<dt id="imodels.tree.tao.TaoTree.predict"><code class="name flex">
+<span>def <span class="ident">predict</span></span>(<span>self, X)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def predict(self, X):
+    preds = self.model.predict(X)
+    if hasattr(self, &#34;classes_&#34;):
+        print(&#34;classes_&#34;, self.classes_, &#39;preds&#39;, preds)
+        return np.array([self.classes_[int(i)] for i in preds])
+    else:
+        return preds</code></pre>
+</details>
+</dd>
+<dt id="imodels.tree.tao.TaoTree.predict_proba"><code class="name flex">
+<span>def <span class="ident">predict_proba</span></span>(<span>self, X)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def predict_proba(self, X):
+    return self.model.predict_proba(X)
+
+# def score(self, X, y):
+    # return self.model.score(X, y)</code></pre>
+</details>
+</dd>
+<dt id="imodels.tree.tao.TaoTree.set_fit_request"><code class="name flex">
+<span>def <span class="ident">set_fit_request</span></span>(<span>self: <a title="imodels.tree.tao.TaoTree" href="#imodels.tree.tao.TaoTree">TaoTree</a>, *, feature_names: Union[bool, ForwardRef(None), str] = '$UNCHANGED$', sample_weight: Union[bool, ForwardRef(None), str] = '$UNCHANGED$') ‑> <a title="imodels.tree.tao.TaoTree" href="#imodels.tree.tao.TaoTree">TaoTree</a></span>
+</code></dt>
+<dd>
+<div class="desc"><p>Request metadata passed to the <code>fit</code> method.</p>
+<p>Note that this method is only relevant if
+<code>enable_metadata_routing=True</code> (see :func:<code>sklearn.set_config</code>).
+Please see :ref:<code>User Guide &lt;metadata_routing&gt;</code> on how the routing
+mechanism works.</p>
+<p>The options for each parameter are:</p>
+<ul>
+<li>
+<p><code>True</code>: metadata is requested, and passed to <code>fit</code> if provided. The request is ignored if metadata is not provided.</p>
+</li>
+<li>
+<p><code>False</code>: metadata is not requested and the meta-estimator will not pass it to <code>fit</code>.</p>
+</li>
+<li>
+<p><code>None</code>: metadata is not requested, and the meta-estimator will raise an error if the user provides it.</p>
+</li>
+<li>
+<p><code>str</code>: metadata should be passed to the meta-estimator with this given alias instead of the original name.</p>
+</li>
+</ul>
+<p>The default (<code>sklearn.utils.metadata_routing.UNCHANGED</code>) retains the
+existing request. This allows you to change the request for some
+parameters and not others.</p>
+<div class="admonition versionadded">
+<p class="admonition-title">Added in version:&ensp;1.3</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method is only relevant if this estimator is used as a
+sub-estimator of a meta-estimator, e.g. used inside a
+:class:<code>~sklearn.pipeline.Pipeline</code>. Otherwise it has no effect.</p>
+</div>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>feature_names</code></strong> :&ensp;<code>str, True, False,</code> or <code>None</code>,
+default=<code>sklearn.utils.metadata_routing.UNCHANGED</code></dt>
+<dd>Metadata routing for <code>feature_names</code> parameter in <code>fit</code>.</dd>
+<dt><strong><code>sample_weight</code></strong> :&ensp;<code>str, True, False,</code> or <code>None</code>,
+default=<code>sklearn.utils.metadata_routing.UNCHANGED</code></dt>
+<dd>Metadata routing for <code>sample_weight</code> parameter in <code>fit</code>.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><strong><code>self</code></strong> :&ensp;<code>object</code></dt>
+<dd>The updated object.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def func(*args, **kw):
+    &#34;&#34;&#34;Updates the request for provided parameters
+
+    This docstring is overwritten below.
+    See REQUESTER_DOC for expected functionality
+    &#34;&#34;&#34;
+    if not _routing_enabled():
+        raise RuntimeError(
+            &#34;This method is only available when metadata routing is enabled.&#34;
+            &#34; You can enable it using&#34;
+            &#34; sklearn.set_config(enable_metadata_routing=True).&#34;
+        )
+
+    if self.validate_keys and (set(kw) - set(self.keys)):
+        raise TypeError(
+            f&#34;Unexpected args: {set(kw) - set(self.keys)} in {self.name}. &#34;
+            f&#34;Accepted arguments are: {set(self.keys)}&#34;
+        )
+
+    # This makes it possible to use the decorated method as an unbound method,
+    # for instance when monkeypatching.
+    # https://github.com/scikit-learn/scikit-learn/issues/28632
+    if instance is None:
+        _instance = args[0]
+        args = args[1:]
+    else:
+        _instance = instance
+
+    # Replicating python&#39;s behavior when positional args are given other than
+    # `self`, and `self` is only allowed if this method is unbound.
+    if args:
+        raise TypeError(
+            f&#34;set_{self.name}_request() takes 0 positional argument but&#34;
+            f&#34; {len(args)} were given&#34;
+        )
+
+    requests = _instance._get_metadata_request()
+    method_metadata_request = getattr(requests, self.name)
+
+    for prop, alias in kw.items():
+        if alias is not UNCHANGED:
+            method_metadata_request.add_request(param=prop, alias=alias)
+    _instance._metadata_request = requests
+
+    return _instance</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="imodels.tree.tao.TaoTreeClassifier"><code class="flex name class">
+<span>class <span class="ident">TaoTreeClassifier</span></span>
+<span>(</span><span>model_type: str = 'CART', n_iters: int = 20, model_args: dict = {'max_leaf_nodes': 15}, randomize_tree=False, update_scoring='accuracy', min_node_samples_tao=3, min_leaf_samples_tao=2, node_model='stump', node_model_args: dict = {}, reg_param: float = 0.001, weight_errors: bool = False, verbose: int = 0)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Base class for all estimators in scikit-learn.</p>
+<p>Inheriting from this class provides default implementations of:</p>
+<ul>
+<li>setting and getting parameters used by <code>GridSearchCV</code> and friends;</li>
+<li>textual and HTML representation displayed in terminals and IDEs;</li>
+<li>estimator serialization;</li>
+<li>parameters validation;</li>
+<li>data validation;</li>
+<li>feature names validation.</li>
+</ul>
+<p>Read more in the :ref:<code>User Guide &lt;rolling_your_own_estimator&gt;</code>.</p>
+<h2 id="notes">Notes</h2>
+<p>All estimators should specify all the parameters that can be set
+at the class level in their <code>__init__</code> as explicit keyword
+arguments (no <code>*args</code> or <code>**kwargs</code>).</p>
+<h2 id="examples">Examples</h2>
+<pre><code class="language-python-repl">&gt;&gt;&gt; import numpy as np
+&gt;&gt;&gt; from sklearn.base import BaseEstimator
+&gt;&gt;&gt; class MyEstimator(BaseEstimator):
+...     def __init__(self, *, param=1):
+...         self.param = param
+...     def fit(self, X, y=None):
+...         self.is_fitted_ = True
+...         return self
+...     def predict(self, X):
+...         return np.full(shape=X.shape[0], fill_value=self.param)
+&gt;&gt;&gt; estimator = MyEstimator(param=2)
+&gt;&gt;&gt; estimator.get_params()
+{'param': 2}
+&gt;&gt;&gt; X = np.array([[1, 2], [2, 3], [3, 4]])
+&gt;&gt;&gt; y = np.array([1, 0, 1])
+&gt;&gt;&gt; estimator.fit(X, y).predict(X)
+array([2, 2, 2])
+&gt;&gt;&gt; estimator.set_params(param=3).fit(X, y).predict(X)
+array([3, 3, 3])
+</code></pre>
+<p>TAO: Alternating optimization of decision trees, with application to learning sparse oblique trees (Neurips 2018)
+<a href="https://proceedings.neurips.cc/paper/2018/hash/185c29dc24325934ee377cfda20e414c-Abstract.html">https://proceedings.neurips.cc/paper/2018/hash/185c29dc24325934ee377cfda20e414c-Abstract.html</a>
+Note: this implementation learns single-feature splits rather than oblique trees.</p>
+<p>Currently supports
+- given a CART tree, posthoc improve it with TAO
+- also works with HSTreeCV</p>
+<p>Todo
+- update bottom to top otherwise input points don't get updated
+- update leaf nodes
+- support regression
+- support FIGS
+- support error-weighting
+- support oblique trees
+- support generic models at decision node
+- support pruning (e.g. if weights -&gt; 0, then remove a node)
+- support classifiers in leaves</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>model_type</code></strong> :&ensp;<code>str</code></dt>
+<dd>'CART' or 'FIGS'</dd>
+<dt><strong><code>n_iters</code></strong></dt>
+<dd>Number of iterations to run TAO</dd>
+<dt><strong><code>model_args</code></strong></dt>
+<dd>Arguments to pass to the model</dd>
+<dt><strong><code>randomize_tree</code></strong></dt>
+<dd>Whether to randomize the tree before each iteration</dd>
+<dt><strong><code>min_node_samples_tao</code></strong> :&ensp;<code>int</code></dt>
+<dd>Minimum number of samples in a node to apply tao</dd>
+<dt><strong><code>min_leaf_samples_tao</code></strong> :&ensp;<code>int</code></dt>
+<dd>&nbsp;</dd>
+<dt><strong><code>node_model</code></strong> :&ensp;<code>str</code></dt>
+<dd>'stump' or 'linear'</dd>
+<dt><strong><code>reg_param</code></strong></dt>
+<dd>Regularization parameter for node-wise linear model (if node_model is 'linear')</dd>
+<dt><strong><code>verbose</code></strong> :&ensp;<code>int</code></dt>
+<dd>Verbosity level</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class TaoTreeClassifier(TaoTree, ClassifierMixin):
+    pass</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="imodels.tree.tao.TaoTree" href="#imodels.tree.tao.TaoTree">TaoTree</a></li>
+<li>sklearn.base.BaseEstimator</li>
+<li>sklearn.utils._estimator_html_repr._HTMLDocumentationLinkMixin</li>
+<li>sklearn.utils._metadata_requests._MetadataRequester</li>
+<li>sklearn.base.ClassifierMixin</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="imodels.tree.tao.TaoTreeClassifier.set_score_request"><code class="name flex">
+<span>def <span class="ident">set_score_request</span></span>(<span>self: <a title="imodels.tree.tao.TaoTreeClassifier" href="#imodels.tree.tao.TaoTreeClassifier">TaoTreeClassifier</a>, *, sample_weight: Union[bool, ForwardRef(None), str] = '$UNCHANGED$') ‑> <a title="imodels.tree.tao.TaoTreeClassifier" href="#imodels.tree.tao.TaoTreeClassifier">TaoTreeClassifier</a></span>
+</code></dt>
+<dd>
+<div class="desc"><p>Request metadata passed to the <code>score</code> method.</p>
+<p>Note that this method is only relevant if
+<code>enable_metadata_routing=True</code> (see :func:<code>sklearn.set_config</code>).
+Please see :ref:<code>User Guide &lt;metadata_routing&gt;</code> on how the routing
+mechanism works.</p>
+<p>The options for each parameter are:</p>
+<ul>
+<li>
+<p><code>True</code>: metadata is requested, and passed to <code>score</code> if provided. The request is ignored if metadata is not provided.</p>
+</li>
+<li>
+<p><code>False</code>: metadata is not requested and the meta-estimator will not pass it to <code>score</code>.</p>
+</li>
+<li>
+<p><code>None</code>: metadata is not requested, and the meta-estimator will raise an error if the user provides it.</p>
+</li>
+<li>
+<p><code>str</code>: metadata should be passed to the meta-estimator with this given alias instead of the original name.</p>
+</li>
+</ul>
+<p>The default (<code>sklearn.utils.metadata_routing.UNCHANGED</code>) retains the
+existing request. This allows you to change the request for some
+parameters and not others.</p>
+<div class="admonition versionadded">
+<p class="admonition-title">Added in version:&ensp;1.3</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method is only relevant if this estimator is used as a
+sub-estimator of a meta-estimator, e.g. used inside a
+:class:<code>~sklearn.pipeline.Pipeline</code>. Otherwise it has no effect.</p>
+</div>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>sample_weight</code></strong> :&ensp;<code>str, True, False,</code> or <code>None</code>,
+default=<code>sklearn.utils.metadata_routing.UNCHANGED</code></dt>
+<dd>Metadata routing for <code>sample_weight</code> parameter in <code>score</code>.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><strong><code>self</code></strong> :&ensp;<code>object</code></dt>
+<dd>The updated object.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def func(*args, **kw):
+    &#34;&#34;&#34;Updates the request for provided parameters
+
+    This docstring is overwritten below.
+    See REQUESTER_DOC for expected functionality
+    &#34;&#34;&#34;
+    if not _routing_enabled():
+        raise RuntimeError(
+            &#34;This method is only available when metadata routing is enabled.&#34;
+            &#34; You can enable it using&#34;
+            &#34; sklearn.set_config(enable_metadata_routing=True).&#34;
+        )
+
+    if self.validate_keys and (set(kw) - set(self.keys)):
+        raise TypeError(
+            f&#34;Unexpected args: {set(kw) - set(self.keys)} in {self.name}. &#34;
+            f&#34;Accepted arguments are: {set(self.keys)}&#34;
+        )
+
+    # This makes it possible to use the decorated method as an unbound method,
+    # for instance when monkeypatching.
+    # https://github.com/scikit-learn/scikit-learn/issues/28632
+    if instance is None:
+        _instance = args[0]
+        args = args[1:]
+    else:
+        _instance = instance
+
+    # Replicating python&#39;s behavior when positional args are given other than
+    # `self`, and `self` is only allowed if this method is unbound.
+    if args:
+        raise TypeError(
+            f&#34;set_{self.name}_request() takes 0 positional argument but&#34;
+            f&#34; {len(args)} were given&#34;
+        )
+
+    requests = _instance._get_metadata_request()
+    method_metadata_request = getattr(requests, self.name)
+
+    for prop, alias in kw.items():
+        if alias is not UNCHANGED:
+            method_metadata_request.add_request(param=prop, alias=alias)
+    _instance._metadata_request = requests
+
+    return _instance</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Inherited members</h3>
+<ul class="hlist">
+<li><code><b><a title="imodels.tree.tao.TaoTree" href="#imodels.tree.tao.TaoTree">TaoTree</a></b></code>:
+<ul class="hlist">
+<li><code><a title="imodels.tree.tao.TaoTree.fit" href="#imodels.tree.tao.TaoTree.fit">fit</a></code></li>
+<li><code><a title="imodels.tree.tao.TaoTree.set_fit_request" href="#imodels.tree.tao.TaoTree.set_fit_request">set_fit_request</a></code></li>
+</ul>
+</li>
+</ul>
+</dd>
+<dt id="imodels.tree.tao.TaoTreeRegressor"><code class="flex name class">
+<span>class <span class="ident">TaoTreeRegressor</span></span>
+<span>(</span><span>model_type: str = 'CART', n_iters: int = 20, model_args: dict = {'max_leaf_nodes': 15}, randomize_tree=False, update_scoring='accuracy', min_node_samples_tao=3, min_leaf_samples_tao=2, node_model='stump', node_model_args: dict = {}, reg_param: float = 0.001, weight_errors: bool = False, verbose: int = 0)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Base class for all estimators in scikit-learn.</p>
+<p>Inheriting from this class provides default implementations of:</p>
+<ul>
+<li>setting and getting parameters used by <code>GridSearchCV</code> and friends;</li>
+<li>textual and HTML representation displayed in terminals and IDEs;</li>
+<li>estimator serialization;</li>
+<li>parameters validation;</li>
+<li>data validation;</li>
+<li>feature names validation.</li>
+</ul>
+<p>Read more in the :ref:<code>User Guide &lt;rolling_your_own_estimator&gt;</code>.</p>
+<h2 id="notes">Notes</h2>
+<p>All estimators should specify all the parameters that can be set
+at the class level in their <code>__init__</code> as explicit keyword
+arguments (no <code>*args</code> or <code>**kwargs</code>).</p>
+<h2 id="examples">Examples</h2>
+<pre><code class="language-python-repl">&gt;&gt;&gt; import numpy as np
+&gt;&gt;&gt; from sklearn.base import BaseEstimator
+&gt;&gt;&gt; class MyEstimator(BaseEstimator):
+...     def __init__(self, *, param=1):
+...         self.param = param
+...     def fit(self, X, y=None):
+...         self.is_fitted_ = True
+...         return self
+...     def predict(self, X):
+...         return np.full(shape=X.shape[0], fill_value=self.param)
+&gt;&gt;&gt; estimator = MyEstimator(param=2)
+&gt;&gt;&gt; estimator.get_params()
+{'param': 2}
+&gt;&gt;&gt; X = np.array([[1, 2], [2, 3], [3, 4]])
+&gt;&gt;&gt; y = np.array([1, 0, 1])
+&gt;&gt;&gt; estimator.fit(X, y).predict(X)
+array([2, 2, 2])
+&gt;&gt;&gt; estimator.set_params(param=3).fit(X, y).predict(X)
+array([3, 3, 3])
+</code></pre>
+<p>TAO: Alternating optimization of decision trees, with application to learning sparse oblique trees (Neurips 2018)
+<a href="https://proceedings.neurips.cc/paper/2018/hash/185c29dc24325934ee377cfda20e414c-Abstract.html">https://proceedings.neurips.cc/paper/2018/hash/185c29dc24325934ee377cfda20e414c-Abstract.html</a>
+Note: this implementation learns single-feature splits rather than oblique trees.</p>
+<p>Currently supports
+- given a CART tree, posthoc improve it with TAO
+- also works with HSTreeCV</p>
+<p>Todo
+- update bottom to top otherwise input points don't get updated
+- update leaf nodes
+- support regression
+- support FIGS
+- support error-weighting
+- support oblique trees
+- support generic models at decision node
+- support pruning (e.g. if weights -&gt; 0, then remove a node)
+- support classifiers in leaves</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>model_type</code></strong> :&ensp;<code>str</code></dt>
+<dd>'CART' or 'FIGS'</dd>
+<dt><strong><code>n_iters</code></strong></dt>
+<dd>Number of iterations to run TAO</dd>
+<dt><strong><code>model_args</code></strong></dt>
+<dd>Arguments to pass to the model</dd>
+<dt><strong><code>randomize_tree</code></strong></dt>
+<dd>Whether to randomize the tree before each iteration</dd>
+<dt><strong><code>min_node_samples_tao</code></strong> :&ensp;<code>int</code></dt>
+<dd>Minimum number of samples in a node to apply tao</dd>
+<dt><strong><code>min_leaf_samples_tao</code></strong> :&ensp;<code>int</code></dt>
+<dd>&nbsp;</dd>
+<dt><strong><code>node_model</code></strong> :&ensp;<code>str</code></dt>
+<dd>'stump' or 'linear'</dd>
+<dt><strong><code>reg_param</code></strong></dt>
+<dd>Regularization parameter for node-wise linear model (if node_model is 'linear')</dd>
+<dt><strong><code>verbose</code></strong> :&ensp;<code>int</code></dt>
+<dd>Verbosity level</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class TaoTreeRegressor(TaoTree, RegressorMixin):
+    pass</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="imodels.tree.tao.TaoTree" href="#imodels.tree.tao.TaoTree">TaoTree</a></li>
+<li>sklearn.base.BaseEstimator</li>
+<li>sklearn.utils._estimator_html_repr._HTMLDocumentationLinkMixin</li>
+<li>sklearn.utils._metadata_requests._MetadataRequester</li>
+<li>sklearn.base.RegressorMixin</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="imodels.tree.tao.TaoTreeRegressor.set_score_request"><code class="name flex">
+<span>def <span class="ident">set_score_request</span></span>(<span>self: <a title="imodels.tree.tao.TaoTreeRegressor" href="#imodels.tree.tao.TaoTreeRegressor">TaoTreeRegressor</a>, *, sample_weight: Union[bool, ForwardRef(None), str] = '$UNCHANGED$') ‑> <a title="imodels.tree.tao.TaoTreeRegressor" href="#imodels.tree.tao.TaoTreeRegressor">TaoTreeRegressor</a></span>
+</code></dt>
+<dd>
+<div class="desc"><p>Request metadata passed to the <code>score</code> method.</p>
+<p>Note that this method is only relevant if
+<code>enable_metadata_routing=True</code> (see :func:<code>sklearn.set_config</code>).
+Please see :ref:<code>User Guide &lt;metadata_routing&gt;</code> on how the routing
+mechanism works.</p>
+<p>The options for each parameter are:</p>
+<ul>
+<li>
+<p><code>True</code>: metadata is requested, and passed to <code>score</code> if provided. The request is ignored if metadata is not provided.</p>
+</li>
+<li>
+<p><code>False</code>: metadata is not requested and the meta-estimator will not pass it to <code>score</code>.</p>
+</li>
+<li>
+<p><code>None</code>: metadata is not requested, and the meta-estimator will raise an error if the user provides it.</p>
+</li>
+<li>
+<p><code>str</code>: metadata should be passed to the meta-estimator with this given alias instead of the original name.</p>
+</li>
+</ul>
+<p>The default (<code>sklearn.utils.metadata_routing.UNCHANGED</code>) retains the
+existing request. This allows you to change the request for some
+parameters and not others.</p>
+<div class="admonition versionadded">
+<p class="admonition-title">Added in version:&ensp;1.3</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method is only relevant if this estimator is used as a
+sub-estimator of a meta-estimator, e.g. used inside a
+:class:<code>~sklearn.pipeline.Pipeline</code>. Otherwise it has no effect.</p>
+</div>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>sample_weight</code></strong> :&ensp;<code>str, True, False,</code> or <code>None</code>,
+default=<code>sklearn.utils.metadata_routing.UNCHANGED</code></dt>
+<dd>Metadata routing for <code>sample_weight</code> parameter in <code>score</code>.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><strong><code>self</code></strong> :&ensp;<code>object</code></dt>
+<dd>The updated object.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def func(*args, **kw):
+    &#34;&#34;&#34;Updates the request for provided parameters
+
+    This docstring is overwritten below.
+    See REQUESTER_DOC for expected functionality
+    &#34;&#34;&#34;
+    if not _routing_enabled():
+        raise RuntimeError(
+            &#34;This method is only available when metadata routing is enabled.&#34;
+            &#34; You can enable it using&#34;
+            &#34; sklearn.set_config(enable_metadata_routing=True).&#34;
+        )
+
+    if self.validate_keys and (set(kw) - set(self.keys)):
+        raise TypeError(
+            f&#34;Unexpected args: {set(kw) - set(self.keys)} in {self.name}. &#34;
+            f&#34;Accepted arguments are: {set(self.keys)}&#34;
+        )
+
+    # This makes it possible to use the decorated method as an unbound method,
+    # for instance when monkeypatching.
+    # https://github.com/scikit-learn/scikit-learn/issues/28632
+    if instance is None:
+        _instance = args[0]
+        args = args[1:]
+    else:
+        _instance = instance
+
+    # Replicating python&#39;s behavior when positional args are given other than
+    # `self`, and `self` is only allowed if this method is unbound.
+    if args:
+        raise TypeError(
+            f&#34;set_{self.name}_request() takes 0 positional argument but&#34;
+            f&#34; {len(args)} were given&#34;
+        )
+
+    requests = _instance._get_metadata_request()
+    method_metadata_request = getattr(requests, self.name)
+
+    for prop, alias in kw.items():
+        if alias is not UNCHANGED:
+            method_metadata_request.add_request(param=prop, alias=alias)
+    _instance._metadata_request = requests
+
+    return _instance</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Inherited members</h3>
+<ul class="hlist">
+<li><code><b><a title="imodels.tree.tao.TaoTree" href="#imodels.tree.tao.TaoTree">TaoTree</a></b></code>:
+<ul class="hlist">
+<li><code><a title="imodels.tree.tao.TaoTree.fit" href="#imodels.tree.tao.TaoTree.fit">fit</a></code></li>
+<li><code><a title="imodels.tree.tao.TaoTree.set_fit_request" href="#imodels.tree.tao.TaoTree.set_fit_request">set_fit_request</a></code></li>
+</ul>
+</li>
+</ul>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index 🔍</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="imodels.tree" href="index.html">imodels.tree</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="imodels.tree.tao.TaoTree" href="#imodels.tree.tao.TaoTree">TaoTree</a></code></h4>
+<ul class="">
+<li><code><a title="imodels.tree.tao.TaoTree.fit" href="#imodels.tree.tao.TaoTree.fit">fit</a></code></li>
+<li><code><a title="imodels.tree.tao.TaoTree.predict" href="#imodels.tree.tao.TaoTree.predict">predict</a></code></li>
+<li><code><a title="imodels.tree.tao.TaoTree.predict_proba" href="#imodels.tree.tao.TaoTree.predict_proba">predict_proba</a></code></li>
+<li><code><a title="imodels.tree.tao.TaoTree.set_fit_request" href="#imodels.tree.tao.TaoTree.set_fit_request">set_fit_request</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="imodels.tree.tao.TaoTreeClassifier" href="#imodels.tree.tao.TaoTreeClassifier">TaoTreeClassifier</a></code></h4>
+<ul class="">
+<li><code><a title="imodels.tree.tao.TaoTreeClassifier.set_score_request" href="#imodels.tree.tao.TaoTreeClassifier.set_score_request">set_score_request</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="imodels.tree.tao.TaoTreeRegressor" href="#imodels.tree.tao.TaoTreeRegressor">TaoTreeRegressor</a></code></h4>
+<ul class="">
+<li><code><a title="imodels.tree.tao.TaoTreeRegressor.set_score_request" href="#imodels.tree.tao.TaoTreeRegressor.set_score_request">set_score_request</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img align="center" width=100% src="https://csinva.io/imodels/img/anim.gif"> </img></p>
+<!-- add wave animation -->
+</nav>
+</main>
+<footer id="footer">
+</footer>
+</body>
+</html>
+<!-- add github corner -->
+<a href="https://github.com/csinva/imodels" class="github-corner" aria-label="View source on GitHub"><svg width="120" height="120" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="m128.3,109.0 c113.8,99.7 119.0,89.6 119.0,89.6 c122.0,82.7 120.5,78.6 120.5,78.6 c119.2,72.0 123.4,76.3 123.4,76.3 c127.3,80.9 125.5,87.3 125.5,87.3 c122.9,97.6 130.6,101.9 134.4,103.2" fill="currentcolor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<!-- add wave animation stylesheet -->
+<link rel="stylesheet" href="github.css">

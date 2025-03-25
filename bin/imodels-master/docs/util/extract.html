@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">from typing import Iterable, Tuple, List
+
+import numpy as np
+import pandas as pd
+from mlxtend import frequent_patterns as mlx
+from sklearn.ensemble import BaggingRegressor, GradientBoostingRegressor, RandomForestRegressor, \
+    GradientBoostingClassifier, RandomForestClassifier
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.utils.validation import check_array
+import inspect
+from imodels.util import rule, convert
+
+
+def extract_fpgrowth(X,
+                     minsupport=0.1,
+                     maxcardinality=2,
+                     verbose=False) -&gt; List[Tuple]:
+
+    itemsets_df = mlx.fpgrowth(
+        X, min_support=minsupport, max_len=maxcardinality)
+    itemsets_indices = [tuple(s[1]) for s in itemsets_df.values]
+    itemsets = [np.array(X.columns)[list(inds)] for inds in itemsets_indices]
+    itemsets = list(map(tuple, itemsets))
+    if verbose:
+        print(len(itemsets), &#39;rules mined&#39;)
+
+    return itemsets
+
+
+def extract_rulefit(X, y, feature_names,
+                    n_estimators=10,
+                    tree_size=4,
+                    memory_par=0.01,
+                    tree_generator=None,
+                    exp_rand_tree_size=True,
+                    random_state=None) -&gt; List[str]:
+    if tree_generator is None:
+        sample_fract_ = min(0.5, (100 + 6 * np.sqrt(X.shape[0])) / X.shape[0])
+
+        tree_generator = GradientBoostingRegressor(n_estimators=n_estimators,
+                                                   max_leaf_nodes=tree_size,
+                                                   learning_rate=memory_par,
+                                                   subsample=sample_fract_,
+                                                   random_state=random_state,
+                                                   max_depth=100)
+
+    if type(tree_generator) not in [GradientBoostingClassifier, GradientBoostingRegressor,
+                                    RandomForestRegressor, RandomForestClassifier]:
+        raise ValueError(
+            &#34;RuleFit only works with GradientBoostingClassifier(), GradientBoostingRegressor(), &#34;
+            &#34;RandomForestRegressor() or RandomForestClassifier()&#34;)
+
+    # fit tree generator
+    if not exp_rand_tree_size:  # simply fit with constant tree size
+        tree_generator.fit(X, y)
+    else:  # randomise tree size as per Friedman 2005 Sec 3.3
+        np.random.seed(random_state)
+        tree_sizes = np.random.exponential(
+            scale=tree_size - 2, size=n_estimators)
+        tree_sizes = np.asarray([2 + np.floor(tree_sizes[i_])
+                                for i_ in np.arange(len(tree_sizes))], dtype=int)
+        tree_generator.set_params(warm_start=True)
+        curr_est_ = 0
+        for i_size in np.arange(len(tree_sizes)):
+            size = tree_sizes[i_size]
+            tree_generator.set_params(n_estimators=curr_est_ + 1)
+            tree_generator.set_params(max_leaf_nodes=size)
+            random_state_add = random_state if random_state else 0
+            tree_generator.set_params(
+                random_state=i_size + random_state_add)  # warm_state=True seems to reset random_state, such that the trees are highly correlated, unless we manually change the random_sate here.
+            tree_generator.fit(np.copy(X, order=&#39;C&#39;), np.copy(y, order=&#39;C&#39;))
+            curr_est_ = curr_est_ + 1
+        tree_generator.set_params(warm_start=False)
+
+    if isinstance(tree_generator, RandomForestRegressor) or isinstance(tree_generator, RandomForestClassifier):
+        estimators_ = [[x] for x in tree_generator.estimators_]
+    else:
+        estimators_ = tree_generator.estimators_
+
+    seen_rules = set()
+    extracted_rules = []
+    for estimator in estimators_:
+        for rule_value_pair in convert.tree_to_rules(estimator[0], np.array(feature_names), prediction_values=True):
+
+            rule_obj = rule.Rule(rule_value_pair[0])
+
+            if rule_obj not in seen_rules:
+                extracted_rules.append(rule_value_pair)
+                seen_rules.add(rule_obj)
+
+    extracted_rules = sorted(extracted_rules, key=lambda x: x[1])
+    extracted_rules = list(map(lambda x: x[0], extracted_rules))
+    return extracted_rules
+
+
+def extract_skope(X, y, feature_names,
+                  sample_weight=None,
+                  n_estimators=10,
+                  max_samples=.8,
+                  max_samples_features=1.,
+                  bootstrap=False,
+                  bootstrap_features=False,
+                  max_depths=[3],
+                  max_features=1.,
+                  min_samples_split=2,
+                  n_jobs=1,
+                  random_state=None,
+                  verbose=0) -&gt; Tuple[List[str], List[np.array], List[np.array]]:
+    ensembles = []
+    if not isinstance(max_depths, Iterable):
+        max_depths = [max_depths]
+
+    for max_depth in max_depths:
+
+        # pass different key based on sklearn version
+        estimator = DecisionTreeRegressor(
+            max_depth=max_depth,
+            max_features=max_features,
+            min_samples_split=min_samples_split,
+
+        )
+        init_signature = inspect.signature(BaggingRegressor.__init__)
+        estimator_key = &#39;estimator&#39; if &#39;estimator&#39; in init_signature.parameters.keys(
+        ) else &#39;base_estimator&#39;
+        kwargs = {
+            estimator_key: estimator,
+        }
+        bagging_clf = BaggingRegressor(
+            n_estimators=n_estimators,
+            max_samples=max_samples,
+            max_features=max_samples_features,
+            bootstrap=bootstrap,
+            bootstrap_features=bootstrap_features,
+            # oob_score=... XXX may be added
+            # if selection on tree perf needed.
+            # warm_start=... XXX may be added to increase computation perf.
+            n_jobs=n_jobs,
+            random_state=random_state,
+            verbose=verbose,
+            **kwargs
+        )
+        ensembles.append(bagging_clf)
+
+    y_reg = y
+    if sample_weight is not None:
+        sample_weight = check_array(sample_weight, ensure_2d=False)
+        weights = sample_weight - sample_weight.min()
+        contamination = float(sum(y)) / len(y)
+        y_reg = (
+            pow(weights, 0.5) * 0.5 / contamination * (y &gt; 0) -
+            pow((weights).mean(), 0.5) * (y == 0)
+        )
+        y_reg = 1. / (1 + np.exp(-y_reg))  # sigmoid
+
+    for e in ensembles[:len(ensembles) // 2]:
+        e.fit(X, y)
+
+    for e in ensembles[len(ensembles) // 2:]:
+        e.fit(X, y_reg)
+
+    estimators_, estimators_samples_, estimators_features_ = [], [], []
+    for ensemble in ensembles:
+        estimators_ += ensemble.estimators_
+        estimators_samples_ += ensemble.estimators_samples_
+        estimators_features_ += ensemble.estimators_features_
+
+    extracted_rules = []
+    for estimator, features in zip(estimators_, estimators_features_):
+        extracted_rules.append(convert.tree_to_rules(
+            estimator, np.array(feature_names)[features]))
+
+    return extracted_rules, estimators_samples_, estimators_features_
+
+
+def extract_marginal_curves(clf, X, max_evals=100):
+    &#34;&#34;&#34;Uses predict_proba to compute marginal curves.
+    Assumes clf is a classifier with a predict_proba method and that classifier is additive across features
+    For GAM, this returns the shape functions
+
+    Params
+    ------
+    clf : classifier
+        A classifier with a predict_proba method
+    X : array-like
+        The data to compute the marginal curves on (used to calculate unique feature vals)
+    max_evals : int
+        The maximum number of evaluations to make for each feature
+
+    Returns
+    -------
+    feature_vals_list : list of arrays
+        The values of each feature for which the shape function is evaluated.
+    shape_function_vals_list : list of arrays
+        The shape function evaluated at each value of the corresponding feature.
+    &#34;&#34;&#34;
+    p = X.shape[1]
+    dummy_input = np.zeros((1, p))
+    base = clf.predict_proba(dummy_input)[:, 1][0]
+    feature_vals_list = []
+    shape_function_vals_list = []
+    for feat_num in range(p):
+        feature_vals = sorted(np.unique(X[:, feat_num]))
+        while len(feature_vals) &gt; max_evals:
+            feature_vals = feature_vals[::2]
+        dummy_input = np.zeros((len(feature_vals), p))
+        dummy_input[:, feat_num] = feature_vals
+        shape_function_vals = clf.predict_proba(dummy_input)[:, 1] - base
+        feature_vals_list.append(feature_vals)
+        shape_function_vals_list.append(shape_function_vals.tolist())
+    return feature_vals_list, shape_function_vals_list
+
+
+if __name__ == &#39;__main__&#39;:
+    init_signature = inspect.signature(BaggingRegressor.__init__)
+    print(&#39;estimator&#39; in init_signature.parameters.keys())</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="imodels.util.extract.extract_fpgrowth"><code class="name flex">
+<span>def <span class="ident">extract_fpgrowth</span></span>(<span>X, minsupport=0.1, maxcardinality=2, verbose=False) ‑> List[Tuple]</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def extract_fpgrowth(X,
+                     minsupport=0.1,
+                     maxcardinality=2,
+                     verbose=False) -&gt; List[Tuple]:
+
+    itemsets_df = mlx.fpgrowth(
+        X, min_support=minsupport, max_len=maxcardinality)
+    itemsets_indices = [tuple(s[1]) for s in itemsets_df.values]
+    itemsets = [np.array(X.columns)[list(inds)] for inds in itemsets_indices]
+    itemsets = list(map(tuple, itemsets))
+    if verbose:
+        print(len(itemsets), &#39;rules mined&#39;)
+
+    return itemsets</code></pre>
+</details>
+</dd>
+<dt id="imodels.util.extract.extract_marginal_curves"><code class="name flex">
+<span>def <span class="ident">extract_marginal_curves</span></span>(<span>clf, X, max_evals=100)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Uses predict_proba to compute marginal curves.
+Assumes clf is a classifier with a predict_proba method and that classifier is additive across features
+For GAM, this returns the shape functions</p>
+<h2 id="params">Params</h2>
+<p>clf : classifier
+A classifier with a predict_proba method
+X : array-like
+The data to compute the marginal curves on (used to calculate unique feature vals)
+max_evals : int
+The maximum number of evaluations to make for each feature</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><strong><code>feature_vals_list</code></strong> :&ensp;<code>list</code> of <code>arrays</code></dt>
+<dd>The values of each feature for which the shape function is evaluated.</dd>
+<dt><strong><code>shape_function_vals_list</code></strong> :&ensp;<code>list</code> of <code>arrays</code></dt>
+<dd>The shape function evaluated at each value of the corresponding feature.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def extract_marginal_curves(clf, X, max_evals=100):
+    &#34;&#34;&#34;Uses predict_proba to compute marginal curves.
+    Assumes clf is a classifier with a predict_proba method and that classifier is additive across features
+    For GAM, this returns the shape functions
+
+    Params
+    ------
+    clf : classifier
+        A classifier with a predict_proba method
+    X : array-like
+        The data to compute the marginal curves on (used to calculate unique feature vals)
+    max_evals : int
+        The maximum number of evaluations to make for each feature
+
+    Returns
+    -------
+    feature_vals_list : list of arrays
+        The values of each feature for which the shape function is evaluated.
+    shape_function_vals_list : list of arrays
+        The shape function evaluated at each value of the corresponding feature.
+    &#34;&#34;&#34;
+    p = X.shape[1]
+    dummy_input = np.zeros((1, p))
+    base = clf.predict_proba(dummy_input)[:, 1][0]
+    feature_vals_list = []
+    shape_function_vals_list = []
+    for feat_num in range(p):
+        feature_vals = sorted(np.unique(X[:, feat_num]))
+        while len(feature_vals) &gt; max_evals:
+            feature_vals = feature_vals[::2]
+        dummy_input = np.zeros((len(feature_vals), p))
+        dummy_input[:, feat_num] = feature_vals
+        shape_function_vals = clf.predict_proba(dummy_input)[:, 1] - base
+        feature_vals_list.append(feature_vals)
+        shape_function_vals_list.append(shape_function_vals.tolist())
+    return feature_vals_list, shape_function_vals_list</code></pre>
+</details>
+</dd>
+<dt id="imodels.util.extract.extract_rulefit"><code class="name flex">
+<span>def <span class="ident">extract_rulefit</span></span>(<span>X, y, feature_names, n_estimators=10, tree_size=4, memory_par=0.01, tree_generator=None, exp_rand_tree_size=True, random_state=None) ‑> List[str]</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def extract_rulefit(X, y, feature_names,
+                    n_estimators=10,
+                    tree_size=4,
+                    memory_par=0.01,
+                    tree_generator=None,
+                    exp_rand_tree_size=True,
+                    random_state=None) -&gt; List[str]:
+    if tree_generator is None:
+        sample_fract_ = min(0.5, (100 + 6 * np.sqrt(X.shape[0])) / X.shape[0])
+
+        tree_generator = GradientBoostingRegressor(n_estimators=n_estimators,
+                                                   max_leaf_nodes=tree_size,
+                                                   learning_rate=memory_par,
+                                                   subsample=sample_fract_,
+                                                   random_state=random_state,
+                                                   max_depth=100)
+
+    if type(tree_generator) not in [GradientBoostingClassifier, GradientBoostingRegressor,
+                                    RandomForestRegressor, RandomForestClassifier]:
+        raise ValueError(
+            &#34;RuleFit only works with GradientBoostingClassifier(), GradientBoostingRegressor(), &#34;
+            &#34;RandomForestRegressor() or RandomForestClassifier()&#34;)
+
+    # fit tree generator
+    if not exp_rand_tree_size:  # simply fit with constant tree size
+        tree_generator.fit(X, y)
+    else:  # randomise tree size as per Friedman 2005 Sec 3.3
+        np.random.seed(random_state)
+        tree_sizes = np.random.exponential(
+            scale=tree_size - 2, size=n_estimators)
+        tree_sizes = np.asarray([2 + np.floor(tree_sizes[i_])
+                                for i_ in np.arange(len(tree_sizes))], dtype=int)
+        tree_generator.set_params(warm_start=True)
+        curr_est_ = 0
+        for i_size in np.arange(len(tree_sizes)):
+            size = tree_sizes[i_size]
+            tree_generator.set_params(n_estimators=curr_est_ + 1)
+            tree_generator.set_params(max_leaf_nodes=size)
+            random_state_add = random_state if random_state else 0
+            tree_generator.set_params(
+                random_state=i_size + random_state_add)  # warm_state=True seems to reset random_state, such that the trees are highly correlated, unless we manually change the random_sate here.
+            tree_generator.fit(np.copy(X, order=&#39;C&#39;), np.copy(y, order=&#39;C&#39;))
+            curr_est_ = curr_est_ + 1
+        tree_generator.set_params(warm_start=False)
+
+    if isinstance(tree_generator, RandomForestRegressor) or isinstance(tree_generator, RandomForestClassifier):
+        estimators_ = [[x] for x in tree_generator.estimators_]
+    else:
+        estimators_ = tree_generator.estimators_
+
+    seen_rules = set()
+    extracted_rules = []
+    for estimator in estimators_:
+        for rule_value_pair in convert.tree_to_rules(estimator[0], np.array(feature_names), prediction_values=True):
+
+            rule_obj = rule.Rule(rule_value_pair[0])
+
+            if rule_obj not in seen_rules:
+                extracted_rules.append(rule_value_pair)
+                seen_rules.add(rule_obj)
+
+    extracted_rules = sorted(extracted_rules, key=lambda x: x[1])
+    extracted_rules = list(map(lambda x: x[0], extracted_rules))
+    return extracted_rules</code></pre>
+</details>
+</dd>
+<dt id="imodels.util.extract.extract_skope"><code class="name flex">
+<span>def <span class="ident">extract_skope</span></span>(<span>X, y, feature_names, sample_weight=None, n_estimators=10, max_samples=0.8, max_samples_features=1.0, bootstrap=False, bootstrap_features=False, max_depths=[3], max_features=1.0, min_samples_split=2, n_jobs=1, random_state=None, verbose=0) ‑> Tuple[List[str], List[<built-in function array>], List[<built-in function array>]]</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def extract_skope(X, y, feature_names,
+                  sample_weight=None,
+                  n_estimators=10,
+                  max_samples=.8,
+                  max_samples_features=1.,
+                  bootstrap=False,
+                  bootstrap_features=False,
+                  max_depths=[3],
+                  max_features=1.,
+                  min_samples_split=2,
+                  n_jobs=1,
+                  random_state=None,
+                  verbose=0) -&gt; Tuple[List[str], List[np.array], List[np.array]]:
+    ensembles = []
+    if not isinstance(max_depths, Iterable):
+        max_depths = [max_depths]
+
+    for max_depth in max_depths:
+
+        # pass different key based on sklearn version
+        estimator = DecisionTreeRegressor(
+            max_depth=max_depth,
+            max_features=max_features,
+            min_samples_split=min_samples_split,
+
+        )
+        init_signature = inspect.signature(BaggingRegressor.__init__)
+        estimator_key = &#39;estimator&#39; if &#39;estimator&#39; in init_signature.parameters.keys(
+        ) else &#39;base_estimator&#39;
+        kwargs = {
+            estimator_key: estimator,
+        }
+        bagging_clf = BaggingRegressor(
+            n_estimators=n_estimators,
+            max_samples=max_samples,
+            max_features=max_samples_features,
+            bootstrap=bootstrap,
+            bootstrap_features=bootstrap_features,
+            # oob_score=... XXX may be added
+            # if selection on tree perf needed.
+            # warm_start=... XXX may be added to increase computation perf.
+            n_jobs=n_jobs,
+            random_state=random_state,
+            verbose=verbose,
+            **kwargs
+        )
+        ensembles.append(bagging_clf)
+
+    y_reg = y
+    if sample_weight is not None:
+        sample_weight = check_array(sample_weight, ensure_2d=False)
+        weights = sample_weight - sample_weight.min()
+        contamination = float(sum(y)) / len(y)
+        y_reg = (
+            pow(weights, 0.5) * 0.5 / contamination * (y &gt; 0) -
+            pow((weights).mean(), 0.5) * (y == 0)
+        )
+        y_reg = 1. / (1 + np.exp(-y_reg))  # sigmoid
+
+    for e in ensembles[:len(ensembles) // 2]:
+        e.fit(X, y)
+
+    for e in ensembles[len(ensembles) // 2:]:
+        e.fit(X, y_reg)
+
+    estimators_, estimators_samples_, estimators_features_ = [], [], []
+    for ensemble in ensembles:
+        estimators_ += ensemble.estimators_
+        estimators_samples_ += ensemble.estimators_samples_
+        estimators_features_ += ensemble.estimators_features_
+
+    extracted_rules = []
+    for estimator, features in zip(estimators_, estimators_features_):
+        extracted_rules.append(convert.tree_to_rules(
+            estimator, np.array(feature_names)[features]))
+
+    return extracted_rules, estimators_samples_, estimators_features_</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index 🔍</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="imodels.util" href="index.html">imodels.util</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="imodels.util.extract.extract_fpgrowth" href="#imodels.util.extract.extract_fpgrowth">extract_fpgrowth</a></code></li>
+<li><code><a title="imodels.util.extract.extract_marginal_curves" href="#imodels.util.extract.extract_marginal_curves">extract_marginal_curves</a></code></li>
+<li><code><a title="imodels.util.extract.extract_rulefit" href="#imodels.util.extract.extract_rulefit">extract_rulefit</a></code></li>
+<li><code><a title="imodels.util.extract.extract_skope" href="#imodels.util.extract.extract_skope">extract_skope</a></code></li>
+</ul>
+</li>
+</ul>
+<p><img align="center" width=100% src="https://csinva.io/imodels/img/anim.gif"> </img></p>
+<!-- add wave animation -->
+</nav>
+</main>
+<footer id="footer">
+</footer>
+</body>
+</html>
+<!-- add github corner -->
+<a href="https://github.com/csinva/imodels" class="github-corner" aria-label="View source on GitHub"><svg width="120" height="120" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="m128.3,109.0 c113.8,99.7 119.0,89.6 119.0,89.6 c122.0,82.7 120.5,78.6 120.5,78.6 c119.2,72.0 123.4,76.3 123.4,76.3 c127.3,80.9 125.5,87.3 125.5,87.3 c122.9,97.6 130.6,101.9 134.4,103.2" fill="currentcolor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<!-- add wave animation stylesheet -->
+<link rel="stylesheet" href="github.css">

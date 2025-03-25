@@ -1,0 +1,1500 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<section id="section-intro">
+<p>Linear model of tree-based decision rules based on the rulefit algorithm from Friedman and Popescu.</p>
+<p>The algorithm can be used for predicting an output vector y given an input matrix X. In the first step a tree ensemble
+is generated with gradient boosting. The trees are then used to form rules, where the paths to each node in each tree
+form one rule. A rule is a binary decision if an observation is in a given node, which is dependent on the input features
+that were used in the splits. The ensemble of rules together with the original input features are then being input in a
+L1-regularized linear model, also called Lasso, which estimates the effects of each rule on the output target but at the
+same time estimating many of those effects to zero.</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">&#34;&#34;&#34;Linear model of tree-based decision rules based on the rulefit algorithm from Friedman and Popescu.
+
+The algorithm can be used for predicting an output vector y given an input matrix X. In the first step a tree ensemble
+is generated with gradient boosting. The trees are then used to form rules, where the paths to each node in each tree
+form one rule. A rule is a binary decision if an observation is in a given node, which is dependent on the input features
+that were used in the splits. The ensemble of rules together with the original input features are then being input in a
+L1-regularized linear model, also called Lasso, which estimates the effects of each rule on the output target but at the
+same time estimating many of those effects to zero.
+&#34;&#34;&#34;
+from typing import List, Tuple
+
+import numpy as np
+import pandas as pd
+import scipy
+from scipy.special import softmax
+from sklearn.base import BaseEstimator, ClassifierMixin, RegressorMixin
+from sklearn.base import TransformerMixin
+from sklearn.utils.multiclass import unique_labels
+from sklearn.utils.validation import check_X_y, check_array, check_is_fitted
+
+from imodels.rule_set.rule_set import RuleSet
+from imodels.util.arguments import check_fit_arguments
+from imodels.util.extract import extract_rulefit
+from imodels.util.rule import get_feature_dict, replace_feature_name, Rule
+from imodels.util.score import score_linear
+from imodels.util.transforms import Winsorizer, FriedScale
+
+
+class RuleFit(BaseEstimator, TransformerMixin, RuleSet):
+    &#34;&#34;&#34;Rulefit class. Rather than using this class directly, should use RuleFitRegressor or RuleFitClassifier
+
+
+    Parameters
+    ----------
+    tree_size:      Number of terminal nodes in generated trees. If exp_rand_tree_size=True, 
+                    this will be the mean number of terminal nodes.
+    sample_fract:   fraction of randomly chosen training observations used to produce each tree. 
+                    FP 2004 (Sec. 2)
+    max_rules:      total number of terms included in the final model (both linear and rules)
+                    approximate total number of candidate rules generated for fitting also is based on this
+                    Note that actual number of candidate rules will usually be lower than this due to duplicates.
+    memory_par:     scale multiplier (shrinkage factor) applied to each new tree when 
+                    sequentially induced. FP 2004 (Sec. 2)
+    lin_standardise: If True, the linear terms will be standardised as per Friedman Sec 3.2
+                    by multiplying the winsorised variable by 0.4/stdev.
+    lin_trim_quantile: If lin_standardise is True, this quantile will be used to trim linear 
+                    terms before standardisation.
+    exp_rand_tree_size: If True, each boosted tree will have a different maximum number of 
+                    terminal nodes based on an exponential distribution about tree_size. 
+                    (Friedman Sec 3.3)
+    include_linear: Include linear terms as opposed to only rules
+    alpha:          Regularization strength, will override max_rules parameter
+    cv:             Whether to use cross-validation scores to select the regularization strength 
+                    the final regularization value out of all that satisfy max_rules. If False, the
+                    least regularization possible is used.
+    random_state:   Integer to initialise random objects and provide repeatability.
+    tree_generator: Optional: this object will be used as provided to generate the rules. 
+                    This will override almost all the other properties above. 
+                    Must be GradientBoostingRegressor(), GradientBoostingClassifier(), or RandomForestRegressor()
+
+    Attributes
+    ----------
+    rule_ensemble: RuleEnsemble
+        The rule ensemble
+
+    feature_names: list of strings, optional (default=None)
+        The names of the features (columns)
+
+    &#34;&#34;&#34;
+
+    def __init__(self,
+                 n_estimators=100,
+                 tree_size=4,
+                 sample_fract=&#39;default&#39;,
+                 max_rules=30,
+                 memory_par=0.01,
+                 tree_generator=None,
+                 lin_trim_quantile=0.025,
+                 lin_standardise=True,
+                 exp_rand_tree_size=True,
+                 include_linear=True,
+                 alpha=None,
+                 cv=True,
+                 random_state=None):
+        self.n_estimators = n_estimators
+        self.tree_size = tree_size
+        self.sample_fract = sample_fract
+        self.max_rules = max_rules
+        self.memory_par = memory_par
+        self.tree_generator = tree_generator
+        self.lin_trim_quantile = lin_trim_quantile
+        self.lin_standardise = lin_standardise
+        self.exp_rand_tree_size = exp_rand_tree_size
+        self.include_linear = include_linear
+        self.alpha = alpha
+        self.cv = cv
+        self.random_state = random_state
+
+        self.winsorizer = Winsorizer(trim_quantile=self.lin_trim_quantile)
+        self.friedscale = FriedScale(self.winsorizer)
+        self.stddev = None
+        self.mean = None
+
+    def fit(self, X, y=None, feature_names=None):
+        &#34;&#34;&#34;Fit and estimate linear combination of rule ensemble
+
+        &#34;&#34;&#34;
+        X, y, feature_names = check_fit_arguments(self, X, y, feature_names)
+        if isinstance(self, ClassifierMixin) and len(np.unique(y)) &gt; 2:
+            raise ValueError(
+                &#34;RuleFit does not yet support multiclass classification&#34;)
+
+        self.n_features_ = X.shape[1]
+        self.feature_dict_ = get_feature_dict(X.shape[1], feature_names)
+        self.feature_placeholders = np.array(list(self.feature_dict_.keys()))
+        self.feature_names = np.array(list(self.feature_dict_.values()))
+
+        extracted_rules = self._extract_rules(X, y)
+        self.rules_without_feature_names_, self.coef, self.intercept = self._score_rules(
+            X, y, extracted_rules)
+        self.rules_ = [
+            replace_feature_name(rule, self.feature_dict_) for rule in self.rules_without_feature_names_
+        ]
+
+        # count total rule terms, plus nonzero linear terms
+        self.complexity_ = self._get_complexity()
+        if self.include_linear:
+            self.complexity_ += np.sum(
+                np.array(self.coef[:X.shape[1]]) != 0)
+
+        return self
+
+    def _predict_continuous_output(self, X):
+        &#34;&#34;&#34;Predict outcome of linear model for X
+        &#34;&#34;&#34;
+        if type(X) == pd.DataFrame:
+            X = X.values.astype(np.float32)
+
+        y_pred = np.zeros(X.shape[0])
+        y_pred += self._eval_weighted_rule_sum(X)
+
+        if self.include_linear:
+            if self.lin_standardise:
+                X = self.friedscale.scale(X)
+            y_pred += X @ self.coef[:X.shape[1]]
+        return y_pred + self.intercept
+
+    def predict(self, X):
+        &#39;&#39;&#39;Predict. For regression returns continuous output.
+        For classification, returns discrete output.
+        &#39;&#39;&#39;
+        check_is_fitted(self)
+        if scipy.sparse.issparse(X):
+            X = X.toarray()
+        X = check_array(X)
+        if isinstance(self, RegressorMixin):
+            return self._predict_continuous_output(X)
+        else:
+            class_preds = np.argmax(self.predict_proba(X), axis=1)
+            return np.array([self.classes_[i] for i in class_preds])
+
+    def predict_proba(self, X):
+        check_is_fitted(self)
+        if scipy.sparse.issparse(X):
+            X = X.toarray()
+        X = check_array(X)
+        continuous_output = self._predict_continuous_output(X)
+        logits = np.vstack(
+            (1 - continuous_output, continuous_output)).transpose()
+        return softmax(logits, axis=1)
+
+    def transform(self, X=None, rules=None):
+        &#34;&#34;&#34;Transform dataset.
+
+        Parameters
+        ----------
+        X : array-like matrix, shape=(n_samples, n_features)
+            Input data to be transformed. Use ``dtype=np.float32`` for maximum
+            efficiency.
+
+        Returns
+        -------
+        X_transformed: matrix, shape=(n_samples, n_out)
+            Transformed data set
+        &#34;&#34;&#34;
+        df = pd.DataFrame(X, columns=self.feature_placeholders)
+        # print(&#39;df&#39;, df.dtypes, df.head())
+        X_transformed = np.zeros((X.shape[0], len(rules)))
+
+        for i, r in enumerate(rules):
+            features_r_uses = list(
+                set(term.split(&#39; &#39;)[0] for term in r.split(&#39; and &#39;)))
+            # print(&#39;r&#39;, r)
+            # print(&#39;feats&#39;, df[features_r_uses])
+            # print(&#39;ans&#39;, df[features_r_uses].query(r))
+            # print(
+            #     &#39;tra&#39;, X_transformed[df[features_r_uses].query(r).index.values, i])
+            X_transformed[df[features_r_uses].query(r).index.values, i] = 1
+        return X_transformed
+
+    def _get_rules(self, exclude_zero_coef=False, subregion=None):
+        &#34;&#34;&#34;Return the estimated rules
+
+        Parameters
+        ----------
+        exclude_zero_coef: If True (default), returns only the rules with an estimated
+                           coefficient not equalt to  zero.
+
+        subregion: If None (default) returns global importances (FP 2004 eq. 28/29), else returns importance over 
+                           subregion of inputs (FP 2004 eq. 30/31/32).
+
+        Returns
+        -------
+        rules: pandas.DataFrame with the rules. Column &#39;rule&#39; describes the rule, &#39;coef&#39; holds
+               the coefficients and &#39;support&#39; the support of the rule in the training
+               data set (X)
+        &#34;&#34;&#34;
+        n_features = len(self.coef) - len(self.rules_)
+        rule_ensemble = list(self.rules_without_feature_names_)
+        output_rules = []
+        # Add coefficients for linear effects
+        for i in range(0, n_features):
+            if self.lin_standardise:
+                coef = self.coef[i] * self.friedscale.scale_multipliers[i]
+            else:
+                coef = self.coef[i]
+            if subregion is None:
+                importance = abs(coef) * self.stddev[i]
+            else:
+                subregion = np.array(subregion)
+                importance = sum(abs(coef) * abs([x[i] for x in self.winsorizer.trim(subregion)] - self.mean[i])) / len(
+                    subregion)
+            output_rules += [(self.feature_names[i],
+                              &#39;linear&#39;, coef, 1, importance)]
+
+        # Add rules
+        for i in range(0, len(self.rules_)):
+            rule = rule_ensemble[i]
+            coef = self.coef[i + n_features]
+
+            if subregion is None:
+                importance = abs(coef) * (rule.support *
+                                          (1 - rule.support)) ** (1 / 2)
+            else:
+                rkx = self.transform(subregion, [rule])[:, -1]
+                importance = sum(
+                    abs(coef) * abs(rkx - rule.support)) / len(subregion)
+
+            output_rules += [(self.rules_[i].rule, &#39;rule&#39;,
+                              coef, rule.support, importance)]
+        rules = pd.DataFrame(output_rules, columns=[
+                             &#34;rule&#34;, &#34;type&#34;, &#34;coef&#34;, &#34;support&#34;, &#34;importance&#34;])
+        if exclude_zero_coef:
+            rules = rules.ix[rules.coef != 0]
+        return rules
+
+    def visualize(self, decimals=2):
+        rules = self._get_rules()
+        rules = rules[rules.coef != 0].sort_values(&#34;support&#34;, ascending=False)
+        pd.set_option(&#39;display.max_colwidth&#39;, None)
+        return rules[[&#39;rule&#39;, &#39;coef&#39;]].round(decimals)
+
+    def __str__(self):
+        if not hasattr(self, &#39;coef&#39;):
+            s = self.__class__.__name__
+            s += &#34;(&#34;
+            s += &#34;max_rules=&#34;
+            s += repr(self.max_rules)
+            s += &#34;)&#34;
+            return s
+        else:
+            s = &#39;&gt; ------------------------------\n&#39;
+            s += &#39;&gt; RuleFit:\n&#39;
+            s += &#39;&gt; \tPredictions are made by summing the coefficients of each rule\n&#39;
+            s += &#39;&gt; ------------------------------\n&#39;
+            return s + self.visualize().to_string(index=False) + &#39;\n&#39;
+
+    def _extract_rules(self, X, y) -&gt; List[str]:
+        return extract_rulefit(X, y,
+                               feature_names=self.feature_placeholders,
+                               n_estimators=self.n_estimators,
+                               tree_size=self.tree_size,
+                               memory_par=self.memory_par,
+                               tree_generator=self.tree_generator,
+                               exp_rand_tree_size=self.exp_rand_tree_size,
+                               random_state=self.random_state)
+
+    def _score_rules(self, X, y, rules) -&gt; Tuple[List[Rule], List[float], float]:
+        X_concat = np.zeros([X.shape[0], 0])
+
+        # standardise linear variables if requested (for regression model only)
+        if self.include_linear:
+
+            # standard deviation and mean of winsorized features
+            self.winsorizer.train(X)
+            winsorized_X = self.winsorizer.trim(X)
+            self.stddev = np.std(winsorized_X, axis=0)
+            self.mean = np.mean(winsorized_X, axis=0)
+
+            if self.lin_standardise:
+                self.friedscale.train(X)
+                X_regn = self.friedscale.scale(X)
+            else:
+                X_regn = X.copy()
+            X_concat = np.concatenate((X_concat, X_regn), axis=1)
+
+        X_rules = self.transform(X, rules)
+        if X_rules.shape[0] &gt; 0:
+            X_concat = np.concatenate((X_concat, X_rules), axis=1)
+
+        # no rules fit and self.include_linear == False
+        if X_concat.shape[1] == 0:
+            return [], [], 0
+        prediction_task = &#39;regression&#39; if isinstance(
+            self, RegressorMixin) else &#39;classification&#39;
+        return score_linear(X_concat, y, rules,
+                            prediction_task=prediction_task,
+                            max_rules=self.max_rules,
+                            alpha=self.alpha,
+                            cv=self.cv,
+                            random_state=self.random_state)
+
+
+class RuleFitRegressor(RuleFit, RegressorMixin):
+    ...
+
+
+class RuleFitClassifier(RuleFit, ClassifierMixin):
+    ...</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="imodels.rule_set.rule_fit.RuleFit"><code class="flex name class">
+<span>class <span class="ident">RuleFit</span></span>
+<span>(</span><span>n_estimators=100, tree_size=4, sample_fract='default', max_rules=30, memory_par=0.01, tree_generator=None, lin_trim_quantile=0.025, lin_standardise=True, exp_rand_tree_size=True, include_linear=True, alpha=None, cv=True, random_state=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Rulefit class. Rather than using this class directly, should use RuleFitRegressor or RuleFitClassifier</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>tree_size</code></strong> :&ensp;<code>
+Number</code> of <code>terminal nodes in generated trees. If exp_rand_tree_size=True,</code></dt>
+<dd>this will be the mean number of terminal nodes.</dd>
+<dt><strong><code>sample_fract</code></strong> :&ensp;<code>
+fraction</code> of <code>randomly chosen training observations used to produce each tree. </code></dt>
+<dd>FP 2004 (Sec. 2)</dd>
+<dt><strong><code>max_rules</code></strong> :&ensp;<code>
+total number</code> of <code>terms included in the final model (both linear and rules)</code></dt>
+<dd>approximate total number of candidate rules generated for fitting also is based on this
+Note that actual number of candidate rules will usually be lower than this due to duplicates.</dd>
+<dt><strong><code>memory_par</code></strong> :&ensp;<code>
+scale multiplier (shrinkage factor) applied to each new tree when </code></dt>
+<dd>sequentially induced. FP 2004 (Sec. 2)</dd>
+<dt><strong><code>lin_standardise</code></strong> :&ensp;<code>If True, the linear terms will be standardised as per Friedman Sec 3.2</code></dt>
+<dd>by multiplying the winsorised variable by 0.4/stdev.</dd>
+<dt><strong><code>lin_trim_quantile</code></strong> :&ensp;<code>If lin_standardise is True, this quantile will be used to trim linear </code></dt>
+<dd>terms before standardisation.</dd>
+<dt><strong><code>exp_rand_tree_size</code></strong> :&ensp;<code>If True, each boosted tree will have a different maximum number</code> of</dt>
+<dd>terminal nodes based on an exponential distribution about tree_size.
+(Friedman Sec 3.3)</dd>
+<dt><strong><code>include_linear</code></strong> :&ensp;<code>Include linear terms as opposed to only rules</code></dt>
+<dd>&nbsp;</dd>
+<dt><strong><code>alpha</code></strong> :&ensp;<code>
+Regularization strength, will override max_rules parameter</code></dt>
+<dd>&nbsp;</dd>
+<dt><strong><code>cv</code></strong> :&ensp;<code>Whether to use cross-validation scores to select the regularization strength</code></dt>
+<dd>the final regularization value out of all that satisfy max_rules. If False, the
+least regularization possible is used.</dd>
+<dt>random_state:
+Integer to initialise random objects and provide repeatability.</dt>
+<dt><strong><code>tree_generator</code></strong> :&ensp;<code>Optional: this object will be used as provided to generate the rules.</code></dt>
+<dd>This will override almost all the other properties above.
+Must be GradientBoostingRegressor(), GradientBoostingClassifier(), or RandomForestRegressor()</dd>
+</dl>
+<h2 id="attributes">Attributes</h2>
+<dl>
+<dt><strong><code>rule_ensemble</code></strong> :&ensp;<code>RuleEnsemble</code></dt>
+<dd>The rule ensemble</dd>
+<dt><strong><code>feature_names</code></strong> :&ensp;<code>list</code> of <code>strings</code>, optional <code>(default=None)</code></dt>
+<dd>The names of the features (columns)</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class RuleFit(BaseEstimator, TransformerMixin, RuleSet):
+    &#34;&#34;&#34;Rulefit class. Rather than using this class directly, should use RuleFitRegressor or RuleFitClassifier
+
+
+    Parameters
+    ----------
+    tree_size:      Number of terminal nodes in generated trees. If exp_rand_tree_size=True, 
+                    this will be the mean number of terminal nodes.
+    sample_fract:   fraction of randomly chosen training observations used to produce each tree. 
+                    FP 2004 (Sec. 2)
+    max_rules:      total number of terms included in the final model (both linear and rules)
+                    approximate total number of candidate rules generated for fitting also is based on this
+                    Note that actual number of candidate rules will usually be lower than this due to duplicates.
+    memory_par:     scale multiplier (shrinkage factor) applied to each new tree when 
+                    sequentially induced. FP 2004 (Sec. 2)
+    lin_standardise: If True, the linear terms will be standardised as per Friedman Sec 3.2
+                    by multiplying the winsorised variable by 0.4/stdev.
+    lin_trim_quantile: If lin_standardise is True, this quantile will be used to trim linear 
+                    terms before standardisation.
+    exp_rand_tree_size: If True, each boosted tree will have a different maximum number of 
+                    terminal nodes based on an exponential distribution about tree_size. 
+                    (Friedman Sec 3.3)
+    include_linear: Include linear terms as opposed to only rules
+    alpha:          Regularization strength, will override max_rules parameter
+    cv:             Whether to use cross-validation scores to select the regularization strength 
+                    the final regularization value out of all that satisfy max_rules. If False, the
+                    least regularization possible is used.
+    random_state:   Integer to initialise random objects and provide repeatability.
+    tree_generator: Optional: this object will be used as provided to generate the rules. 
+                    This will override almost all the other properties above. 
+                    Must be GradientBoostingRegressor(), GradientBoostingClassifier(), or RandomForestRegressor()
+
+    Attributes
+    ----------
+    rule_ensemble: RuleEnsemble
+        The rule ensemble
+
+    feature_names: list of strings, optional (default=None)
+        The names of the features (columns)
+
+    &#34;&#34;&#34;
+
+    def __init__(self,
+                 n_estimators=100,
+                 tree_size=4,
+                 sample_fract=&#39;default&#39;,
+                 max_rules=30,
+                 memory_par=0.01,
+                 tree_generator=None,
+                 lin_trim_quantile=0.025,
+                 lin_standardise=True,
+                 exp_rand_tree_size=True,
+                 include_linear=True,
+                 alpha=None,
+                 cv=True,
+                 random_state=None):
+        self.n_estimators = n_estimators
+        self.tree_size = tree_size
+        self.sample_fract = sample_fract
+        self.max_rules = max_rules
+        self.memory_par = memory_par
+        self.tree_generator = tree_generator
+        self.lin_trim_quantile = lin_trim_quantile
+        self.lin_standardise = lin_standardise
+        self.exp_rand_tree_size = exp_rand_tree_size
+        self.include_linear = include_linear
+        self.alpha = alpha
+        self.cv = cv
+        self.random_state = random_state
+
+        self.winsorizer = Winsorizer(trim_quantile=self.lin_trim_quantile)
+        self.friedscale = FriedScale(self.winsorizer)
+        self.stddev = None
+        self.mean = None
+
+    def fit(self, X, y=None, feature_names=None):
+        &#34;&#34;&#34;Fit and estimate linear combination of rule ensemble
+
+        &#34;&#34;&#34;
+        X, y, feature_names = check_fit_arguments(self, X, y, feature_names)
+        if isinstance(self, ClassifierMixin) and len(np.unique(y)) &gt; 2:
+            raise ValueError(
+                &#34;RuleFit does not yet support multiclass classification&#34;)
+
+        self.n_features_ = X.shape[1]
+        self.feature_dict_ = get_feature_dict(X.shape[1], feature_names)
+        self.feature_placeholders = np.array(list(self.feature_dict_.keys()))
+        self.feature_names = np.array(list(self.feature_dict_.values()))
+
+        extracted_rules = self._extract_rules(X, y)
+        self.rules_without_feature_names_, self.coef, self.intercept = self._score_rules(
+            X, y, extracted_rules)
+        self.rules_ = [
+            replace_feature_name(rule, self.feature_dict_) for rule in self.rules_without_feature_names_
+        ]
+
+        # count total rule terms, plus nonzero linear terms
+        self.complexity_ = self._get_complexity()
+        if self.include_linear:
+            self.complexity_ += np.sum(
+                np.array(self.coef[:X.shape[1]]) != 0)
+
+        return self
+
+    def _predict_continuous_output(self, X):
+        &#34;&#34;&#34;Predict outcome of linear model for X
+        &#34;&#34;&#34;
+        if type(X) == pd.DataFrame:
+            X = X.values.astype(np.float32)
+
+        y_pred = np.zeros(X.shape[0])
+        y_pred += self._eval_weighted_rule_sum(X)
+
+        if self.include_linear:
+            if self.lin_standardise:
+                X = self.friedscale.scale(X)
+            y_pred += X @ self.coef[:X.shape[1]]
+        return y_pred + self.intercept
+
+    def predict(self, X):
+        &#39;&#39;&#39;Predict. For regression returns continuous output.
+        For classification, returns discrete output.
+        &#39;&#39;&#39;
+        check_is_fitted(self)
+        if scipy.sparse.issparse(X):
+            X = X.toarray()
+        X = check_array(X)
+        if isinstance(self, RegressorMixin):
+            return self._predict_continuous_output(X)
+        else:
+            class_preds = np.argmax(self.predict_proba(X), axis=1)
+            return np.array([self.classes_[i] for i in class_preds])
+
+    def predict_proba(self, X):
+        check_is_fitted(self)
+        if scipy.sparse.issparse(X):
+            X = X.toarray()
+        X = check_array(X)
+        continuous_output = self._predict_continuous_output(X)
+        logits = np.vstack(
+            (1 - continuous_output, continuous_output)).transpose()
+        return softmax(logits, axis=1)
+
+    def transform(self, X=None, rules=None):
+        &#34;&#34;&#34;Transform dataset.
+
+        Parameters
+        ----------
+        X : array-like matrix, shape=(n_samples, n_features)
+            Input data to be transformed. Use ``dtype=np.float32`` for maximum
+            efficiency.
+
+        Returns
+        -------
+        X_transformed: matrix, shape=(n_samples, n_out)
+            Transformed data set
+        &#34;&#34;&#34;
+        df = pd.DataFrame(X, columns=self.feature_placeholders)
+        # print(&#39;df&#39;, df.dtypes, df.head())
+        X_transformed = np.zeros((X.shape[0], len(rules)))
+
+        for i, r in enumerate(rules):
+            features_r_uses = list(
+                set(term.split(&#39; &#39;)[0] for term in r.split(&#39; and &#39;)))
+            # print(&#39;r&#39;, r)
+            # print(&#39;feats&#39;, df[features_r_uses])
+            # print(&#39;ans&#39;, df[features_r_uses].query(r))
+            # print(
+            #     &#39;tra&#39;, X_transformed[df[features_r_uses].query(r).index.values, i])
+            X_transformed[df[features_r_uses].query(r).index.values, i] = 1
+        return X_transformed
+
+    def _get_rules(self, exclude_zero_coef=False, subregion=None):
+        &#34;&#34;&#34;Return the estimated rules
+
+        Parameters
+        ----------
+        exclude_zero_coef: If True (default), returns only the rules with an estimated
+                           coefficient not equalt to  zero.
+
+        subregion: If None (default) returns global importances (FP 2004 eq. 28/29), else returns importance over 
+                           subregion of inputs (FP 2004 eq. 30/31/32).
+
+        Returns
+        -------
+        rules: pandas.DataFrame with the rules. Column &#39;rule&#39; describes the rule, &#39;coef&#39; holds
+               the coefficients and &#39;support&#39; the support of the rule in the training
+               data set (X)
+        &#34;&#34;&#34;
+        n_features = len(self.coef) - len(self.rules_)
+        rule_ensemble = list(self.rules_without_feature_names_)
+        output_rules = []
+        # Add coefficients for linear effects
+        for i in range(0, n_features):
+            if self.lin_standardise:
+                coef = self.coef[i] * self.friedscale.scale_multipliers[i]
+            else:
+                coef = self.coef[i]
+            if subregion is None:
+                importance = abs(coef) * self.stddev[i]
+            else:
+                subregion = np.array(subregion)
+                importance = sum(abs(coef) * abs([x[i] for x in self.winsorizer.trim(subregion)] - self.mean[i])) / len(
+                    subregion)
+            output_rules += [(self.feature_names[i],
+                              &#39;linear&#39;, coef, 1, importance)]
+
+        # Add rules
+        for i in range(0, len(self.rules_)):
+            rule = rule_ensemble[i]
+            coef = self.coef[i + n_features]
+
+            if subregion is None:
+                importance = abs(coef) * (rule.support *
+                                          (1 - rule.support)) ** (1 / 2)
+            else:
+                rkx = self.transform(subregion, [rule])[:, -1]
+                importance = sum(
+                    abs(coef) * abs(rkx - rule.support)) / len(subregion)
+
+            output_rules += [(self.rules_[i].rule, &#39;rule&#39;,
+                              coef, rule.support, importance)]
+        rules = pd.DataFrame(output_rules, columns=[
+                             &#34;rule&#34;, &#34;type&#34;, &#34;coef&#34;, &#34;support&#34;, &#34;importance&#34;])
+        if exclude_zero_coef:
+            rules = rules.ix[rules.coef != 0]
+        return rules
+
+    def visualize(self, decimals=2):
+        rules = self._get_rules()
+        rules = rules[rules.coef != 0].sort_values(&#34;support&#34;, ascending=False)
+        pd.set_option(&#39;display.max_colwidth&#39;, None)
+        return rules[[&#39;rule&#39;, &#39;coef&#39;]].round(decimals)
+
+    def __str__(self):
+        if not hasattr(self, &#39;coef&#39;):
+            s = self.__class__.__name__
+            s += &#34;(&#34;
+            s += &#34;max_rules=&#34;
+            s += repr(self.max_rules)
+            s += &#34;)&#34;
+            return s
+        else:
+            s = &#39;&gt; ------------------------------\n&#39;
+            s += &#39;&gt; RuleFit:\n&#39;
+            s += &#39;&gt; \tPredictions are made by summing the coefficients of each rule\n&#39;
+            s += &#39;&gt; ------------------------------\n&#39;
+            return s + self.visualize().to_string(index=False) + &#39;\n&#39;
+
+    def _extract_rules(self, X, y) -&gt; List[str]:
+        return extract_rulefit(X, y,
+                               feature_names=self.feature_placeholders,
+                               n_estimators=self.n_estimators,
+                               tree_size=self.tree_size,
+                               memory_par=self.memory_par,
+                               tree_generator=self.tree_generator,
+                               exp_rand_tree_size=self.exp_rand_tree_size,
+                               random_state=self.random_state)
+
+    def _score_rules(self, X, y, rules) -&gt; Tuple[List[Rule], List[float], float]:
+        X_concat = np.zeros([X.shape[0], 0])
+
+        # standardise linear variables if requested (for regression model only)
+        if self.include_linear:
+
+            # standard deviation and mean of winsorized features
+            self.winsorizer.train(X)
+            winsorized_X = self.winsorizer.trim(X)
+            self.stddev = np.std(winsorized_X, axis=0)
+            self.mean = np.mean(winsorized_X, axis=0)
+
+            if self.lin_standardise:
+                self.friedscale.train(X)
+                X_regn = self.friedscale.scale(X)
+            else:
+                X_regn = X.copy()
+            X_concat = np.concatenate((X_concat, X_regn), axis=1)
+
+        X_rules = self.transform(X, rules)
+        if X_rules.shape[0] &gt; 0:
+            X_concat = np.concatenate((X_concat, X_rules), axis=1)
+
+        # no rules fit and self.include_linear == False
+        if X_concat.shape[1] == 0:
+            return [], [], 0
+        prediction_task = &#39;regression&#39; if isinstance(
+            self, RegressorMixin) else &#39;classification&#39;
+        return score_linear(X_concat, y, rules,
+                            prediction_task=prediction_task,
+                            max_rules=self.max_rules,
+                            alpha=self.alpha,
+                            cv=self.cv,
+                            random_state=self.random_state)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sklearn.base.BaseEstimator</li>
+<li>sklearn.utils._estimator_html_repr._HTMLDocumentationLinkMixin</li>
+<li>sklearn.utils._metadata_requests._MetadataRequester</li>
+<li>sklearn.base.TransformerMixin</li>
+<li>sklearn.utils._set_output._SetOutputMixin</li>
+<li><a title="imodels.rule_set.rule_set.RuleSet" href="rule_set.html#imodels.rule_set.rule_set.RuleSet">RuleSet</a></li>
+</ul>
+<h3>Subclasses</h3>
+<ul class="hlist">
+<li><a title="imodels.experimental.stablelinear.StableLinear" href="../experimental/stablelinear.html#imodels.experimental.stablelinear.StableLinear">StableLinear</a></li>
+<li><a title="imodels.rule_set.fplasso.FPLasso" href="fplasso.html#imodels.rule_set.fplasso.FPLasso">FPLasso</a></li>
+<li><a title="imodels.rule_set.rule_fit.RuleFitClassifier" href="#imodels.rule_set.rule_fit.RuleFitClassifier">RuleFitClassifier</a></li>
+<li><a title="imodels.rule_set.rule_fit.RuleFitRegressor" href="#imodels.rule_set.rule_fit.RuleFitRegressor">RuleFitRegressor</a></li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="imodels.rule_set.rule_fit.RuleFit.fit"><code class="name flex">
+<span>def <span class="ident">fit</span></span>(<span>self, X, y=None, feature_names=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Fit and estimate linear combination of rule ensemble</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def fit(self, X, y=None, feature_names=None):
+    &#34;&#34;&#34;Fit and estimate linear combination of rule ensemble
+
+    &#34;&#34;&#34;
+    X, y, feature_names = check_fit_arguments(self, X, y, feature_names)
+    if isinstance(self, ClassifierMixin) and len(np.unique(y)) &gt; 2:
+        raise ValueError(
+            &#34;RuleFit does not yet support multiclass classification&#34;)
+
+    self.n_features_ = X.shape[1]
+    self.feature_dict_ = get_feature_dict(X.shape[1], feature_names)
+    self.feature_placeholders = np.array(list(self.feature_dict_.keys()))
+    self.feature_names = np.array(list(self.feature_dict_.values()))
+
+    extracted_rules = self._extract_rules(X, y)
+    self.rules_without_feature_names_, self.coef, self.intercept = self._score_rules(
+        X, y, extracted_rules)
+    self.rules_ = [
+        replace_feature_name(rule, self.feature_dict_) for rule in self.rules_without_feature_names_
+    ]
+
+    # count total rule terms, plus nonzero linear terms
+    self.complexity_ = self._get_complexity()
+    if self.include_linear:
+        self.complexity_ += np.sum(
+            np.array(self.coef[:X.shape[1]]) != 0)
+
+    return self</code></pre>
+</details>
+</dd>
+<dt id="imodels.rule_set.rule_fit.RuleFit.predict"><code class="name flex">
+<span>def <span class="ident">predict</span></span>(<span>self, X)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Predict. For regression returns continuous output.
+For classification, returns discrete output.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def predict(self, X):
+    &#39;&#39;&#39;Predict. For regression returns continuous output.
+    For classification, returns discrete output.
+    &#39;&#39;&#39;
+    check_is_fitted(self)
+    if scipy.sparse.issparse(X):
+        X = X.toarray()
+    X = check_array(X)
+    if isinstance(self, RegressorMixin):
+        return self._predict_continuous_output(X)
+    else:
+        class_preds = np.argmax(self.predict_proba(X), axis=1)
+        return np.array([self.classes_[i] for i in class_preds])</code></pre>
+</details>
+</dd>
+<dt id="imodels.rule_set.rule_fit.RuleFit.predict_proba"><code class="name flex">
+<span>def <span class="ident">predict_proba</span></span>(<span>self, X)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def predict_proba(self, X):
+    check_is_fitted(self)
+    if scipy.sparse.issparse(X):
+        X = X.toarray()
+    X = check_array(X)
+    continuous_output = self._predict_continuous_output(X)
+    logits = np.vstack(
+        (1 - continuous_output, continuous_output)).transpose()
+    return softmax(logits, axis=1)</code></pre>
+</details>
+</dd>
+<dt id="imodels.rule_set.rule_fit.RuleFit.set_fit_request"><code class="name flex">
+<span>def <span class="ident">set_fit_request</span></span>(<span>self: <a title="imodels.rule_set.rule_fit.RuleFit" href="#imodels.rule_set.rule_fit.RuleFit">RuleFit</a>, *, feature_names: Union[bool, ForwardRef(None), str] = '$UNCHANGED$') ‑> <a title="imodels.rule_set.rule_fit.RuleFit" href="#imodels.rule_set.rule_fit.RuleFit">RuleFit</a></span>
+</code></dt>
+<dd>
+<div class="desc"><p>Request metadata passed to the <code>fit</code> method.</p>
+<p>Note that this method is only relevant if
+<code>enable_metadata_routing=True</code> (see :func:<code>sklearn.set_config</code>).
+Please see :ref:<code>User Guide &lt;metadata_routing&gt;</code> on how the routing
+mechanism works.</p>
+<p>The options for each parameter are:</p>
+<ul>
+<li>
+<p><code>True</code>: metadata is requested, and passed to <code>fit</code> if provided. The request is ignored if metadata is not provided.</p>
+</li>
+<li>
+<p><code>False</code>: metadata is not requested and the meta-estimator will not pass it to <code>fit</code>.</p>
+</li>
+<li>
+<p><code>None</code>: metadata is not requested, and the meta-estimator will raise an error if the user provides it.</p>
+</li>
+<li>
+<p><code>str</code>: metadata should be passed to the meta-estimator with this given alias instead of the original name.</p>
+</li>
+</ul>
+<p>The default (<code>sklearn.utils.metadata_routing.UNCHANGED</code>) retains the
+existing request. This allows you to change the request for some
+parameters and not others.</p>
+<div class="admonition versionadded">
+<p class="admonition-title">Added in version:&ensp;1.3</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method is only relevant if this estimator is used as a
+sub-estimator of a meta-estimator, e.g. used inside a
+:class:<code>~sklearn.pipeline.Pipeline</code>. Otherwise it has no effect.</p>
+</div>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>feature_names</code></strong> :&ensp;<code>str, True, False,</code> or <code>None</code>,
+default=<code>sklearn.utils.metadata_routing.UNCHANGED</code></dt>
+<dd>Metadata routing for <code>feature_names</code> parameter in <code>fit</code>.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><strong><code>self</code></strong> :&ensp;<code>object</code></dt>
+<dd>The updated object.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def func(*args, **kw):
+    &#34;&#34;&#34;Updates the request for provided parameters
+
+    This docstring is overwritten below.
+    See REQUESTER_DOC for expected functionality
+    &#34;&#34;&#34;
+    if not _routing_enabled():
+        raise RuntimeError(
+            &#34;This method is only available when metadata routing is enabled.&#34;
+            &#34; You can enable it using&#34;
+            &#34; sklearn.set_config(enable_metadata_routing=True).&#34;
+        )
+
+    if self.validate_keys and (set(kw) - set(self.keys)):
+        raise TypeError(
+            f&#34;Unexpected args: {set(kw) - set(self.keys)} in {self.name}. &#34;
+            f&#34;Accepted arguments are: {set(self.keys)}&#34;
+        )
+
+    # This makes it possible to use the decorated method as an unbound method,
+    # for instance when monkeypatching.
+    # https://github.com/scikit-learn/scikit-learn/issues/28632
+    if instance is None:
+        _instance = args[0]
+        args = args[1:]
+    else:
+        _instance = instance
+
+    # Replicating python&#39;s behavior when positional args are given other than
+    # `self`, and `self` is only allowed if this method is unbound.
+    if args:
+        raise TypeError(
+            f&#34;set_{self.name}_request() takes 0 positional argument but&#34;
+            f&#34; {len(args)} were given&#34;
+        )
+
+    requests = _instance._get_metadata_request()
+    method_metadata_request = getattr(requests, self.name)
+
+    for prop, alias in kw.items():
+        if alias is not UNCHANGED:
+            method_metadata_request.add_request(param=prop, alias=alias)
+    _instance._metadata_request = requests
+
+    return _instance</code></pre>
+</details>
+</dd>
+<dt id="imodels.rule_set.rule_fit.RuleFit.set_transform_request"><code class="name flex">
+<span>def <span class="ident">set_transform_request</span></span>(<span>self: <a title="imodels.rule_set.rule_fit.RuleFit" href="#imodels.rule_set.rule_fit.RuleFit">RuleFit</a>, *, rules: Union[bool, ForwardRef(None), str] = '$UNCHANGED$') ‑> <a title="imodels.rule_set.rule_fit.RuleFit" href="#imodels.rule_set.rule_fit.RuleFit">RuleFit</a></span>
+</code></dt>
+<dd>
+<div class="desc"><p>Request metadata passed to the <code>transform</code> method.</p>
+<p>Note that this method is only relevant if
+<code>enable_metadata_routing=True</code> (see :func:<code>sklearn.set_config</code>).
+Please see :ref:<code>User Guide &lt;metadata_routing&gt;</code> on how the routing
+mechanism works.</p>
+<p>The options for each parameter are:</p>
+<ul>
+<li>
+<p><code>True</code>: metadata is requested, and passed to <code>transform</code> if provided. The request is ignored if metadata is not provided.</p>
+</li>
+<li>
+<p><code>False</code>: metadata is not requested and the meta-estimator will not pass it to <code>transform</code>.</p>
+</li>
+<li>
+<p><code>None</code>: metadata is not requested, and the meta-estimator will raise an error if the user provides it.</p>
+</li>
+<li>
+<p><code>str</code>: metadata should be passed to the meta-estimator with this given alias instead of the original name.</p>
+</li>
+</ul>
+<p>The default (<code>sklearn.utils.metadata_routing.UNCHANGED</code>) retains the
+existing request. This allows you to change the request for some
+parameters and not others.</p>
+<div class="admonition versionadded">
+<p class="admonition-title">Added in version:&ensp;1.3</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method is only relevant if this estimator is used as a
+sub-estimator of a meta-estimator, e.g. used inside a
+:class:<code>~sklearn.pipeline.Pipeline</code>. Otherwise it has no effect.</p>
+</div>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>rules</code></strong> :&ensp;<code>str, True, False,</code> or <code>None</code>,
+default=<code>sklearn.utils.metadata_routing.UNCHANGED</code></dt>
+<dd>Metadata routing for <code>rules</code> parameter in <code>transform</code>.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><strong><code>self</code></strong> :&ensp;<code>object</code></dt>
+<dd>The updated object.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def func(*args, **kw):
+    &#34;&#34;&#34;Updates the request for provided parameters
+
+    This docstring is overwritten below.
+    See REQUESTER_DOC for expected functionality
+    &#34;&#34;&#34;
+    if not _routing_enabled():
+        raise RuntimeError(
+            &#34;This method is only available when metadata routing is enabled.&#34;
+            &#34; You can enable it using&#34;
+            &#34; sklearn.set_config(enable_metadata_routing=True).&#34;
+        )
+
+    if self.validate_keys and (set(kw) - set(self.keys)):
+        raise TypeError(
+            f&#34;Unexpected args: {set(kw) - set(self.keys)} in {self.name}. &#34;
+            f&#34;Accepted arguments are: {set(self.keys)}&#34;
+        )
+
+    # This makes it possible to use the decorated method as an unbound method,
+    # for instance when monkeypatching.
+    # https://github.com/scikit-learn/scikit-learn/issues/28632
+    if instance is None:
+        _instance = args[0]
+        args = args[1:]
+    else:
+        _instance = instance
+
+    # Replicating python&#39;s behavior when positional args are given other than
+    # `self`, and `self` is only allowed if this method is unbound.
+    if args:
+        raise TypeError(
+            f&#34;set_{self.name}_request() takes 0 positional argument but&#34;
+            f&#34; {len(args)} were given&#34;
+        )
+
+    requests = _instance._get_metadata_request()
+    method_metadata_request = getattr(requests, self.name)
+
+    for prop, alias in kw.items():
+        if alias is not UNCHANGED:
+            method_metadata_request.add_request(param=prop, alias=alias)
+    _instance._metadata_request = requests
+
+    return _instance</code></pre>
+</details>
+</dd>
+<dt id="imodels.rule_set.rule_fit.RuleFit.transform"><code class="name flex">
+<span>def <span class="ident">transform</span></span>(<span>self, X=None, rules=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Transform dataset.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>X</code></strong> :&ensp;<code>array-like matrix, shape=(n_samples, n_features)</code></dt>
+<dd>Input data to be transformed. Use <code>dtype=np.float32</code> for maximum
+efficiency.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><strong><code>X_transformed</code></strong> :&ensp;<code>matrix, shape=(n_samples, n_out)</code></dt>
+<dd>Transformed data set</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def transform(self, X=None, rules=None):
+    &#34;&#34;&#34;Transform dataset.
+
+    Parameters
+    ----------
+    X : array-like matrix, shape=(n_samples, n_features)
+        Input data to be transformed. Use ``dtype=np.float32`` for maximum
+        efficiency.
+
+    Returns
+    -------
+    X_transformed: matrix, shape=(n_samples, n_out)
+        Transformed data set
+    &#34;&#34;&#34;
+    df = pd.DataFrame(X, columns=self.feature_placeholders)
+    # print(&#39;df&#39;, df.dtypes, df.head())
+    X_transformed = np.zeros((X.shape[0], len(rules)))
+
+    for i, r in enumerate(rules):
+        features_r_uses = list(
+            set(term.split(&#39; &#39;)[0] for term in r.split(&#39; and &#39;)))
+        # print(&#39;r&#39;, r)
+        # print(&#39;feats&#39;, df[features_r_uses])
+        # print(&#39;ans&#39;, df[features_r_uses].query(r))
+        # print(
+        #     &#39;tra&#39;, X_transformed[df[features_r_uses].query(r).index.values, i])
+        X_transformed[df[features_r_uses].query(r).index.values, i] = 1
+    return X_transformed</code></pre>
+</details>
+</dd>
+<dt id="imodels.rule_set.rule_fit.RuleFit.visualize"><code class="name flex">
+<span>def <span class="ident">visualize</span></span>(<span>self, decimals=2)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def visualize(self, decimals=2):
+    rules = self._get_rules()
+    rules = rules[rules.coef != 0].sort_values(&#34;support&#34;, ascending=False)
+    pd.set_option(&#39;display.max_colwidth&#39;, None)
+    return rules[[&#39;rule&#39;, &#39;coef&#39;]].round(decimals)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="imodels.rule_set.rule_fit.RuleFitClassifier"><code class="flex name class">
+<span>class <span class="ident">RuleFitClassifier</span></span>
+<span>(</span><span>n_estimators=100, tree_size=4, sample_fract='default', max_rules=30, memory_par=0.01, tree_generator=None, lin_trim_quantile=0.025, lin_standardise=True, exp_rand_tree_size=True, include_linear=True, alpha=None, cv=True, random_state=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Rulefit class. Rather than using this class directly, should use RuleFitRegressor or RuleFitClassifier</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>tree_size</code></strong> :&ensp;<code>
+Number</code> of <code>terminal nodes in generated trees. If exp_rand_tree_size=True,</code></dt>
+<dd>this will be the mean number of terminal nodes.</dd>
+<dt><strong><code>sample_fract</code></strong> :&ensp;<code>
+fraction</code> of <code>randomly chosen training observations used to produce each tree. </code></dt>
+<dd>FP 2004 (Sec. 2)</dd>
+<dt><strong><code>max_rules</code></strong> :&ensp;<code>
+total number</code> of <code>terms included in the final model (both linear and rules)</code></dt>
+<dd>approximate total number of candidate rules generated for fitting also is based on this
+Note that actual number of candidate rules will usually be lower than this due to duplicates.</dd>
+<dt><strong><code>memory_par</code></strong> :&ensp;<code>
+scale multiplier (shrinkage factor) applied to each new tree when </code></dt>
+<dd>sequentially induced. FP 2004 (Sec. 2)</dd>
+<dt><strong><code>lin_standardise</code></strong> :&ensp;<code>If True, the linear terms will be standardised as per Friedman Sec 3.2</code></dt>
+<dd>by multiplying the winsorised variable by 0.4/stdev.</dd>
+<dt><strong><code>lin_trim_quantile</code></strong> :&ensp;<code>If lin_standardise is True, this quantile will be used to trim linear </code></dt>
+<dd>terms before standardisation.</dd>
+<dt><strong><code>exp_rand_tree_size</code></strong> :&ensp;<code>If True, each boosted tree will have a different maximum number</code> of</dt>
+<dd>terminal nodes based on an exponential distribution about tree_size.
+(Friedman Sec 3.3)</dd>
+<dt><strong><code>include_linear</code></strong> :&ensp;<code>Include linear terms as opposed to only rules</code></dt>
+<dd>&nbsp;</dd>
+<dt><strong><code>alpha</code></strong> :&ensp;<code>
+Regularization strength, will override max_rules parameter</code></dt>
+<dd>&nbsp;</dd>
+<dt><strong><code>cv</code></strong> :&ensp;<code>Whether to use cross-validation scores to select the regularization strength</code></dt>
+<dd>the final regularization value out of all that satisfy max_rules. If False, the
+least regularization possible is used.</dd>
+<dt>random_state:
+Integer to initialise random objects and provide repeatability.</dt>
+<dt><strong><code>tree_generator</code></strong> :&ensp;<code>Optional: this object will be used as provided to generate the rules.</code></dt>
+<dd>This will override almost all the other properties above.
+Must be GradientBoostingRegressor(), GradientBoostingClassifier(), or RandomForestRegressor()</dd>
+</dl>
+<h2 id="attributes">Attributes</h2>
+<dl>
+<dt><strong><code>rule_ensemble</code></strong> :&ensp;<code>RuleEnsemble</code></dt>
+<dd>The rule ensemble</dd>
+<dt><strong><code>feature_names</code></strong> :&ensp;<code>list</code> of <code>strings</code>, optional <code>(default=None)</code></dt>
+<dd>The names of the features (columns)</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class RuleFitClassifier(RuleFit, ClassifierMixin):
+    ...</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="imodels.rule_set.rule_fit.RuleFit" href="#imodels.rule_set.rule_fit.RuleFit">RuleFit</a></li>
+<li>sklearn.base.BaseEstimator</li>
+<li>sklearn.utils._estimator_html_repr._HTMLDocumentationLinkMixin</li>
+<li>sklearn.utils._metadata_requests._MetadataRequester</li>
+<li>sklearn.base.TransformerMixin</li>
+<li>sklearn.utils._set_output._SetOutputMixin</li>
+<li><a title="imodels.rule_set.rule_set.RuleSet" href="rule_set.html#imodels.rule_set.rule_set.RuleSet">RuleSet</a></li>
+<li>sklearn.base.ClassifierMixin</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="imodels.rule_set.rule_fit.RuleFitClassifier.set_score_request"><code class="name flex">
+<span>def <span class="ident">set_score_request</span></span>(<span>self: <a title="imodels.rule_set.rule_fit.RuleFitClassifier" href="#imodels.rule_set.rule_fit.RuleFitClassifier">RuleFitClassifier</a>, *, sample_weight: Union[bool, ForwardRef(None), str] = '$UNCHANGED$') ‑> <a title="imodels.rule_set.rule_fit.RuleFitClassifier" href="#imodels.rule_set.rule_fit.RuleFitClassifier">RuleFitClassifier</a></span>
+</code></dt>
+<dd>
+<div class="desc"><p>Request metadata passed to the <code>score</code> method.</p>
+<p>Note that this method is only relevant if
+<code>enable_metadata_routing=True</code> (see :func:<code>sklearn.set_config</code>).
+Please see :ref:<code>User Guide &lt;metadata_routing&gt;</code> on how the routing
+mechanism works.</p>
+<p>The options for each parameter are:</p>
+<ul>
+<li>
+<p><code>True</code>: metadata is requested, and passed to <code>score</code> if provided. The request is ignored if metadata is not provided.</p>
+</li>
+<li>
+<p><code>False</code>: metadata is not requested and the meta-estimator will not pass it to <code>score</code>.</p>
+</li>
+<li>
+<p><code>None</code>: metadata is not requested, and the meta-estimator will raise an error if the user provides it.</p>
+</li>
+<li>
+<p><code>str</code>: metadata should be passed to the meta-estimator with this given alias instead of the original name.</p>
+</li>
+</ul>
+<p>The default (<code>sklearn.utils.metadata_routing.UNCHANGED</code>) retains the
+existing request. This allows you to change the request for some
+parameters and not others.</p>
+<div class="admonition versionadded">
+<p class="admonition-title">Added in version:&ensp;1.3</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method is only relevant if this estimator is used as a
+sub-estimator of a meta-estimator, e.g. used inside a
+:class:<code>~sklearn.pipeline.Pipeline</code>. Otherwise it has no effect.</p>
+</div>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>sample_weight</code></strong> :&ensp;<code>str, True, False,</code> or <code>None</code>,
+default=<code>sklearn.utils.metadata_routing.UNCHANGED</code></dt>
+<dd>Metadata routing for <code>sample_weight</code> parameter in <code>score</code>.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><strong><code>self</code></strong> :&ensp;<code>object</code></dt>
+<dd>The updated object.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def func(*args, **kw):
+    &#34;&#34;&#34;Updates the request for provided parameters
+
+    This docstring is overwritten below.
+    See REQUESTER_DOC for expected functionality
+    &#34;&#34;&#34;
+    if not _routing_enabled():
+        raise RuntimeError(
+            &#34;This method is only available when metadata routing is enabled.&#34;
+            &#34; You can enable it using&#34;
+            &#34; sklearn.set_config(enable_metadata_routing=True).&#34;
+        )
+
+    if self.validate_keys and (set(kw) - set(self.keys)):
+        raise TypeError(
+            f&#34;Unexpected args: {set(kw) - set(self.keys)} in {self.name}. &#34;
+            f&#34;Accepted arguments are: {set(self.keys)}&#34;
+        )
+
+    # This makes it possible to use the decorated method as an unbound method,
+    # for instance when monkeypatching.
+    # https://github.com/scikit-learn/scikit-learn/issues/28632
+    if instance is None:
+        _instance = args[0]
+        args = args[1:]
+    else:
+        _instance = instance
+
+    # Replicating python&#39;s behavior when positional args are given other than
+    # `self`, and `self` is only allowed if this method is unbound.
+    if args:
+        raise TypeError(
+            f&#34;set_{self.name}_request() takes 0 positional argument but&#34;
+            f&#34; {len(args)} were given&#34;
+        )
+
+    requests = _instance._get_metadata_request()
+    method_metadata_request = getattr(requests, self.name)
+
+    for prop, alias in kw.items():
+        if alias is not UNCHANGED:
+            method_metadata_request.add_request(param=prop, alias=alias)
+    _instance._metadata_request = requests
+
+    return _instance</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Inherited members</h3>
+<ul class="hlist">
+<li><code><b><a title="imodels.rule_set.rule_fit.RuleFit" href="#imodels.rule_set.rule_fit.RuleFit">RuleFit</a></b></code>:
+<ul class="hlist">
+<li><code><a title="imodels.rule_set.rule_fit.RuleFit.fit" href="#imodels.rule_set.rule_fit.RuleFit.fit">fit</a></code></li>
+<li><code><a title="imodels.rule_set.rule_fit.RuleFit.predict" href="#imodels.rule_set.rule_fit.RuleFit.predict">predict</a></code></li>
+<li><code><a title="imodels.rule_set.rule_fit.RuleFit.set_fit_request" href="#imodels.rule_set.rule_fit.RuleFit.set_fit_request">set_fit_request</a></code></li>
+<li><code><a title="imodels.rule_set.rule_fit.RuleFit.set_transform_request" href="#imodels.rule_set.rule_fit.RuleFit.set_transform_request">set_transform_request</a></code></li>
+<li><code><a title="imodels.rule_set.rule_fit.RuleFit.transform" href="#imodels.rule_set.rule_fit.RuleFit.transform">transform</a></code></li>
+</ul>
+</li>
+</ul>
+</dd>
+<dt id="imodels.rule_set.rule_fit.RuleFitRegressor"><code class="flex name class">
+<span>class <span class="ident">RuleFitRegressor</span></span>
+<span>(</span><span>n_estimators=100, tree_size=4, sample_fract='default', max_rules=30, memory_par=0.01, tree_generator=None, lin_trim_quantile=0.025, lin_standardise=True, exp_rand_tree_size=True, include_linear=True, alpha=None, cv=True, random_state=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Rulefit class. Rather than using this class directly, should use RuleFitRegressor or RuleFitClassifier</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>tree_size</code></strong> :&ensp;<code>
+Number</code> of <code>terminal nodes in generated trees. If exp_rand_tree_size=True,</code></dt>
+<dd>this will be the mean number of terminal nodes.</dd>
+<dt><strong><code>sample_fract</code></strong> :&ensp;<code>
+fraction</code> of <code>randomly chosen training observations used to produce each tree. </code></dt>
+<dd>FP 2004 (Sec. 2)</dd>
+<dt><strong><code>max_rules</code></strong> :&ensp;<code>
+total number</code> of <code>terms included in the final model (both linear and rules)</code></dt>
+<dd>approximate total number of candidate rules generated for fitting also is based on this
+Note that actual number of candidate rules will usually be lower than this due to duplicates.</dd>
+<dt><strong><code>memory_par</code></strong> :&ensp;<code>
+scale multiplier (shrinkage factor) applied to each new tree when </code></dt>
+<dd>sequentially induced. FP 2004 (Sec. 2)</dd>
+<dt><strong><code>lin_standardise</code></strong> :&ensp;<code>If True, the linear terms will be standardised as per Friedman Sec 3.2</code></dt>
+<dd>by multiplying the winsorised variable by 0.4/stdev.</dd>
+<dt><strong><code>lin_trim_quantile</code></strong> :&ensp;<code>If lin_standardise is True, this quantile will be used to trim linear </code></dt>
+<dd>terms before standardisation.</dd>
+<dt><strong><code>exp_rand_tree_size</code></strong> :&ensp;<code>If True, each boosted tree will have a different maximum number</code> of</dt>
+<dd>terminal nodes based on an exponential distribution about tree_size.
+(Friedman Sec 3.3)</dd>
+<dt><strong><code>include_linear</code></strong> :&ensp;<code>Include linear terms as opposed to only rules</code></dt>
+<dd>&nbsp;</dd>
+<dt><strong><code>alpha</code></strong> :&ensp;<code>
+Regularization strength, will override max_rules parameter</code></dt>
+<dd>&nbsp;</dd>
+<dt><strong><code>cv</code></strong> :&ensp;<code>Whether to use cross-validation scores to select the regularization strength</code></dt>
+<dd>the final regularization value out of all that satisfy max_rules. If False, the
+least regularization possible is used.</dd>
+<dt>random_state:
+Integer to initialise random objects and provide repeatability.</dt>
+<dt><strong><code>tree_generator</code></strong> :&ensp;<code>Optional: this object will be used as provided to generate the rules.</code></dt>
+<dd>This will override almost all the other properties above.
+Must be GradientBoostingRegressor(), GradientBoostingClassifier(), or RandomForestRegressor()</dd>
+</dl>
+<h2 id="attributes">Attributes</h2>
+<dl>
+<dt><strong><code>rule_ensemble</code></strong> :&ensp;<code>RuleEnsemble</code></dt>
+<dd>The rule ensemble</dd>
+<dt><strong><code>feature_names</code></strong> :&ensp;<code>list</code> of <code>strings</code>, optional <code>(default=None)</code></dt>
+<dd>The names of the features (columns)</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class RuleFitRegressor(RuleFit, RegressorMixin):
+    ...</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="imodels.rule_set.rule_fit.RuleFit" href="#imodels.rule_set.rule_fit.RuleFit">RuleFit</a></li>
+<li>sklearn.base.BaseEstimator</li>
+<li>sklearn.utils._estimator_html_repr._HTMLDocumentationLinkMixin</li>
+<li>sklearn.utils._metadata_requests._MetadataRequester</li>
+<li>sklearn.base.TransformerMixin</li>
+<li>sklearn.utils._set_output._SetOutputMixin</li>
+<li><a title="imodels.rule_set.rule_set.RuleSet" href="rule_set.html#imodels.rule_set.rule_set.RuleSet">RuleSet</a></li>
+<li>sklearn.base.RegressorMixin</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="imodels.rule_set.rule_fit.RuleFitRegressor.set_score_request"><code class="name flex">
+<span>def <span class="ident">set_score_request</span></span>(<span>self: <a title="imodels.rule_set.rule_fit.RuleFitRegressor" href="#imodels.rule_set.rule_fit.RuleFitRegressor">RuleFitRegressor</a>, *, sample_weight: Union[bool, ForwardRef(None), str] = '$UNCHANGED$') ‑> <a title="imodels.rule_set.rule_fit.RuleFitRegressor" href="#imodels.rule_set.rule_fit.RuleFitRegressor">RuleFitRegressor</a></span>
+</code></dt>
+<dd>
+<div class="desc"><p>Request metadata passed to the <code>score</code> method.</p>
+<p>Note that this method is only relevant if
+<code>enable_metadata_routing=True</code> (see :func:<code>sklearn.set_config</code>).
+Please see :ref:<code>User Guide &lt;metadata_routing&gt;</code> on how the routing
+mechanism works.</p>
+<p>The options for each parameter are:</p>
+<ul>
+<li>
+<p><code>True</code>: metadata is requested, and passed to <code>score</code> if provided. The request is ignored if metadata is not provided.</p>
+</li>
+<li>
+<p><code>False</code>: metadata is not requested and the meta-estimator will not pass it to <code>score</code>.</p>
+</li>
+<li>
+<p><code>None</code>: metadata is not requested, and the meta-estimator will raise an error if the user provides it.</p>
+</li>
+<li>
+<p><code>str</code>: metadata should be passed to the meta-estimator with this given alias instead of the original name.</p>
+</li>
+</ul>
+<p>The default (<code>sklearn.utils.metadata_routing.UNCHANGED</code>) retains the
+existing request. This allows you to change the request for some
+parameters and not others.</p>
+<div class="admonition versionadded">
+<p class="admonition-title">Added in version:&ensp;1.3</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method is only relevant if this estimator is used as a
+sub-estimator of a meta-estimator, e.g. used inside a
+:class:<code>~sklearn.pipeline.Pipeline</code>. Otherwise it has no effect.</p>
+</div>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>sample_weight</code></strong> :&ensp;<code>str, True, False,</code> or <code>None</code>,
+default=<code>sklearn.utils.metadata_routing.UNCHANGED</code></dt>
+<dd>Metadata routing for <code>sample_weight</code> parameter in <code>score</code>.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><strong><code>self</code></strong> :&ensp;<code>object</code></dt>
+<dd>The updated object.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def func(*args, **kw):
+    &#34;&#34;&#34;Updates the request for provided parameters
+
+    This docstring is overwritten below.
+    See REQUESTER_DOC for expected functionality
+    &#34;&#34;&#34;
+    if not _routing_enabled():
+        raise RuntimeError(
+            &#34;This method is only available when metadata routing is enabled.&#34;
+            &#34; You can enable it using&#34;
+            &#34; sklearn.set_config(enable_metadata_routing=True).&#34;
+        )
+
+    if self.validate_keys and (set(kw) - set(self.keys)):
+        raise TypeError(
+            f&#34;Unexpected args: {set(kw) - set(self.keys)} in {self.name}. &#34;
+            f&#34;Accepted arguments are: {set(self.keys)}&#34;
+        )
+
+    # This makes it possible to use the decorated method as an unbound method,
+    # for instance when monkeypatching.
+    # https://github.com/scikit-learn/scikit-learn/issues/28632
+    if instance is None:
+        _instance = args[0]
+        args = args[1:]
+    else:
+        _instance = instance
+
+    # Replicating python&#39;s behavior when positional args are given other than
+    # `self`, and `self` is only allowed if this method is unbound.
+    if args:
+        raise TypeError(
+            f&#34;set_{self.name}_request() takes 0 positional argument but&#34;
+            f&#34; {len(args)} were given&#34;
+        )
+
+    requests = _instance._get_metadata_request()
+    method_metadata_request = getattr(requests, self.name)
+
+    for prop, alias in kw.items():
+        if alias is not UNCHANGED:
+            method_metadata_request.add_request(param=prop, alias=alias)
+    _instance._metadata_request = requests
+
+    return _instance</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Inherited members</h3>
+<ul class="hlist">
+<li><code><b><a title="imodels.rule_set.rule_fit.RuleFit" href="#imodels.rule_set.rule_fit.RuleFit">RuleFit</a></b></code>:
+<ul class="hlist">
+<li><code><a title="imodels.rule_set.rule_fit.RuleFit.fit" href="#imodels.rule_set.rule_fit.RuleFit.fit">fit</a></code></li>
+<li><code><a title="imodels.rule_set.rule_fit.RuleFit.predict" href="#imodels.rule_set.rule_fit.RuleFit.predict">predict</a></code></li>
+<li><code><a title="imodels.rule_set.rule_fit.RuleFit.set_fit_request" href="#imodels.rule_set.rule_fit.RuleFit.set_fit_request">set_fit_request</a></code></li>
+<li><code><a title="imodels.rule_set.rule_fit.RuleFit.set_transform_request" href="#imodels.rule_set.rule_fit.RuleFit.set_transform_request">set_transform_request</a></code></li>
+<li><code><a title="imodels.rule_set.rule_fit.RuleFit.transform" href="#imodels.rule_set.rule_fit.RuleFit.transform">transform</a></code></li>
+</ul>
+</li>
+</ul>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index 🔍</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="imodels.rule_set" href="index.html">imodels.rule_set</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="imodels.rule_set.rule_fit.RuleFit" href="#imodels.rule_set.rule_fit.RuleFit">RuleFit</a></code></h4>
+<ul class="">
+<li><code><a title="imodels.rule_set.rule_fit.RuleFit.fit" href="#imodels.rule_set.rule_fit.RuleFit.fit">fit</a></code></li>
+<li><code><a title="imodels.rule_set.rule_fit.RuleFit.predict" href="#imodels.rule_set.rule_fit.RuleFit.predict">predict</a></code></li>
+<li><code><a title="imodels.rule_set.rule_fit.RuleFit.predict_proba" href="#imodels.rule_set.rule_fit.RuleFit.predict_proba">predict_proba</a></code></li>
+<li><code><a title="imodels.rule_set.rule_fit.RuleFit.set_fit_request" href="#imodels.rule_set.rule_fit.RuleFit.set_fit_request">set_fit_request</a></code></li>
+<li><code><a title="imodels.rule_set.rule_fit.RuleFit.set_transform_request" href="#imodels.rule_set.rule_fit.RuleFit.set_transform_request">set_transform_request</a></code></li>
+<li><code><a title="imodels.rule_set.rule_fit.RuleFit.transform" href="#imodels.rule_set.rule_fit.RuleFit.transform">transform</a></code></li>
+<li><code><a title="imodels.rule_set.rule_fit.RuleFit.visualize" href="#imodels.rule_set.rule_fit.RuleFit.visualize">visualize</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="imodels.rule_set.rule_fit.RuleFitClassifier" href="#imodels.rule_set.rule_fit.RuleFitClassifier">RuleFitClassifier</a></code></h4>
+<ul class="">
+<li><code><a title="imodels.rule_set.rule_fit.RuleFitClassifier.set_score_request" href="#imodels.rule_set.rule_fit.RuleFitClassifier.set_score_request">set_score_request</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="imodels.rule_set.rule_fit.RuleFitRegressor" href="#imodels.rule_set.rule_fit.RuleFitRegressor">RuleFitRegressor</a></code></h4>
+<ul class="">
+<li><code><a title="imodels.rule_set.rule_fit.RuleFitRegressor.set_score_request" href="#imodels.rule_set.rule_fit.RuleFitRegressor.set_score_request">set_score_request</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img align="center" width=100% src="https://csinva.io/imodels/img/anim.gif"> </img></p>
+<!-- add wave animation -->
+</nav>
+</main>
+<footer id="footer">
+</footer>
+</body>
+</html>
+<!-- add github corner -->
+<a href="https://github.com/csinva/imodels" class="github-corner" aria-label="View source on GitHub"><svg width="120" height="120" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="m128.3,109.0 c113.8,99.7 119.0,89.6 119.0,89.6 c122.0,82.7 120.5,78.6 120.5,78.6 c119.2,72.0 123.4,76.3 123.4,76.3 c127.3,80.9 125.5,87.3 125.5,87.3 c122.9,97.6 130.6,101.9 134.4,103.2" fill="currentcolor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<!-- add wave animation stylesheet -->
+<link rel="stylesheet" href="github.css">
